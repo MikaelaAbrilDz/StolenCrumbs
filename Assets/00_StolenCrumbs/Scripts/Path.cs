@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class Path : MonoBehaviour
 {
-    public List<CheckerManager> pathToFollow;
+    public int direction;
 	void Start()
     {
         
