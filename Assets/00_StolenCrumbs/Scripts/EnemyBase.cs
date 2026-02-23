@@ -7,7 +7,7 @@ public class EnemyBase : CheckerPlaceable
     int damage;
     int killingPrice;
     GameObject visual;
-    enum bugType
+    public enum bugType
     {
         flyer, armored
     }
@@ -17,7 +17,7 @@ public class EnemyBase : CheckerPlaceable
     {
 
     }
-    void GetDamaged(int damage)
+    public void GetDamaged(int damage, Turret.damageType[] damageTypes)
     {
         currentLife -= damage;
     }

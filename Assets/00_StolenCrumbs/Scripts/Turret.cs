@@ -6,9 +6,9 @@ public class Turret : CheckerPlaceable
 	int damage;
 	int range;
 	int paidPric;
-	enum damageType
+	public enum damageType
 	{
-		pesticide, electric, water, torch, glue
+		gas, electric, water, fire, floor
 	}
 	damageType[] damageTypes;
 	EnemyBase nearestEnemy;
@@ -26,12 +26,7 @@ public class Turret : CheckerPlaceable
 
 	public void Shoot()
 	{
-		EnemyBase target = FindTarget();
-
-		if (target == null)
-			return;
-
-		//target.GetDamaged(damage, damageTypes);
+		FindTarget()?.GetDamaged(damage, damageTypes);
 	}
 
 	EnemyBase FindTarget()
