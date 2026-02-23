@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class CheckerPlaceable : MonoBehaviour
 {
-    CheckerManager parentChecker;
+	[SerializeField] protected CheckerManager parentChecker;
 
-    public void SetParentChecker(CheckerManager parent)
-    {
-        parentChecker = parent;
-    }
+	public void SetParentChecker(CheckerManager parent)
+	{
+		parentChecker = parent;
+		transform.parent = parent.transform;
+	}
 }
