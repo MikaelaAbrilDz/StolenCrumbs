@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: 47ee60abed1514dababc02a35d8293ea
-TextScriptImporter:
-  externalObjects: {}
+guid: 3e55a11a05aa141af9f3be5e921cc003
+timeCreated: 1460231732
+licenseType: Store
+NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -10,5 +11,5 @@ AssetOrigin:
   productId: 3595
   packageName: LeanTween
   packageVersion: 2.51
-  assetPath: Assets/Resources/BillingMode.json
+  assetPath: Assets/LeanTween/Examples/Material/TrackCar.mat
   uploadId: 469983

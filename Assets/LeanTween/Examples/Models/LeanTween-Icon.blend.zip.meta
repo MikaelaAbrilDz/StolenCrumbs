@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 47ee60abed1514dababc02a35d8293ea
-TextScriptImporter:
+guid: 2fb081ef63f8c4c92a76f0b593f7abb0
+DefaultImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -10,5 +10,5 @@ AssetOrigin:
   productId: 3595
   packageName: LeanTween
   packageVersion: 2.51
-  assetPath: Assets/Resources/BillingMode.json
+  assetPath: Assets/LeanTween/Examples/Models/LeanTween-Icon.blend.zip
   uploadId: 469983

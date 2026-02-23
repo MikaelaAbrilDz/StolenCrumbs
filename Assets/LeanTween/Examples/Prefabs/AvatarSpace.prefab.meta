@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: 47ee60abed1514dababc02a35d8293ea
-TextScriptImporter:
+guid: e02878730c48147bb9fc414aabee207b
+timeCreated: 1535222974
+licenseType: Store
+NativeFormatImporter:
   externalObjects: {}
+  mainObjectFileID: 100100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -10,5 +13,5 @@ AssetOrigin:
   productId: 3595
   packageName: LeanTween
   packageVersion: 2.51
-  assetPath: Assets/Resources/BillingMode.json
+  assetPath: Assets/LeanTween/Examples/Prefabs/AvatarSpace.prefab
   uploadId: 469983

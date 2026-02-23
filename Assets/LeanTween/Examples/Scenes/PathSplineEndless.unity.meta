@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: 47ee60abed1514dababc02a35d8293ea
-TextScriptImporter:
-  externalObjects: {}
+guid: 2a7ce2e628c14472a9fb2af42917d270
+timeCreated: 1460314600
+licenseType: Store
+DefaultImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -10,5 +11,5 @@ AssetOrigin:
   productId: 3595
   packageName: LeanTween
   packageVersion: 2.51
-  assetPath: Assets/Resources/BillingMode.json
+  assetPath: Assets/LeanTween/Examples/Scenes/PathSplineEndless.unity
   uploadId: 469983

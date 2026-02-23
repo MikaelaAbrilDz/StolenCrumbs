@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: 47ee60abed1514dababc02a35d8293ea
-TextScriptImporter:
+guid: 3d163efe5358b49dabdfa387538d1030
+NativeFormatImporter:
   externalObjects: {}
+  mainObjectFileID: 4890085278179872738
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -10,5 +11,5 @@ AssetOrigin:
   productId: 3595
   packageName: LeanTween
   packageVersion: 2.51
-  assetPath: Assets/Resources/BillingMode.json
+  assetPath: Assets/LeanTween/Examples/Scenes/GeneralUISpaceSettings.lighting
   uploadId: 469983

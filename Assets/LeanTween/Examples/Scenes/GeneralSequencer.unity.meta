@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: 47ee60abed1514dababc02a35d8293ea
-TextScriptImporter:
-  externalObjects: {}
+guid: 28ab900ace00b47e39ad8fef65f3170a
+timeCreated: 1488722111
+licenseType: Store
+DefaultImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -10,5 +11,5 @@ AssetOrigin:
   productId: 3595
   packageName: LeanTween
   packageVersion: 2.51
-  assetPath: Assets/Resources/BillingMode.json
+  assetPath: Assets/LeanTween/Examples/Scenes/GeneralSequencer.unity
   uploadId: 469983

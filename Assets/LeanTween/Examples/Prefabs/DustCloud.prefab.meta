@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: 47ee60abed1514dababc02a35d8293ea
-TextScriptImporter:
-  externalObjects: {}
+guid: 3a6e1cb160a414c6cbe7d27b34d381a1
+timeCreated: 1488749437
+licenseType: Store
+NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -10,5 +11,5 @@ AssetOrigin:
   productId: 3595
   packageName: LeanTween
   packageVersion: 2.51
-  assetPath: Assets/Resources/BillingMode.json
+  assetPath: Assets/LeanTween/Examples/Prefabs/DustCloud.prefab
   uploadId: 469983
