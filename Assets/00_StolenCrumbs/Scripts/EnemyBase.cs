@@ -4,9 +4,9 @@ using System.Collections;
 public class EnemyBase : CheckerPlaceable
 {
 	int maxLife;
-	int currentLife;
+	int currentLife = 100;
 	int damage = 2;
-	[SerializeField ]float movementSpeed = 1.0f;
+	[SerializeField ] float movementSpeed = 1.0f;
 	int killingPrice;
 	GameObject visual;
 
@@ -26,7 +26,9 @@ public class EnemyBase : CheckerPlaceable
 	}
 	public void GetDamaged(int damage, Turret.damageType[] damageTypes)
 	{
-		currentLife -= damage;
+		print(name + " has " + currentLife + " HP now");
+		currentLife = Mathf.Max(currentLife - damage, 0);
+		if (currentLife == 0) Die();
 	}
 	void MoveNextPath()
 	{

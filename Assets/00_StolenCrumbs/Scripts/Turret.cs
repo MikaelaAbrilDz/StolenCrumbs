@@ -1,57 +1,83 @@
 using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Turret : CheckerPlaceable
 {
-	int fireRate;
-	int damage;
-	int range;
-	int paidPric;
+	[SerializeField] GameObject bulletPrefab;
+	float bulletYield = 0.5f;
+	int fireRate = 1;
+	int damage = 10;
+	int range = 2;
+	int paidPrice;
 	public enum damageType
 	{
 		gas, electric, water, fire, floor
 	}
 	damageType[] damageTypes;
-	EnemyBase nearestEnemy;
 
-	[SerializeField] LayerMask enemyLayer;
+	GameObject bullet;
+	float fireCooldown;
+	EnemyBase[] targetEnemies;
 	void Start()
 	{
-
+		bullet = Instantiate(bulletPrefab, transform);
+		bullet.SetActive(false);
 	}
 
 	void Update()
 	{
-		Shoot();
+		fireCooldown -= Time.deltaTime * fireRate;
+		if (fireCooldown <= 0)
+		{
+			fireCooldown = 1;
+			Shoot();
+		}
 	}
 
 	public void Shoot()
 	{
-		FindTarget()?.GetDamaged(damage, damageTypes);
+		EnemyBase target = FindTarget(parentChecker, range);
+		if (target == null) return;
+        StartCoroutine(DealDamage(target, bulletYield));
+		bullet.SetActive(true);
+		LeanTween.move(bullet, target.transform.position, bulletYield);
+	}
+	private IEnumerator DealDamage(EnemyBase target, float delay)
+	{
+		yield return new WaitForSeconds(delay);
+		bullet.SetActive(false);
+		bullet.transform.localPosition = Vector3.zero;
+		target.GetDamaged(damage, damageTypes);
 	}
 
-	EnemyBase FindTarget()
+	EnemyBase FindTarget(CheckerManager initialChecker, int rangeToDo)
 	{
-		Collider[] hits = Physics.OverlapSphere(transform.position, range, enemyLayer);
-
-		float shortestDistance = Mathf.Infinity;
-		EnemyBase nearestEnemy = null;
-
-		foreach (Collider hit in hits)
+		EnemyBase enemy = null;
+		for (int i = 0; i < 6; i++)
 		{
-			EnemyBase enemy = hit.GetComponent<EnemyBase>();
-
-			if (enemy == null)
-				continue;
-
-			float sqrDistance = (enemy.transform.position - transform.position).sqrMagnitude;
-
-			if (sqrDistance < shortestDistance)
+			enemy = initialChecker.sideCheckers[i].GetComponentInChildren<EnemyBase>();
+			if (rangeToDo > 0)
 			{
-				shortestDistance = sqrDistance;
-				nearestEnemy = enemy;
+                EnemyBase newEnemy = FindTarget(initialChecker.sideCheckers[i], rangeToDo - 1);
+
+				//FALTA CAMBIAR A LÓGICA DE DISTANCIA A LA BASE
+				if (newEnemy != null)
+				{
+					return newEnemy;
+				}
+				if (enemy != null)
+				{
+					return enemy;
+				}
+			}
+			else
+			{
+				return enemy;
 			}
 		}
-		return nearestEnemy;
+		return enemy;
 	}
 	public void Sell()
 	{
