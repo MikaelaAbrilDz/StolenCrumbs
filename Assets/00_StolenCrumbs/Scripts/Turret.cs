@@ -19,7 +19,7 @@ public class Turret : CheckerPlaceable
 
 	GameObject bullet;
 	float fireCooldown;
-	EnemyBase[] targetEnemies;
+	public List<EnemyBase> targetEnemies = new List<EnemyBase>();
 	void Start()
 	{
 		bullet = Instantiate(bulletPrefab, transform);
@@ -38,7 +38,8 @@ public class Turret : CheckerPlaceable
 
 	public void Shoot()
 	{
-		EnemyBase target = FindTarget(parentChecker, range);
+		print(FindTarget()?.name);
+		EnemyBase target = FindTarget();
 		if (target == null) return;
         StartCoroutine(DealDamage(target, bulletYield));
 		bullet.SetActive(true);
@@ -52,32 +53,49 @@ public class Turret : CheckerPlaceable
 		target.GetDamaged(damage, damageTypes);
 	}
 
-	EnemyBase FindTarget(CheckerManager initialChecker, int rangeToDo)
+	EnemyBase FindTarget()
 	{
-		EnemyBase enemy = null;
-		for (int i = 0; i < 6; i++)
+		targetEnemies.Clear();
+		FindTarget(parentChecker, range);
+		EnemyBase bestSuitedEnemy = null;
+		for (int i = 0; i < targetEnemies.Count - 1; i++)
 		{
-			enemy = initialChecker.sideCheckers[i].GetComponentInChildren<EnemyBase>();
-			if (rangeToDo > 0)
+			if (targetEnemies[i].GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort < targetEnemies[i + 1].GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort)
 			{
-                EnemyBase newEnemy = FindTarget(initialChecker.sideCheckers[i], rangeToDo - 1);
-
-				//FALTA CAMBIAR A LÓGICA DE DISTANCIA A LA BASE
-				if (newEnemy != null)
-				{
-					return newEnemy;
-				}
-				if (enemy != null)
-				{
-					return enemy;
-				}
+				bestSuitedEnemy = targetEnemies[i];
 			}
+			else if (targetEnemies[i].GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort > targetEnemies[i + 1].GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort) bestSuitedEnemy = targetEnemies[i + 1];
 			else
 			{
-				return enemy;
+				float a, b;
+
+				if (targetEnemies[i].currentTween.ratioPassed > 0.5) a = 1 - targetEnemies[i].currentTween.ratioPassed;
+				else a = targetEnemies[i].currentTween.ratioPassed;
+				if (targetEnemies[i + 1].currentTween.ratioPassed > 0.5) b = 1 - targetEnemies[i + 1].currentTween.ratioPassed;
+				else b = targetEnemies[i + 1].currentTween.ratioPassed;
+
+				if (a > b) bestSuitedEnemy = targetEnemies[i];
+				else bestSuitedEnemy = targetEnemies[i + 1];
+			}
+
+        }
+		return bestSuitedEnemy;
+	}
+	void FindTarget(CheckerManager initialChecker, int rangeToDo)
+    {
+		if (rangeToDo > 0)
+		{
+			for (int i = 0; i < 6; i++)
+			{
+				FindTarget(initialChecker.sideCheckers[i], rangeToDo - 1);
+				EnemyBase[] targets = initialChecker.sideCheckers[i].GetComponentsInChildren<EnemyBase>();
+				foreach (var target in targets)
+				{
+					if (!targetEnemies.Contains(target) && target != null) targetEnemies.Add(target);
+				}
 			}
 		}
-		return enemy;
+		else return;
 	}
 	public void Sell()
 	{

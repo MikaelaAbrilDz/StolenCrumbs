@@ -9,4 +9,8 @@ public class CheckerPlaceable : MonoBehaviour
 		parentChecker = parent;
 		transform.parent = parent.transform;
 	}
+	public CheckerManager GetParentChecker()
+	{
+		return parentChecker;
+	}
 }

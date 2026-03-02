@@ -9,6 +9,7 @@ public class EnemyBase : CheckerPlaceable
 	[SerializeField ] float movementSpeed = 1.0f;
 	int killingPrice;
 	GameObject visual;
+    [HideInInspector] public LTDescr currentTween;
 
 	public enum bugType
 	{
@@ -26,8 +27,8 @@ public class EnemyBase : CheckerPlaceable
 	}
 	public void GetDamaged(int damage, Turret.damageType[] damageTypes)
 	{
-		print(name + " has " + currentLife + " HP now");
 		currentLife = Mathf.Max(currentLife - damage, 0);
+		print(name + " has " + currentLife + " HP now");
 		if (currentLife == 0) Die();
 	}
 	void MoveNextPath()
@@ -35,7 +36,7 @@ public class EnemyBase : CheckerPlaceable
 		Path path = parentChecker.GetComponentInChildren<Path>();
 		if (path != null)
 		{
-			LeanTween.move(gameObject, parentChecker.sideCheckers[path.direction].transform.position, 1 / movementSpeed).setOnComplete(MoveNextPath);
+			currentTween = LeanTween.move(gameObject, parentChecker.sideCheckers[path.direction].transform.position, 1 / movementSpeed).setOnComplete(MoveNextPath);
 			StartCoroutine(PassNextChecker((1 / movementSpeed) / 2, parentChecker.sideCheckers[path.direction]));
 		}
 		Fort fort = parentChecker.GetComponentInChildren<Fort>();
