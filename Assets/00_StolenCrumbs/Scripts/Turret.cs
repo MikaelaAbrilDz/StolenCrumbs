@@ -38,7 +38,6 @@ public class Turret : CheckerPlaceable
 
 	public void Shoot()
 	{
-		print(FindTarget()?.name);
 		EnemyBase target = FindTarget();
 		if (target == null) return;
         StartCoroutine(DealDamage(target, bulletYield));
@@ -57,7 +56,8 @@ public class Turret : CheckerPlaceable
 	{
 		targetEnemies.Clear();
 		FindTarget(parentChecker, range);
-		EnemyBase bestSuitedEnemy = null;
+		if (targetEnemies.Count == 0) return null;
+		EnemyBase bestSuitedEnemy = targetEnemies[0];
 		for (int i = 0; i < targetEnemies.Count - 1; i++)
 		{
 			if (targetEnemies[i].GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort < targetEnemies[i + 1].GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort)
@@ -79,6 +79,7 @@ public class Turret : CheckerPlaceable
 			}
 
         }
+		print(bestSuitedEnemy);
 		return bestSuitedEnemy;
 	}
 	void FindTarget(CheckerManager initialChecker, int rangeToDo)
