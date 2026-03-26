@@ -58,28 +58,25 @@ public class Turret : CheckerPlaceable
 		FindTarget(parentChecker, range);
 		if (targetEnemies.Count == 0) return null;
 		EnemyBase bestSuitedEnemy = targetEnemies[0];
-		for (int i = 0; i < targetEnemies.Count - 1; i++)
+		for (int i = 1; i < targetEnemies.Count; i++)
 		{
-			if (targetEnemies[i].GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort < targetEnemies[i + 1].GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort)
+			if (targetEnemies[i].GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort < bestSuitedEnemy.GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort)
 			{
 				bestSuitedEnemy = targetEnemies[i];
 			}
-			else if (targetEnemies[i].GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort > targetEnemies[i + 1].GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort) bestSuitedEnemy = targetEnemies[i + 1];
-			else
+			else if (targetEnemies[i].GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort == bestSuitedEnemy.GetParentChecker().GetComponentInChildren<Path>().stepsUntilFort)
 			{
 				float a, b;
 
 				if (targetEnemies[i].currentTween.ratioPassed > 0.5) a = 1 - targetEnemies[i].currentTween.ratioPassed;
 				else a = targetEnemies[i].currentTween.ratioPassed;
-				if (targetEnemies[i + 1].currentTween.ratioPassed > 0.5) b = 1 - targetEnemies[i + 1].currentTween.ratioPassed;
-				else b = targetEnemies[i + 1].currentTween.ratioPassed;
+				if (bestSuitedEnemy.currentTween.ratioPassed > 0.5) b = 1 - bestSuitedEnemy.currentTween.ratioPassed;
+				else b = bestSuitedEnemy.currentTween.ratioPassed;
 
-				if (a > b) bestSuitedEnemy = targetEnemies[i];
-				else bestSuitedEnemy = targetEnemies[i + 1];
+
+                if (a > b) bestSuitedEnemy = targetEnemies[i];
 			}
-
         }
-		print(bestSuitedEnemy);
 		return bestSuitedEnemy;
 	}
 	void FindTarget(CheckerManager initialChecker, int rangeToDo)
