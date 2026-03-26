@@ -135,3 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb3af443b8638e4bb7eded35dbb7925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawn
+  parentChecker: {fileID: 0}
+  enemyPrefab:
+  - {fileID: 8962002682576190340, guid: 59f1b1c3c0bed5845ad95b826fa1a50b, type: 3}
+  - {fileID: 8962002682576190340, guid: 77b4e1f6bdcc1904f91d8bac4a758a48, type: 3}

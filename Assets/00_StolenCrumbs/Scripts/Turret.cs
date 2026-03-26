@@ -5,57 +5,42 @@ using System.Collections.Generic;
 
 public class Turret : CheckerPlaceable
 {
-	[SerializeField] GameObject bulletPrefab;
-	float bulletYield = 0.5f;
-	int fireRate = 1;
-	int damage = 10;
-	int range = 2;
-	int paidPrice;
-	public enum damageType
-	{
-		gas, electric, water, fire, floor
-	}
-	damageType[] damageTypes;
+	public TurretData turretData;
+
+    public int paidPrice;
 
 	GameObject bullet;
-	float fireCooldown;
 	public List<EnemyBase> targetEnemies = new List<EnemyBase>();
+
 	void Start()
 	{
-		bullet = Instantiate(bulletPrefab, transform);
-		bullet.SetActive(false);
-	}
-
-	void Update()
-	{
-		fireCooldown -= Time.deltaTime * fireRate;
-		if (fireCooldown <= 0)
-		{
-			fireCooldown = 1;
-			Shoot();
-		}
+        bullet = Instantiate(turretData.bulletPrefab, transform);
+        bullet.SetActive(false);
+		FindAnyObjectByType<TurretShooterManager>().turrets.Add(this);
 	}
 
 	public void Shoot()
 	{
 		EnemyBase target = FindTarget();
 		if (target == null) return;
-        StartCoroutine(DealDamage(target, bulletYield));
-		bullet.SetActive(true);
-		LeanTween.move(bullet, target.transform.position, bulletYield);
+        StartCoroutine(DealDamage(target, turretData.bulletYield));
+        bullet.SetActive(true);
+		LeanTween.move(bullet, target.transform.position, turretData.bulletYield);
 	}
 	private IEnumerator DealDamage(EnemyBase target, float delay)
 	{
 		yield return new WaitForSeconds(delay);
-		bullet.SetActive(false);
-		bullet.transform.localPosition = Vector3.zero;
-		target.GetDamaged(damage, damageTypes);
+        bullet.SetActive(false);
+        bullet.transform.localPosition = Vector3.zero;
+		target.GetStatusEffect(turretData.damageTypes, turretData.damageTimes);
+		yield return new WaitForEndOfFrame();
+		target.GetDamaged(turretData.damage, turretData.damageTypes, turretData.hitVisualPrefab);
 	}
 
 	EnemyBase FindTarget()
 	{
 		targetEnemies.Clear();
-		FindTarget(parentChecker, range);
+		FindTarget(parentChecker, turretData.range);
 		if (targetEnemies.Count == 0) return null;
 		EnemyBase bestSuitedEnemy = targetEnemies[0];
 		for (int i = 1; i < targetEnemies.Count; i++)
@@ -68,9 +53,9 @@ public class Turret : CheckerPlaceable
 			{
 				float a, b;
 
-				if (targetEnemies[i].currentTween.ratioPassed > 0.5) a = 1 - targetEnemies[i].currentTween.ratioPassed;
+				if (targetEnemies[i].currentTween.ratioPassed > 0.5) a = targetEnemies[i].currentTween.ratioPassed -1;
 				else a = targetEnemies[i].currentTween.ratioPassed;
-				if (bestSuitedEnemy.currentTween.ratioPassed > 0.5) b = 1 - bestSuitedEnemy.currentTween.ratioPassed;
+				if (bestSuitedEnemy.currentTween.ratioPassed > 0.5) b = bestSuitedEnemy.currentTween.ratioPassed - 1;
 				else b = bestSuitedEnemy.currentTween.ratioPassed;
 
 

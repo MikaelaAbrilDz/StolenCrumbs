@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Spawn : CheckerPlaceable
 {
-    [SerializeField] GameObject enemyPrefab;
+    [SerializeField] GameObject[] enemyPrefab;
     int counter = 0;
     void Start()
     {
@@ -13,20 +13,11 @@ public class Spawn : CheckerPlaceable
 
     IEnumerator TestSpawning() //ONLY FOR TESTING, REBUILD THIS AFTER TESTING
     {
-        SpawnEnemy(enemyPrefab);
-        yield return new WaitForSeconds(3);
-        SpawnEnemy(enemyPrefab);
-        yield return new WaitForSeconds(2);
-        SpawnEnemy(enemyPrefab);
-        yield return new WaitForSeconds(2);
-        SpawnEnemy(enemyPrefab);
-        yield return new WaitForSeconds(5);
-        SpawnEnemy(enemyPrefab);
-        yield return new WaitForSeconds(0.7f);
-        SpawnEnemy(enemyPrefab);
-        yield return new WaitForSeconds(0.7f);
-        SpawnEnemy(enemyPrefab);
-        yield return new WaitForSeconds(0.7f);
+        for (int i = 0; i < 12; i++)
+        {
+            yield return new WaitForSeconds(3.5f);
+            SpawnEnemy(enemyPrefab[counter%2]);
+        }
     }
 
     void SpawnEnemy(GameObject enemy)

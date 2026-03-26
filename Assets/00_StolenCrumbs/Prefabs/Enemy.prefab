@@ -137,3 +137,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBase
   parentChecker: {fileID: 0}
   movementSpeed: 0.5
+  statusEffects: 
+  statusEffectsTimeLeft: []
+  explosionVisual: {fileID: 7879344167108214069, guid: d278ac471300dc24e90c48ed056c9a78, type: 3}
