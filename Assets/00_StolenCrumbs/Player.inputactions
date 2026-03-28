@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "Player",
+    "maps": [
+        {
+            "name": "PlayerInput",
+            "id": "754d2219-ddd6-4564-936a-664be4081a01",
+            "actions": [
+                {
+                    "name": "MainTap",
+                    "type": "Button",
+                    "id": "cf0ddd55-131d-4f58-a3c9-2c8c17d7fa60",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "77e4ca75-cd15-4252-b8be-d18519c31f7f",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MainTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
