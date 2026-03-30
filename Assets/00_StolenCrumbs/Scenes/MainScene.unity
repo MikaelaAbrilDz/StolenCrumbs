@@ -11434,6 +11434,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4385873864694005593, guid: 300da5fde2cafd24cacbf3b124af38c0, type: 3}
   m_PrefabInstance: {fileID: 877962836}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &884073175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 789959991901704140, guid: b1a1ad4a66b7ea74a8a100b16599b851, type: 3}
+  m_PrefabInstance: {fileID: 5397938966496836089}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &884308157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26291,13 +26296,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 789959991901704140, guid: b1a1ad4a66b7ea74a8a100b16599b851, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5397938966496836096}
   m_SourcePrefab: {fileID: 100100000, guid: b1a1ad4a66b7ea74a8a100b16599b851, type: 3}
 --- !u!224 &5397938966496836090 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6943496614029916962, guid: b1a1ad4a66b7ea74a8a100b16599b851, type: 3}
   m_PrefabInstance: {fileID: 5397938966496836089}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5397938966496836096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884073175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
