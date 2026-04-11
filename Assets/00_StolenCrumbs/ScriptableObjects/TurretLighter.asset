@@ -15,9 +15,9 @@ MonoBehaviour:
   turretName: Lighter
   icon: {fileID: 21300000, guid: 1f2bed41a42ccee4c9268012ec378062, type: 3}
   bulletYield: 0.4
-  fireRate: 18
+  fireRate: 10
   damage: 3
-  range: 2
+  range: 1
   bulletPrefab: {fileID: 6129253312025661718, guid: 374cda5a8f7df134589b3bbd6cd06927, type: 3}
   hitVisualPrefab: {fileID: 7879344167108214069, guid: 6e0937f6e61f357428af6cead48e306e, type: 3}
   basePrice: 10
