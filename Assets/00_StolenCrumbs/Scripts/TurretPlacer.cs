@@ -11,8 +11,9 @@ public class TurretPlacer : MonoBehaviour
 
 	TurretPrevisualizer previsualizer;
 	private bool isPicked;
+	private float placingRange = 1.2f;
 
-	void Start()
+    void Start()
 	{
 		iconTurret = GetComponent<Image>();
 		nameText = GetComponentInChildren<TextMeshProUGUI>();
@@ -43,6 +44,34 @@ public class TurretPlacer : MonoBehaviour
 
 			Camera mainCam = Camera.main;
 			GameObject placedturret = Instantiate(turretPrefab, mainCam.ScreenToWorldPoint(Mouse.current.position.value) + Vector3.forward, Quaternion.identity);
-		}
+			Collider2D[] avalaibleCheckers = Physics2D.OverlapCircleAll(placedturret.transform.position, placingRange, LayerMask.GetMask("Checkers"));
+			CheckerManager finalChecker = null;
+			foreach (Collider2D checker in avalaibleCheckers)
+			{
+				if (checker.GetComponentInChildren<Path>() == null && checker.GetComponentInChildren<Fort>() == null && checker.GetComponentInChildren<Turret>() == null)
+				{
+					if (finalChecker == null)
+					{
+						finalChecker = checker.GetComponent<CheckerManager>();
+					}
+					else if ((finalChecker.transform.position - placedturret.transform.position).magnitude > (checker.transform.position - placedturret.transform.position).magnitude)
+					{
+						finalChecker = checker.GetComponent<CheckerManager>();
+                    }
+                }
+            }
+
+			if (finalChecker == null)
+			{
+				Destroy(placedturret);
+			}
+			else 
+			{
+				placedturret.GetComponent<Turret>().SetParentChecker(finalChecker);
+				placedturret.transform.localPosition = Vector3.zero;
+
+            }
+
+        }
 	}
 }
