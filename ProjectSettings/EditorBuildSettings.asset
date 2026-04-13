@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00_StolenCrumbs/Scenes/MainScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/00_StolenCrumbs/Scenes/WinScreen.unity
+    guid: 703ddb752defc4d4fa034944aace97aa
+  - enabled: 1
+    path: Assets/00_StolenCrumbs/Scenes/LoseScreen.unity
+    guid: 825a01602b71e6d48a62009f0342043a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

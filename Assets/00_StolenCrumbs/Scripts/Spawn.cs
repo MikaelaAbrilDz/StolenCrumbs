@@ -15,14 +15,16 @@ public class Spawn : CheckerPlaceable
     {
         for (int i = 0; i < 20; i++)
         {
-            yield return new WaitForSeconds(3.5f);
+            yield return new WaitForSeconds(5f);
             SpawnEnemy(enemyPrefab[counter%2]);
         }
+        WinLoseManager._isFinalWave = true;
     }
 
     void SpawnEnemy(GameObject enemy)
     {
         GameObject instantiatedEnemy = Instantiate(enemy, GetParentChecker().transform);
+        instantiatedEnemy.transform.localPosition = Vector3.zero;
         instantiatedEnemy.GetComponent<EnemyBase>().SetParentChecker(GetParentChecker());
         instantiatedEnemy.name = "Enemy " + counter;
         counter++;

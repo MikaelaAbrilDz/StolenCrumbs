@@ -34,7 +34,7 @@ public class Turret : CheckerPlaceable
         bullet.transform.localPosition = Vector3.zero;
 		target.GetStatusEffect(turretData.damageTypes, turretData.damageTimes);
 		yield return new WaitForEndOfFrame();
-		target.GetDamaged(turretData.damage, turretData.damageTypes, turretData.hitVisualPrefab);
+		if (target) target.GetDamaged(turretData.damage, turretData.damageTypes, turretData.hitVisualPrefab);
 	}
 
 	EnemyBase FindTarget()
@@ -70,13 +70,16 @@ public class Turret : CheckerPlaceable
 		{
 			for (int i = 0; i < 6; i++)
 			{
-				FindTarget(initialChecker.sideCheckers[i], rangeToDo - 1);
-				EnemyBase[] targets = initialChecker.sideCheckers[i].GetComponentsInChildren<EnemyBase>();
+				if (initialChecker.sideCheckers[i])
+				{
+					FindTarget(initialChecker.sideCheckers[i], rangeToDo - 1);
+					EnemyBase[] targets = initialChecker.sideCheckers[i].GetComponentsInChildren<EnemyBase>();
 				foreach (var target in targets)
 				{
 					if (!targetEnemies.Contains(target) && target != null) targetEnemies.Add(target);
 				}
-			}
+                }
+            }
 		}
 		else return;
 	}

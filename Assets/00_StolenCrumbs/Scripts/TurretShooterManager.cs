@@ -22,7 +22,7 @@ public class TurretShooterManager : MonoBehaviour
             frequencyCounter += 1;
             for (int i = 1; i < maxFrequencies; i++)
             {
-                if (frequencyCounter % i == 0)
+                if (frequencyCounter == i)
                 {
                     foreach (Turret turret in turrets)
                     {
@@ -30,6 +30,7 @@ public class TurretShooterManager : MonoBehaviour
                     }
                 }
             }
+            if (frequencyCounter == maxFrequencies) frequencyCounter = 0;
         }
     }
 }

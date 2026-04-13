@@ -42,7 +42,7 @@ public class EnemyBase : CheckerPlaceable
 			}
 		}
 	}
-    public void GetStatusEffect(TurretData.damageType[] damageTypes, float[] damageTimes)
+    public void GetStatusEffect(damageType[] damageTypes, float[] damageTimes)
     {
 		for (int i = 0; i < damageTypes.Length; i++)
 		{
@@ -50,11 +50,15 @@ public class EnemyBase : CheckerPlaceable
 			statusEffectsTimeLeft.Add(damageTimes[i]);
         }
     }
-    public void GetDamaged(int damage, TurretData.damageType[] damageTypes, GameObject hitVisual)
+    public void GetDamaged(int damage, damageType[] damageTypes, GameObject hitVisual)
 	{
+		if (currentLife == 0) return;
+
 		currentLife = Mathf.Max(currentLife - damage, 0);
 
 		Instantiate(hitVisual, transform.position, Quaternion.identity);
+
+		if (currentLife == 0) Die();
 
 		foreach (var damageType in damageTypes) //Checks synergies
 		{
@@ -62,13 +66,12 @@ public class EnemyBase : CheckerPlaceable
 			{
 				if (damageType == TurretData.damageType.fire && statusEffect == TurretData.damageType.gas)
 				{
-                    GetDamaged(10, new TurretData.damageType[1] { TurretData.damageType.explosion }, explosionVisual);
+                    GetDamaged(10, new damageType[1] { TurretData.damageType.explosion }, explosionVisual);
 				}
 
             }
 		}
 
-		if (currentLife == 0) Die();
 	}
 	void MoveNextPath()
 	{
@@ -82,12 +85,22 @@ public class EnemyBase : CheckerPlaceable
 		if (fort != null)
 		{
 			fort.GetDamaged(damage);
-			Die();
+			End();
 		}
 
 	}
 	void Die()
 	{
+		gameObject.SetActive(false);
+		CurrencyManager.AddCurrency(1);
+		print(gameObject.name + " died");
+		if (FindAnyObjectByType<EnemyBase>() == null) WinLoseManager._gameState = WinLoseManager.GameState.Won;
+		Destroy(gameObject);
+	}
+	void End()
+	{
+		gameObject.SetActive(false);
+		if (FindAnyObjectByType<EnemyBase>() == null) WinLoseManager._gameState = WinLoseManager.GameState.Won;
 		Destroy(gameObject);
 	}
 

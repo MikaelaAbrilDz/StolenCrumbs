@@ -18,7 +18,7 @@ public class TurretPlacer : MonoBehaviour
 		iconTurret = GetComponent<Image>();
 		nameText = GetComponentInChildren<TextMeshProUGUI>();
 		iconTurret.sprite = turretPrefab.GetComponent<Turret>().turretData.icon;
-		nameText.text = turretPrefab.GetComponent<Turret>().turretData.turretName;
+		nameText.text = turretPrefab.GetComponent<Turret>().turretData.turretName + " ("+ turretPrefab.GetComponent<Turret>().turretData.basePrice + " coins)";
 		
 		previsualizer = FindAnyObjectByType<TurretPrevisualizer>();
 	}
@@ -30,9 +30,11 @@ public class TurretPlacer : MonoBehaviour
 
 	public void GrabTurret()
 	{
-		isPicked = true;
-		previsualizer.Using(iconTurret.sprite);
-
+        if (CurrencyManager.RemoveCurrency(turretPrefab.GetComponent<Turret>().turretData.basePrice))
+        {
+	        isPicked = true;
+			previsualizer.Using(iconTurret.sprite);    
+        }
 	}
 
 	public void PlaceTurret(InputAction.CallbackContext context)
@@ -63,7 +65,8 @@ public class TurretPlacer : MonoBehaviour
 
 			if (finalChecker == null)
 			{
-				Destroy(placedturret);
+				CurrencyManager.AddCurrency(turretPrefab.GetComponent<Turret>().turretData.basePrice);
+                Destroy(placedturret);
 			}
 			else 
 			{

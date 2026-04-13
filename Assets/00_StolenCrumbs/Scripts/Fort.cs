@@ -14,11 +14,14 @@ public class Fort : CheckerPlaceable
 	}
     private void Update()
     {
+        if (currentLife < 0) currentLife = 0;
         if (lifeText) lifeText.text = currentLife.ToString();
+
+        if (currentLife == 0) WinLoseManager._gameState = WinLoseManager.GameState.Lost;
     }
 
     public void GetDamaged(int damaged)
 	{
 		currentLife -= damaged;
-	}
+    }
 }
