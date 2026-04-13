@@ -1,21 +1,24 @@
 using UnityEngine;
+using TMPro;
 
 public class Fort : CheckerPlaceable
 {
 	int maxLife;
-	int currentLife;
+	static int currentLife;
+	[SerializeField]TextMeshProUGUI lifeText;
 
-	private void Start()
+    private void Start()
 	{
-		maxLife = 100;
+		maxLife = 20;
 		currentLife = maxLife;
-
 	}
+    private void Update()
+    {
+        if (lifeText) lifeText.text = currentLife.ToString();
+    }
 
-	public void GetDamaged(int damaged)
+    public void GetDamaged(int damaged)
 	{
 		currentLife -= damaged;
-		print(currentLife);
-
 	}
 }

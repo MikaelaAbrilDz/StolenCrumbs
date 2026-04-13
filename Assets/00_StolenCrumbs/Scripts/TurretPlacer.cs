@@ -11,7 +11,7 @@ public class TurretPlacer : MonoBehaviour
 
 	TurretPrevisualizer previsualizer;
 	private bool isPicked;
-	private float placingRange = 1.2f;
+	private float placingRange = 1f;
 
     void Start()
 	{
@@ -68,7 +68,7 @@ public class TurretPlacer : MonoBehaviour
 			else 
 			{
 				placedturret.GetComponent<Turret>().SetParentChecker(finalChecker);
-				placedturret.transform.localPosition = Vector3.zero;
+				placedturret.transform.localPosition = Vector3.zero - Vector3.forward;
 
             }
 

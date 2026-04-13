@@ -13,7 +13,7 @@ public class Spawn : CheckerPlaceable
 
     IEnumerator TestSpawning() //ONLY FOR TESTING, REBUILD THIS AFTER TESTING
     {
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < 20; i++)
         {
             yield return new WaitForSeconds(3.5f);
             SpawnEnemy(enemyPrefab[counter%2]);

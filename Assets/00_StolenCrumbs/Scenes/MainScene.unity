@@ -2103,7 +2103,8 @@ PrefabInstance:
       value: Base
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3629621617136584376, guid: e90bebdaee0e03242a8cf32ab4bb6160, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e90bebdaee0e03242a8cf32ab4bb6160, type: 3}
@@ -2745,7 +2746,8 @@ PrefabInstance:
       value: Base
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3629621617136584376, guid: e90bebdaee0e03242a8cf32ab4bb6160, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e90bebdaee0e03242a8cf32ab4bb6160, type: 3}
@@ -3001,7 +3003,8 @@ PrefabInstance:
       value: Base
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3629621617136584376, guid: e90bebdaee0e03242a8cf32ab4bb6160, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e90bebdaee0e03242a8cf32ab4bb6160, type: 3}
@@ -3195,7 +3198,8 @@ PrefabInstance:
       value: Base
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3629621617136584376, guid: e90bebdaee0e03242a8cf32ab4bb6160, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e90bebdaee0e03242a8cf32ab4bb6160, type: 3}
@@ -5674,7 +5678,7 @@ Transform:
   m_GameObject: {fileID: 503695325}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14108,7 +14112,8 @@ PrefabInstance:
       value: Base
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3629621617136584376, guid: e90bebdaee0e03242a8cf32ab4bb6160, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e90bebdaee0e03242a8cf32ab4bb6160, type: 3}
@@ -16127,6 +16132,7 @@ GameObject:
   - component: {fileID: 1428694590}
   - component: {fileID: 1428694589}
   - component: {fileID: 1428694588}
+  - component: {fileID: 1428694592}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -16233,7 +16239,7 @@ Camera:
   m_HDR: 1
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
+  m_ForceIntoRT: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -16252,6 +16258,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1428694592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428694587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb42831ee5422f409e7f24f9e7488ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: EPO::EPOOutline.Outliner
+  stage: 1
+  renderingStrategy: 0
+  renderingMode: 0
+  outlineLayerMask: -1
+  primaryBufferSizeMode: 2
+  primaryRendererScale: 1
+  primarySizeReference: 800
+  blurShift: 0
+  dilateShift: 1
+  dilateIterations: 1
+  dilateQuality: 1
+  blurIterations: 1
+  blurType: 1
 --- !u!1001 &1430357856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23402,7 +23433,8 @@ PrefabInstance:
       value: Base
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3629621617136584376, guid: e90bebdaee0e03242a8cf32ab4bb6160, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e90bebdaee0e03242a8cf32ab4bb6160, type: 3}
