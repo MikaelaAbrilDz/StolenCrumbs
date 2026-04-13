@@ -10,6 +10,6 @@ public class CurrencyTextUpdater : MonoBehaviour
     }
     void Update()
     {
-        currencyText.text = CurrencyManager.Currency() + " coins";
+        currencyText.text = CurrencyManager.Currency() + " bolts";
     }
 }

@@ -18,7 +18,7 @@ public class TurretPlacer : MonoBehaviour
 		iconTurret = GetComponent<Image>();
 		nameText = GetComponentInChildren<TextMeshProUGUI>();
 		iconTurret.sprite = turretPrefab.GetComponent<Turret>().turretData.icon;
-		nameText.text = turretPrefab.GetComponent<Turret>().turretData.turretName + " ("+ turretPrefab.GetComponent<Turret>().turretData.basePrice + " coins)";
+		nameText.text = turretPrefab.GetComponent<Turret>().turretData.turretName + " ("+ turretPrefab.GetComponent<Turret>().turretData.basePrice + " bolts)";
 		
 		previsualizer = FindAnyObjectByType<TurretPrevisualizer>();
 	}

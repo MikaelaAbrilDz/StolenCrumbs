@@ -15,7 +15,7 @@ public class Spawn : CheckerPlaceable
     {
         for (int i = 0; i < 20; i++)
         {
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(7f);
             SpawnEnemy(enemyPrefab[counter%2]);
         }
         WinLoseManager._isFinalWave = true;
