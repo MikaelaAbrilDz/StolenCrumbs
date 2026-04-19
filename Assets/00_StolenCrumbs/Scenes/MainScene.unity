@@ -19665,6 +19665,12 @@ MonoBehaviour:
   spawns:
   - {fileID: 25936241}
   - {fileID: 253420704}
+  rounds:
+  - {fileID: 11400000, guid: 19cbf477a9e728649bf1599bce609547, type: 2}
+  - {fileID: 11400000, guid: bfe2782239d137a48b84e4a9a87dfb75, type: 2}
+  - {fileID: 11400000, guid: e1b2b233d5cd7e5449f5a6de1799b4c2, type: 2}
+  - {fileID: 11400000, guid: 61c399b73c4d30640bb8ec6746a00b9a, type: 2}
+  - {fileID: 11400000, guid: 1816ceb9edba39d45908885998f33566, type: 2}
 --- !u!1001 &1510751244
 PrefabInstance:
   m_ObjectHideFlags: 0

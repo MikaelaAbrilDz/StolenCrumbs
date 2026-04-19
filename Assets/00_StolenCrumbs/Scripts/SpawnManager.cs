@@ -7,9 +7,13 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] GameObject[] enemyPrefab;
     public List<Spawn> spawns = new List<Spawn>();
 
+    public List<Round> rounds = new List<Round>();
+
+    int round = 0;
+
     struct EnemiesToBeUsed
     {
-        public EnemiesToBeUsed(int lenght, int[] enemies, float[] frequencies)
+        public EnemiesToBeUsed(int lenght, Round.EnemyType[] enemies, float[] frequencies)
         {
             this.lenght = lenght;
             this.enemies = enemies;
@@ -35,16 +39,28 @@ public class SpawnManager : MonoBehaviour
             }
         }
         public int lenght;
-        public int[] enemies;
+        public Round.EnemyType[] enemies;
         public float[] frequencies;
     }
     void Start()
     {
-        StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(45, new int[]{ 0, 1 }, new float[] { 0.8f, 0.2f }))));
+        StartCoroutine(SpawnGenerator());
     }
-    int[] GenerateEnemyQueue(EnemiesToBeUsed enemies)
+    IEnumerator SpawnGenerator()
     {
-        int[] enemyQueue = new int[enemies.lenght];
+        yield return new WaitForSeconds(3);
+        if (round < rounds.Count)
+        {
+            StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(rounds[round].numberOfEnemies, rounds[round].enemies, rounds[round].enemiesProbs)), rounds[round].rate));
+        }
+        else
+        {
+            WinLoseManager._isFinalWave = true;
+        }
+    }
+    Round.EnemyType[] GenerateEnemyQueue(EnemiesToBeUsed enemies)
+    {
+        Round.EnemyType[] enemyQueue = new Round.EnemyType[enemies.lenght];
 
         for (int i = 0; i < enemyQueue.Length; i++)
         {
@@ -65,17 +81,14 @@ public class SpawnManager : MonoBehaviour
 
         return enemyQueue;
     }
-    IEnumerator SpawnCo(int[] enemies)
+    IEnumerator SpawnCo(Round.EnemyType[] enemies, float delay)
     {
         for (int i = 0; i < enemies.Length; i++)
         {
-            print(enemyPrefab[enemies[i]].name);
+            yield return new WaitForSeconds(delay);
+            spawns[Random.Range(0, spawns.Count)].SpawnEnemy(enemyPrefab[(int)enemies[i]]);
         }
-        for (int i = 0; i < enemies.Length; i++)
-        {
-            yield return new WaitForSeconds(3f);
-            spawns[Random.Range(0, spawns.Count)].SpawnEnemy(enemyPrefab[enemies[i]]);
-        }
-        WinLoseManager._isFinalWave = true;
+        round++;
+        StartCoroutine(SpawnGenerator());
     }
 }
