@@ -7,7 +7,7 @@ public class TurretPrevisualizer : MonoBehaviour
 	private Vector3 originalPosition;
 	private bool isBeingUsed = false;
 	private Image iconHolder;
-	void Start()
+	void Awake()
 	{
 		originalPosition = transform.position;
 		iconHolder = GetComponent<Image>();
@@ -23,6 +23,7 @@ public class TurretPrevisualizer : MonoBehaviour
 
 	public void Using(Sprite icon)
 	{
+		gameObject.SetActive(true);
 		isBeingUsed = true;
 		iconHolder.sprite = icon;
 	}
@@ -30,6 +31,6 @@ public class TurretPrevisualizer : MonoBehaviour
 	public void StopUsing()
 	{
 		isBeingUsed = false;
-		transform.position = originalPosition;
+		gameObject.SetActive(false);
 	}
 }
