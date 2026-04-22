@@ -9,6 +9,9 @@ public class TurretUnlockManager : MonoBehaviour
 	[HideInInspector] public List<TurretData> unlockedTurrets = new List<TurretData>();
 	[HideInInspector] public List<TurretData> lockedTurrets = new List<TurretData>();
 
+	//AÑADIR: referencias instancias torretas elegibles (poner en array)
+
+
 	private void Awake()
 	{
 		instance = this;
@@ -33,8 +36,10 @@ public class TurretUnlockManager : MonoBehaviour
 			int index = Random.Range(0, copy.Count);
 			options.Add(copy[index]);
 			copy.RemoveAt(index);
+			//AÑADIR: a cada indice su torreta
+			
 		}
-
+	
 		return options;
 	}
 
