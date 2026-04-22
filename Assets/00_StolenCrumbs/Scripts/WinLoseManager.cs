@@ -36,7 +36,7 @@ public class WinLoseManager : MonoBehaviour
         }
         set
         {
-            if (gameState != value)
+            if (gameState != value && gameState != GameState.Lost)
             {
                 if (value == GameState.Won)
                 {

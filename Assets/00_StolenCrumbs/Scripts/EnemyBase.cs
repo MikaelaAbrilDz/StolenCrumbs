@@ -85,7 +85,7 @@ public class EnemyBase : CheckerPlaceable
 		if (fort != null)
 		{
 			fort.GetDamaged(damage);
-			End();
+			HitFort();
 		}
 
 	}
@@ -94,13 +94,13 @@ public class EnemyBase : CheckerPlaceable
 		gameObject.SetActive(false);
 		CurrencyManager.AddCurrency(1);
 		print(gameObject.name + " died");
-		if (FindAnyObjectByType<EnemyBase>() == null) WinLoseManager._gameState = WinLoseManager.GameState.Won;
+		if (WinLoseManager._isFinalWave && FindAnyObjectByType<EnemyBase>() == null) WinLoseManager._gameState = WinLoseManager.GameState.Won;
 		Destroy(gameObject);
 	}
-	void End()
+	void HitFort()
 	{
 		gameObject.SetActive(false);
-		if (FindAnyObjectByType<EnemyBase>() == null) WinLoseManager._gameState = WinLoseManager.GameState.Won;
+		if (WinLoseManager._isFinalWave && FindAnyObjectByType<EnemyBase>() == null) WinLoseManager._gameState = WinLoseManager.GameState.Won;
 		Destroy(gameObject);
 	}
 
