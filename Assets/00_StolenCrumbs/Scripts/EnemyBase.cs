@@ -52,11 +52,9 @@ public class EnemyBase : CheckerPlaceable
     }
     public void GetDamaged(int damage, damageType[] damageTypes, GameObject hitVisual)
 	{
-		if (currentLife == 0) return;
-
 		currentLife = Mathf.Max(currentLife - damage, 0);
 
-		Instantiate(hitVisual, transform.position, Quaternion.identity);
+		if (hitVisual) Instantiate(hitVisual, transform.position, Quaternion.identity);
 
 		if (currentLife == 0) Die();
 
@@ -66,7 +64,15 @@ public class EnemyBase : CheckerPlaceable
 			{
 				if (damageType == TurretData.damageType.fire && statusEffect == TurretData.damageType.gas)
 				{
-                    GetDamaged(10, new damageType[1] { TurretData.damageType.explosion }, explosionVisual);
+                    GetDamaged(8, new damageType[1] { TurretData.damageType.explosion }, explosionVisual);
+                    foreach (CheckerManager checker in parentChecker.sideCheckers)
+					{
+						foreach (EnemyBase sideEnemy in checker.GetComponentsInChildren<EnemyBase>())
+						{
+							sideEnemy.GetDamaged(8, new damageType[1] { TurretData.damageType.explosion }, null);
+						}
+						
+					}
 				}
 
             }
@@ -93,7 +99,6 @@ public class EnemyBase : CheckerPlaceable
 	{
 		gameObject.SetActive(false);
 		CurrencyManager.AddCurrency(1);
-		print(gameObject.name + " died");
 		if (WinLoseManager._isFinalWave && FindAnyObjectByType<EnemyBase>() == null) WinLoseManager._gameState = WinLoseManager.GameState.Won;
 		Destroy(gameObject);
 	}

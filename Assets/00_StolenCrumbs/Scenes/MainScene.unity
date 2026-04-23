@@ -18500,7 +18500,7 @@ MonoBehaviour:
   primaryRendererScale: 1
   primarySizeReference: 800
   blurShift: 0
-  dilateShift: 1
+  dilateShift: 0.5
   dilateIterations: 1
   dilateQuality: 1
   blurIterations: 1
@@ -24068,7 +24068,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae627cc00324b1841b20a950a1bfd126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TurretUnlockManager
-  allTurrets: []
+  allTurrets:
+  - {fileID: 11400000, guid: 8c2ec250d5f477e4db624b326d2bb3ef, type: 2}
+  - {fileID: 11400000, guid: 40c02793a1c19e74182ff716acae89d9, type: 2}
   unlockedTurrets: []
   lockedTurrets: []
 --- !u!1001 &1825559197
