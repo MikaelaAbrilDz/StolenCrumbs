@@ -29,8 +29,6 @@ public class TurretUnlockManager : MonoBehaviour
         //desbloquear una inicial
         if (lockedTurrets.Count > 0)
             UnlockTurret(lockedTurrets[0]);
-
-        canvas.SetActive(false);
     }
 
     public List<TurretData> GetRandomOptions(int amount) //Devuelve una lista de torretas aleatorias sin repetir
@@ -77,6 +75,11 @@ public class TurretUnlockManager : MonoBehaviour
 
         lockedTurrets.Remove(turret);
         unlockedTurrets.Add(turret);
+
+        foreach (var item in turretSlots)
+        {
+            item.gameObject.SetActive(false);
+        }
 
         Debug.Log("Desbloqueada: " + turret.turretName);
     }

@@ -4,11 +4,18 @@ using UnityEngine.UI;
 
 public class TurretOption : MonoBehaviour
 {
+    [SerializeField] TurretUnlockManager manager;
+
     public Image icon;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI descriptionText;
 
-    TurretData turret;
+    public TurretData turret;
+
+    private void Start()
+    {
+        SetTurret(turret);
+    }
 
     public void SetTurret(TurretData data)
     {
@@ -22,8 +29,7 @@ public class TurretOption : MonoBehaviour
     {
         if (turret != null)
         {
-            TurretUnlockManager.instance.UnlockTurret(turret);
-            gameObject.SetActive(false);
+            manager.UnlockTurret(turret);
         }
     }
 }
