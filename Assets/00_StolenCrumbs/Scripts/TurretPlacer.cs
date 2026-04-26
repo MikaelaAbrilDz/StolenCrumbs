@@ -15,22 +15,25 @@ public class TurretPlacer : MonoBehaviour
 
     void Start()
 	{
-		iconTurret = GetComponent<Image>();
+        iconTurret = GetComponent<Image>();
 		nameText = GetComponentInChildren<TextMeshProUGUI>();
-		iconTurret.sprite = turretPrefab.GetComponent<Turret>().turretData.icon;
-		nameText.text = turretPrefab.GetComponent<Turret>().turretData.turretName + " ("+ turretPrefab.GetComponent<Turret>().turretData.basePrice + " bolts)";
-		
 		previsualizer = FindAnyObjectByType<TurretPrevisualizer>(FindObjectsInactive.Include);
+		SetData();
 	}
 
-	void Update()
+	public void SetData()
 	{
+        TurretData data = turretPrefab.GetComponent<Turret>().turretData;
 
+		iconTurret.sprite = turretPrefab.GetComponent<Turret>().turretData.icon;
+		nameText.text = data.turretName + " ("+ data.FinalPrice() + " bolts)";
 	}
 
 	public void GrabTurret()
 	{
-        if (CurrencyManager.RemoveCurrency(turretPrefab.GetComponent<Turret>().turretData.basePrice))
+		TurretData data = turretPrefab.GetComponent<Turret>().turretData;
+
+        if (CurrencyManager.RemoveCurrency(data.FinalPrice()))
         {
 	        isPicked = true;
 			previsualizer.Using(iconTurret.sprite);    
@@ -63,13 +66,18 @@ public class TurretPlacer : MonoBehaviour
                 }
             }
 
-			if (finalChecker == null)
+            TurretData data = turretPrefab.GetComponent<Turret>().turretData;
+
+            if (finalChecker == null)
 			{
-				CurrencyManager.AddCurrency(turretPrefab.GetComponent<Turret>().turretData.basePrice);
+                CurrencyManager.AddCurrency(data.FinalPrice());
                 Destroy(placedturret);
 			}
 			else 
 			{
+				data.placedTurrets++;
+				SetData();
+
 				placedturret.GetComponent<Turret>().SetParentChecker(finalChecker);
 				placedturret.transform.localPosition = Vector3.zero - Vector3.forward;
 

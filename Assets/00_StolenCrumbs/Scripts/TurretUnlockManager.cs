@@ -81,6 +81,8 @@ public class TurretUnlockManager : MonoBehaviour
             item.gameObject.SetActive(false);
         }
 
+        turret.placedTurrets = 0;
+
         Debug.Log("Desbloqueada: " + turret.turretName);
     }
 }

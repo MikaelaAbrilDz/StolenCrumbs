@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CurrencyManager : MonoBehaviour
 {
-    static int currency = 60;
+    [SerializeField] static int currency = 60;
     public static void AddCurrency(int amount)
     {
         currency += amount;

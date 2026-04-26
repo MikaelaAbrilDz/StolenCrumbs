@@ -12,6 +12,8 @@ public class TurretData : ScriptableObject
     public GameObject bulletPrefab;
     public GameObject hitVisualPrefab;
     public int basePrice = 10;
+    public int placedTurrets = 0;
+    public float moneyMultiplier = 0.5f;
     public enum damageType
     {
         gas, electric, water, fire, explosion, floor
@@ -19,4 +21,8 @@ public class TurretData : ScriptableObject
     public damageType[] damageTypes;
     public float[] damageTimes;
 
+    public int FinalPrice()
+    {
+        return basePrice + ((int)(basePrice * moneyMultiplier) * placedTurrets);
+    }
 }
