@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6396120689482178001}
   - component: {fileID: 4820354893204660956}
-  - component: {fileID: 4331415919946074280}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -28,8 +27,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4385873864694005593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -79,9 +78,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1f2bed41a42ccee4c9268012ec378062, type: 3}
-  m_Color: {r: 0.5372549, g: 0.0627451, b: 0.28342187, a: 1}
+  m_Color: {r: 0.645283, g: 0.645283, b: 0.645283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -91,18 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4331415919946074280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8381587892025655097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 034bc47afcbf5e141a58d5c20b7808e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: EPO::EPOOutline.TargetStateListener
 --- !u!1 &8456811084168725349
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,9 +99,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4385873864694005593}
-  - component: {fileID: 954168487731782906}
-  m_Layer: 3
-  m_Name: Enemy
+  - component: {fileID: 3321900667795814022}
+  m_Layer: 6
+  m_Name: PathOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,7 +123,7 @@ Transform:
   - {fileID: 6396120689482178001}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &954168487731782906
+--- !u!114 &3321900667795814022
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,12 +132,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8456811084168725349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62d349fbb07c2944096a5d09328ba669, type: 3}
+  m_Script: {fileID: 11500000, guid: 63d9e703730c08e4196f54f1d3d9e6c7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyBase
+  m_EditorClassIdentifier: Assembly-CSharp::PathOrigin
   parentChecker: {fileID: 0}
-  currentLife: 40
-  movementSpeed: 0.5
-  statusEffects: 
-  statusEffectsTimeLeft: []
-  explosionVisual: {fileID: 7879344167108214069, guid: d278ac471300dc24e90c48ed056c9a78, type: 3}
+  initialDirection: 0
+  spawnPrefab: {fileID: 8456811084168725349, guid: ea8f3cfb4c0a2ef4184b0a09ad87a8b4, type: 3}
+  pathPrefab: {fileID: 8456811084168725349, guid: f7db50ea3490e574ab70157b4f6ec440, type: 3}

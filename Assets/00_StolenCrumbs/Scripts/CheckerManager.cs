@@ -5,7 +5,7 @@ public class CheckerManager : MonoBehaviour
 	float angle;
 
 	public CheckerManager[] sideCheckers;
-	void Start()
+	void Awake()
 	{
 		//Sets angle to 30 (change that value if the angle changes) and converts it to radian to be used by sine and cosine functions
 		angle = 30 * Mathf.Deg2Rad;
