@@ -125,7 +125,7 @@ public class SpawnManager : MonoBehaviour
         }
         if (wave == 7)
         {
-            WinLoseManager._isFinalWave = true;
+            WinLoseManager._gameState = WinLoseManager.GameState.Won;
         }
     }
     Round.EnemyType[] GenerateEnemyQueue(EnemiesToBeUsed enemies)
