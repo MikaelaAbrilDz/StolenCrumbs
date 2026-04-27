@@ -9,6 +9,7 @@ public class EnemyBase : CheckerPlaceable
 	[SerializeField] int currentLife = 40;
 	int damage = 2;
 	[SerializeField ] float movementSpeed = 1.0f;
+	[SerializeField ] int prize = 1;
 	int killingPrice;
 	GameObject visual;
 	[HideInInspector] public List<TurretData.damageType> statusEffects = new List<TurretData.damageType>();
@@ -84,8 +85,8 @@ public class EnemyBase : CheckerPlaceable
 		Path path = parentChecker.GetComponentInChildren<Path>();
 		if (path != null)
 		{
-			currentTween = LeanTween.move(gameObject, parentChecker.sideCheckers[path.direction].transform.position, 1 / movementSpeed).setOnComplete(MoveNextPath);
-			StartCoroutine(PassNextChecker((1 / movementSpeed) / 2, parentChecker.sideCheckers[path.direction]));
+			currentTween = LeanTween.move(gameObject, parentChecker.sideCheckers[path.direction].transform.position, movementSpeed).setOnComplete(MoveNextPath);
+			StartCoroutine(PassNextChecker(movementSpeed / 2, parentChecker.sideCheckers[path.direction]));
 		}
 		Fort fort = parentChecker.GetComponentInChildren<Fort>();
 		if (fort != null)
@@ -98,7 +99,7 @@ public class EnemyBase : CheckerPlaceable
 	void Die()
 	{
 		gameObject.SetActive(false);
-		CurrencyManager.AddCurrency(1);
+		CurrencyManager.AddCurrency(prize);
 		if (WinLoseManager._isFinalWave && FindAnyObjectByType<EnemyBase>() == null) WinLoseManager._gameState = WinLoseManager.GameState.Won;
 		Destroy(gameObject);
 	}

@@ -31,7 +31,7 @@ public class TurretUnlockManager : MonoBehaviour
             UnlockTurret(lockedTurrets[0]);
     }
 
-    public List<TurretData> GetRandomOptions(int amount) //Devuelve una lista de torretas aleatorias sin repetir
+    List<TurretData> GetRandomOptions(int amount) //Devuelve una lista de torretas aleatorias sin repetir
     {
         List<TurretData> options = new List<TurretData>();
         List<TurretData> copy = new List<TurretData>(lockedTurrets);
@@ -82,7 +82,7 @@ public class TurretUnlockManager : MonoBehaviour
         }
 
         turret.placedTurrets = 0;
-
+        Time.timeScale = 1f;
         Debug.Log("Desbloqueada: " + turret.turretName);
     }
 }

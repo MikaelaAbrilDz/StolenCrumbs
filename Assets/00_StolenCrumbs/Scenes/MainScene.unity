@@ -18818,12 +18818,17 @@ MonoBehaviour:
   - {fileID: 8962002682576190340, guid: 59f1b1c3c0bed5845ad95b826fa1a50b, type: 3}
   - {fileID: 8962002682576190340, guid: 77b4e1f6bdcc1904f91d8bac4a758a48, type: 3}
   spawns: []
-  rounds:
+  firstWaveRounds:
   - {fileID: 11400000, guid: 19cbf477a9e728649bf1599bce609547, type: 2}
+  secondWaveRounds:
   - {fileID: 11400000, guid: bfe2782239d137a48b84e4a9a87dfb75, type: 2}
   - {fileID: 11400000, guid: e1b2b233d5cd7e5449f5a6de1799b4c2, type: 2}
   - {fileID: 11400000, guid: 61c399b73c4d30640bb8ec6746a00b9a, type: 2}
   - {fileID: 11400000, guid: 1816ceb9edba39d45908885998f33566, type: 2}
+  thirdWaveRounds: []
+  fourthWaveRounds: []
+  fifthWaveRounds: []
+  sixthWaveRounds: []
 --- !u!114 &1510302098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22633,7 +22638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1823630437
 MonoBehaviour:
   m_ObjectHideFlags: 0

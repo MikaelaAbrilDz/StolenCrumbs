@@ -7,9 +7,15 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] GameObject[] enemyPrefab;
     public List<Spawn> spawns = new List<Spawn>();
 
-    public List<Round> rounds = new List<Round>();
+    public List<Round> firstWaveRounds = new List<Round>();
+    public List<Round> secondWaveRounds = new List<Round>();
+    public List<Round> thirdWaveRounds = new List<Round>();
+    public List<Round> fourthWaveRounds = new List<Round>();
+    public List<Round> fifthWaveRounds = new List<Round>();
+    public List<Round> sixthWaveRounds = new List<Round>();
 
     int round = 0;
+    int wave = 1;
 
     struct EnemiesToBeUsed
     {
@@ -49,11 +55,75 @@ public class SpawnManager : MonoBehaviour
     IEnumerator SpawnGenerator()
     {
         yield return new WaitForSeconds(3);
-        if (round < rounds.Count)
+        if (wave == 1)
         {
-            StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(rounds[round].numberOfEnemies, rounds[round].enemies, rounds[round].enemiesProbs)), rounds[round].rate));
+            if (round < firstWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(firstWaveRounds[round].numberOfEnemies, firstWaveRounds[round].enemies, firstWaveRounds[round].enemiesProbs)), firstWaveRounds[round].rate));
+            else
+            {
+                round = 0;
+                wave++;
+                while(FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
+                FindAnyObjectByType<PathGenerationManager>().CreatePath();
+            } 
         }
-        else
+        if (wave == 2)
+        {
+           if (round < secondWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(secondWaveRounds[round].numberOfEnemies, secondWaveRounds[round].enemies, secondWaveRounds[round].enemiesProbs)), secondWaveRounds[round].rate));
+           else
+           {
+                round = 0;
+                wave++;
+                while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
+            }
+        }
+        if (wave == 3)
+        {
+           if (round < thirdWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(thirdWaveRounds[round].numberOfEnemies, thirdWaveRounds[round].enemies, thirdWaveRounds[round].enemiesProbs)), thirdWaveRounds[round].rate));
+           else
+           {
+                round = 0;
+                wave++;
+                while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
+                FindAnyObjectByType<PathGenerationManager>().CreatePath();
+            }
+        }
+        if (wave == 4)
+        {
+           if (round < fourthWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(fourthWaveRounds[round].numberOfEnemies, fourthWaveRounds[round].enemies, fourthWaveRounds[round].enemiesProbs)), fourthWaveRounds[round].rate));
+           else
+           {
+                round = 0;
+                wave++;
+                while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
+            }
+        }
+        if (wave == 5)
+        {
+           if (round < fifthWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(fifthWaveRounds[round].numberOfEnemies, fifthWaveRounds[round].enemies, fifthWaveRounds[round].enemiesProbs)), fifthWaveRounds[round].rate));
+           else
+           {
+                round = 0;
+                wave++;
+                while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
+                FindAnyObjectByType<PathGenerationManager>().CreatePath();
+            }
+        }
+        if (wave == 6)
+        {
+           if (round < sixthWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(sixthWaveRounds[round].numberOfEnemies, sixthWaveRounds[round].enemies, sixthWaveRounds[round].enemiesProbs)), sixthWaveRounds[round].rate));
+           else
+           {
+                round = 0;
+                wave++;
+                while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+            }
+        }
+        if (wave == 7)
         {
             WinLoseManager._isFinalWave = true;
         }
