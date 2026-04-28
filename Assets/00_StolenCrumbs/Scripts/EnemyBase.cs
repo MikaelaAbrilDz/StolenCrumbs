@@ -59,6 +59,7 @@ public class EnemyBase : CheckerPlaceable
     }
     public void GetDamaged(int damage, damageType[] damageTypes, GameObject hitVisual)
 	{
+		anim.SetTrigger("damaged");
 		currentLife = Mathf.Max(currentLife - damage, 0);
 
 		if (hitVisual) Instantiate(hitVisual, transform.position, Quaternion.identity);
@@ -107,15 +108,14 @@ public class EnemyBase : CheckerPlaceable
 	}
 	void Die()
 	{
-		gameObject.SetActive(false);
+		LeanTween.cancel(gameObject);
+		anim.SetBool("isDead", true);
 		CurrencyManager.AddCurrency(prize);
-		if (WinLoseManager._isFinalWave && FindAnyObjectByType<EnemyBase>() == null) WinLoseManager._gameState = WinLoseManager.GameState.Won;
-		Destroy(gameObject);
+		Destroy(gameObject, 1.5f);
 	}
 	void HitFort()
 	{
 		gameObject.SetActive(false);
-		if (WinLoseManager._isFinalWave && FindAnyObjectByType<EnemyBase>() == null) WinLoseManager._gameState = WinLoseManager.GameState.Won;
 		Destroy(gameObject);
 	}
 

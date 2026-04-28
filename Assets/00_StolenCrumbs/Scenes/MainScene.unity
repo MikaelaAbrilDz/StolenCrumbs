@@ -18817,6 +18817,12 @@ MonoBehaviour:
   enemyPrefab:
   - {fileID: 8962002682576190340, guid: 59f1b1c3c0bed5845ad95b826fa1a50b, type: 3}
   - {fileID: 8962002682576190340, guid: 77b4e1f6bdcc1904f91d8bac4a758a48, type: 3}
+  - {fileID: 0}
+  - {fileID: 8962002682576190340, guid: fe75df42ec4afc144bc65b3177f09722, type: 3}
+  - {fileID: 8962002682576190340, guid: 9fbd3fed3dce3d2499a645511c8a18be, type: 3}
+  - {fileID: 0}
+  - {fileID: 8962002682576190340, guid: 486214ea9a89393448be520785e4b81f, type: 3}
+  - {fileID: 8962002682576190340, guid: 3f5ecaf937ad1934fb2ea2a34786d494, type: 3}
   spawns: []
   firstWaveRounds:
   - {fileID: 11400000, guid: 19cbf477a9e728649bf1599bce609547, type: 2}
