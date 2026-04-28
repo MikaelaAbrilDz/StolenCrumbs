@@ -5,27 +5,57 @@ using System.Collections.Generic;
 
 public class Turret : CheckerPlaceable
 {
+	[SerializeField] Transform canonPivot, shootPoint;
+
 	public TurretData turretData;
 
     public int paidPrice;
 
 	GameObject bullet;
 	public List<EnemyBase> targetEnemies = new List<EnemyBase>();
+	EnemyBase target;
 
-	void Start()
+	LTDescr tween;
+
+
+    void Start()
 	{
-        bullet = Instantiate(turretData.bulletPrefab, transform);
+        bullet = Instantiate(turretData.bulletPrefab, shootPoint);
         bullet.SetActive(false);
 		FindAnyObjectByType<TurretShooterManager>().turrets.Add(this);
 	}
-
-	public void Shoot()
+    private void Update()
+    {
+		if (target != null)
+		{
+			LookAtTarget();
+			if (bullet.activeSelf) tween.to = target.transform.position;
+		}
+    }
+	public void LookAtTarget()
 	{
-		EnemyBase target = FindTarget();
+		float angleToLook = Mathf.Atan2(target.transform.position.y - canonPivot.transform.position.y, target.transform.position.x - canonPivot.transform.position.x) * Mathf.Rad2Deg;
+		angleToLook = ((angleToLook % 360) + 360) % 360;
+
+        if (angleToLook > 90 && angleToLook < 275)
+		{
+			canonPivot.transform.localScale = new Vector3(-1, 1, 1);
+			canonPivot.transform.eulerAngles = new Vector3(0, 0, angleToLook + 180);
+        }
+		else
+		{
+			canonPivot.transform.localScale = new Vector3(1, 1, 1);
+			canonPivot.transform.eulerAngles = new Vector3(0, 0, angleToLook);
+		}
+	}
+
+    public void Shoot()
+	{
+		target = FindTarget();
 		if (target == null) return;
         StartCoroutine(DealDamage(target, turretData.bulletYield));
         bullet.SetActive(true);
-		LeanTween.move(bullet, target.transform.position, turretData.bulletYield);
+		tween = LeanTween.move(bullet, target.transform.position, turretData.bulletYield);
 	}
 	private IEnumerator DealDamage(EnemyBase target, float delay)
 	{
