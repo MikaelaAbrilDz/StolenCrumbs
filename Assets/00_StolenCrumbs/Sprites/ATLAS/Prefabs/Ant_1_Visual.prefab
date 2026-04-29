@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       propertyPath: m_Name
-      value: Ant_1
+      value: Ant_1_Visual
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       propertyPath: m_LocalPosition.x
