@@ -92,8 +92,8 @@ public class EnemyBase : CheckerPlaceable
 		Path path = parentChecker.GetComponentInChildren<Path>();
         if (path != null)
 		{
-			if (path.direction > 2) anim.gameObject.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
-			else anim.gameObject.transform.localScale = new Vector3(-0.6f, 0.6f, 0.6f);
+			if (path.direction > 2) anim.gameObject.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+			else anim.gameObject.transform.localScale = new Vector3(-0.7f, 0.7f, 0.7f);
 
             currentTween = LeanTween.move(gameObject, parentChecker.sideCheckers[path.direction].transform.position, movementSpeed).setOnComplete(MoveNextPath);
 			StartCoroutine(PassNextChecker(movementSpeed / 2, parentChecker.sideCheckers[path.direction]));
