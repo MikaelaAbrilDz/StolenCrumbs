@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8095c26cc7993448a2ddd5a00a22d29, type: 3}
-  m_Name: TurretToxicSpray
+  m_Name: TurretGas
   m_EditorClassIdentifier: Assembly-CSharp::TurretData
+  turretUiPrefab: {fileID: 6474176572579707037, guid: aa4368946841838449c38a5d273df3ce, type: 3}
   turretName: Pesticide Spray
   icon: {fileID: 21300000, guid: 5b54ccd2442f6a6418f7a6b1eea6245a, type: 3}
   bulletYield: 0.3

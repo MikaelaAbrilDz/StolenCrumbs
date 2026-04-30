@@ -106,7 +106,7 @@ public class Turret : CheckerPlaceable
 					EnemyBase[] targets = initialChecker.sideCheckers[i].GetComponentsInChildren<EnemyBase>();
 				foreach (var target in targets)
 				{
-					if (!targetEnemies.Contains(target) && target != null) targetEnemies.Add(target);
+					if (!targetEnemies.Contains(target) && target != null && !target.isDead) targetEnemies.Add(target);
 				}
                 }
             }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8544055636489100466}
   - component: {fileID: 1462556349146353850}
   m_Layer: 5
-  m_Name: TurretIcon
+  m_Name: TurretPlacer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f87cfb099ab7c6448b2a84891e9bc0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TurretPlacer
-  turretPrefab: {fileID: 0}
+  turretPrefab: {fileID: 4316312361366573387, guid: 13a74a59037c5cb4aa9518a1426add8d, type: 3}
 --- !u!114 &5362418936173046847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,6 +178,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: cf0ddd55-131d-4f58-a3c9-2c8c17d7fa60
     m_ActionName: 'PlayerInput/MainTap[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0b530356-f393-4ae1-be61-07bd4811cd61
+    m_ActionName: 'SoundMenu/OpenCloseMenu[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerInput
@@ -311,7 +315,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0

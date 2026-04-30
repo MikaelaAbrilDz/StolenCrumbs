@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "TurretData", menuName = "ScriptableObjects/TurretData")]
 public class TurretData : ScriptableObject
 {
+    public GameObject turretUiPrefab;
     public string turretName;
     public Sprite icon;
     public float bulletYield = 0.5f;

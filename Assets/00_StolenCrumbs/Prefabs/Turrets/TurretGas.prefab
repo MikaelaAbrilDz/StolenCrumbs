@@ -231,7 +231,7 @@ Transform:
   m_GameObject: {fileID: 3363493567646136308}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.368, z: 0}
+  m_LocalPosition: {x: 0, y: -0.3, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -901,7 +901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8456811084168725349, guid: d10f72b8aa7729f40ab991c383356431, type: 3}
       propertyPath: m_Name
-      value: TurretToxicSpray
+      value: TurretGas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

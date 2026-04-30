@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6165152413455878755}
   - component: {fileID: 7535338471731330796}
   m_Layer: 0
-  m_Name: BulletElectric
+  m_Name: BulletWater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

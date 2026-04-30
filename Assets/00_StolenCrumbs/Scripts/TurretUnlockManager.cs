@@ -4,6 +4,7 @@ using UnityEngine;
 public class TurretUnlockManager : MonoBehaviour
 {
     public static TurretUnlockManager instance;
+    TurretShopManager turretShopManager;
     public List<TurretData> allTurrets;
 
     [HideInInspector] public List<TurretData> unlockedTurrets = new List<TurretData>();
@@ -12,13 +13,13 @@ public class TurretUnlockManager : MonoBehaviour
 
     [SerializeField] private TurretOption[] turretSlots;
     TurretData[] currentOptions = new TurretData[3];
-    public GameObject canvas; //Referencia al canvas para mostrar las opciones de torretas desbloqueables
     //AÑADIR: referencias instancias torretas elegibles (poner en array)
 
 
     private void Awake()
     {
         instance = this;
+        turretShopManager = FindAnyObjectByType<TurretShopManager>();
     }
 
     void Start()
@@ -65,7 +66,6 @@ public class TurretUnlockManager : MonoBehaviour
                 turretSlots[i].gameObject.SetActive(false);
             }
         }
-        canvas.SetActive(true);
         Time.timeScale = 0f;
     }
 
@@ -80,7 +80,7 @@ public class TurretUnlockManager : MonoBehaviour
         {
             item.gameObject.SetActive(false);
         }
-
+        turretShopManager.AddToShop(turret);
         turret.placedTurrets = 0;
         Time.timeScale = 1f;
         Debug.Log("Desbloqueada: " + turret.turretName);

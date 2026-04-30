@@ -5,6 +5,7 @@ using static TurretData;
 
 public class EnemyBase : CheckerPlaceable
 {
+	public bool isDead = false;
 	int maxLife;
 	[SerializeField] int currentLife = 40;
 	int damage = 2;
@@ -108,6 +109,7 @@ public class EnemyBase : CheckerPlaceable
 	}
 	void Die()
 	{
+		isDead = true;
 		LeanTween.cancel(gameObject);
 		anim.SetBool("isDead", true);
 		CurrencyManager.AddCurrency(prize);
