@@ -17624,7 +17624,7 @@ MonoBehaviour:
   dilateShift: 1
   dilateIterations: 1
   dilateQuality: 1
-  blurIterations: 1
+  blurIterations: 0
   blurType: 1
 --- !u!1001 &1430357856
 PrefabInstance:
