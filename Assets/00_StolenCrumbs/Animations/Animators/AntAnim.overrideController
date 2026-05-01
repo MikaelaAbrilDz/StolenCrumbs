@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AntAnim
+  m_Controller: {fileID: 9100000, guid: 314d75ae64f8209459acdf07bfe480f9, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: f6dd9e3674c795640acfe59de6bf7dd4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 58c2536adb5c7c84eac4b68e42622614, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3a7deeea5630c4f4882808682a57d263, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 78d1f7a696c71c04795946b10e6975a6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d7dd29d78b417cb47a1bd8538325ded5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9c3c417fb8217a644980aa28ce9620cf, type: 2}

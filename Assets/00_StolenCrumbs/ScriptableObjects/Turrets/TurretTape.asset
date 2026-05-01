@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8095c26cc7993448a2ddd5a00a22d29, type: 3}
   m_Name: TurretTape
   m_EditorClassIdentifier: Assembly-CSharp::TurretData
+  turretUiPrefab: {fileID: 0}
   turretName: Tape
   icon: {fileID: -6967981779641598073, guid: fa60ec96af928b94d86dadda126269b0, type: 3}
   bulletYield: 0.5
@@ -22,6 +23,6 @@ MonoBehaviour:
   hitVisualPrefab: {fileID: 7879344167108214069, guid: 6e0937f6e61f357428af6cead48e306e, type: 3}
   basePrice: 10
   placedTurrets: 0
-  moneyMultiplier: 0.5
+  moneyMultiplier: 0.1
   damageTypes: 
   damageTimes: []

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8095c26cc7993448a2ddd5a00a22d29, type: 3}
   m_Name: TurretElectric
   m_EditorClassIdentifier: Assembly-CSharp::TurretData
+  turretUiPrefab: {fileID: 0}
   turretName: Electric
   icon: {fileID: 2735028436908637532, guid: 0e3ce981fe2d4f24cb3df3ac6151c9e7, type: 3}
   bulletYield: 0.5
@@ -22,7 +23,7 @@ MonoBehaviour:
   hitVisualPrefab: {fileID: 7879344167108214069, guid: bea89a0134aad7742a51cacdb875899f, type: 3}
   basePrice: 10
   placedTurrets: 0
-  moneyMultiplier: 0.5
+  moneyMultiplier: 0.1
   damageTypes: 01000000
   damageTimes:
   - 0.7
