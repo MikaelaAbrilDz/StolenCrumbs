@@ -111,8 +111,8 @@ ScriptedImporter:
     spriteBone:
     - name: Turret_Canon
       guid: dfccbfae6c4249c4d93cf37bbff05ecf
-      position: {x: 45.742695, y: 0.000051345844, z: 0}
-      rotation: {x: 0, y: 0, z: -0.056757938, w: 0.99838805}
+      position: {x: 45.74269, y: 0.000013993185, z: 0}
+      rotation: {x: 0, y: 0, z: -0.056757852, w: 0.998388}
       length: 48.4767
       parentId: 1
       color:
@@ -120,9 +120,9 @@ ScriptedImporter:
         rgba: 4294901760
     - name: Turret_Cap
       guid: 91a0c2818abf0924aaeef98167830acd
-      position: {x: -38.8732, y: 44.849197, z: 0}
-      rotation: {x: 0, y: 0, z: -0.15046848, w: 0.9886148}
-      length: 45.742695
+      position: {x: -38.87317, y: 44.849243, z: 0}
+      rotation: {x: 0, y: 0, z: -0.15046819, w: 0.9886149}
+      length: 45.742706
       parentId: -1
       color:
         serializedVersion: 2
@@ -416,16 +416,16 @@ ScriptedImporter:
     - name: Turret_Base
       guid: 4892ed25ede3258468e9badd9e00d227
       position: {x: 52.622467, y: -87.702515, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7177357, w: 0.69631565}
-      length: 90.880394
+      rotation: {x: 0, y: 0, z: 0.7160144, w: 0.69808555}
+      length: 117.27754
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4278255615
     - name: Turret_Canon
       guid: dfccbfae6c4249c4d93cf37bbff05ecf
-      position: {x: 45.7427, y: 0.000003785039, z: 0}
-      rotation: {x: 0, y: 0, z: -0.056757938, w: 0.99838805}
+      position: {x: 45.7427, y: -0.00000838772, z: 0}
+      rotation: {x: 0, y: 0, z: -0.056757852, w: 0.998388}
       length: 48.4767
       parentId: 2
       color:
@@ -433,18 +433,18 @@ ScriptedImporter:
         rgba: 4294901760
     - name: Turret_Cap
       guid: 91a0c2818abf0924aaeef98167830acd
-      position: {x: 18.126808, y: 37.849197, z: 0}
-      rotation: {x: 0, y: 0, z: -0.15046848, w: 0.9886148}
-      length: 45.742695
+      position: {x: 18.126831, y: 37.849243, z: 0}
+      rotation: {x: 0, y: 0, z: -0.15046819, w: 0.9886149}
+      length: 45.742706
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4294967040
     - name: Turret_Trigger
       guid: 269cc7f05eab5bc4ebe712891bd6b613
-      position: {x: 16.601814, y: 38.62587, z: 0}
-      rotation: {x: 0, y: 0, z: 0.9858021, w: 0.16791134}
-      length: 53.70546
+      position: {x: 16.601814, y: 38.6259, z: 0}
+      rotation: {x: 0, y: 0, z: 0.98580223, w: 0.16791084}
+      length: 53.705452
       parentId: -1
       color:
         serializedVersion: 2
@@ -801,18 +801,18 @@ ScriptedImporter:
     spriteBone:
     - name: Turret_Cap
       guid: 91a0c2818abf0924aaeef98167830acd
-      position: {x: 56.1268, y: 20.849197, z: 0}
-      rotation: {x: 0, y: 0, z: -0.15046848, w: 0.9886148}
-      length: 45.742695
+      position: {x: 56.12683, y: 20.849243, z: 0}
+      rotation: {x: 0, y: 0, z: -0.15046819, w: 0.9886149}
+      length: 45.742706
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4294967040
     - name: Turret_Trigger
       guid: 269cc7f05eab5bc4ebe712891bd6b613
-      position: {x: 54.601807, y: 21.62587, z: 0}
-      rotation: {x: 0, y: 0, z: 0.9858021, w: 0.16791134}
-      length: 53.70546
+      position: {x: 54.601807, y: 21.6259, z: 0}
+      rotation: {x: 0, y: 0, z: 0.98580223, w: 0.16791084}
+      length: 53.705452
       parentId: -1
       color:
         serializedVersion: 2
@@ -1566,8 +1566,8 @@ ScriptedImporter:
     - name: Turret_Base
       guid: 4892ed25ede3258468e9badd9e00d227
       position: {x: 42.622467, y: -18.702515, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7177357, w: 0.69631565}
-      length: 90.880394
+      rotation: {x: 0, y: 0, z: 0.7160144, w: 0.69808555}
+      length: 117.27754
       parentId: -1
       color:
         serializedVersion: 2
@@ -1716,7 +1716,7 @@ ScriptedImporter:
     - position: {x: 52.623, y: 65.169}
       boneWeight:
         weight0: 0.79
-        weight1: 0.21
+        weight1: 0.20999998
         weight2: 0
         weight3: 0
         boneIndex0: 0
@@ -1726,7 +1726,7 @@ ScriptedImporter:
     - position: {x: 43.389, y: 64.201004}
       boneWeight:
         weight0: 0.79
-        weight1: 0.21
+        weight1: 0.20999998
         weight2: 0
         weight3: 0
         boneIndex0: 0
@@ -1736,7 +1736,7 @@ ScriptedImporter:
     - position: {x: 34.475998, y: 64.216}
       boneWeight:
         weight0: 0.79
-        weight1: 0.21
+        weight1: 0.20999998
         weight2: 0
         weight3: 0
         boneIndex0: 0
@@ -1746,7 +1746,7 @@ ScriptedImporter:
     - position: {x: 25.563, y: 66.201004}
       boneWeight:
         weight0: 0.79
-        weight1: 0.21
+        weight1: 0.20999998
         weight2: 0
         weight3: 0
         boneIndex0: 0
@@ -1947,8 +1947,8 @@ ScriptedImporter:
     - name: Turret_Base
       guid: 4892ed25ede3258468e9badd9e00d227
       position: {x: 31.622467, y: -74.702515, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7177357, w: 0.69631565}
-      length: 90.880394
+      rotation: {x: 0, y: 0, z: 0.7160144, w: 0.69808555}
+      length: 117.27754
       parentId: -1
       color:
         serializedVersion: 2
@@ -2240,8 +2240,8 @@ ScriptedImporter:
     - name: Turret_Base
       guid: 4892ed25ede3258468e9badd9e00d227
       position: {x: 135.62247, y: 87.297485, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7177357, w: 0.69631565}
-      length: 90.880394
+      rotation: {x: 0, y: 0, z: 0.7160144, w: 0.69808555}
+      length: 117.27754
       parentId: -1
       color:
         serializedVersion: 2
@@ -2631,39 +2631,48 @@ ScriptedImporter:
     - name: Turret_Base
       guid: 4892ed25ede3258468e9badd9e00d227
       position: {x: 139.62247, y: 91.297485, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7177357, w: 0.69631565}
-      length: 90.8804
+      rotation: {x: 0, y: 0, z: 0.7160144, w: 0.69808555}
+      length: 117.27753
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4278255615
     - name: Turret_Trigger
       guid: 269cc7f05eab5bc4ebe712891bd6b613
-      position: {x: 103.601814, y: 217.62587, z: 0}
-      rotation: {x: 0, y: 0, z: 0.9858021, w: 0.16791134}
+      position: {x: -33.047306, y: 9.088597, z: 0}
+      rotation: {x: 0, y: 0, z: 0.98580223, w: 0.16791084}
       length: 53.705452
-      parentId: -1
+      parentId: 5
       color:
         serializedVersion: 2
         rgba: 4278255360
     - name: Turret_Cap
       guid: 91a0c2818abf0924aaeef98167830acd
-      position: {x: 105.12681, y: 216.8492, z: 0}
-      rotation: {x: 0, y: 0, z: -0.15046848, w: 0.9886148}
-      length: 45.742695
-      parentId: -1
+      position: {x: -31.522291, y: 8.31194, z: 0}
+      rotation: {x: 0, y: 0, z: -0.15046819, w: 0.9886149}
+      length: 45.742702
+      parentId: 5
       color:
         serializedVersion: 2
         rgba: 4294967040
     - name: Turret_Canon
       guid: dfccbfae6c4249c4d93cf37bbff05ecf
-      position: {x: 45.742695, y: -0.0000055753153, z: 0}
-      rotation: {x: 0, y: 0, z: -0.056757938, w: 0.99838805}
+      position: {x: 45.742706, y: -0.000008689636, z: 0}
+      rotation: {x: 0, y: 0, z: -0.05675783, w: 0.998388}
       length: 48.476696
       parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294901760
+    - name: CanonPivot
+      guid: 2423c08dff379c24cb72be539e2a69e4
+      position: {x: 117.27752, y: -0.00001863608, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7160144, w: 0.69808555}
+      length: 32.6951
+      parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294902015
     parts:
     - spritePosition:
         x: 144

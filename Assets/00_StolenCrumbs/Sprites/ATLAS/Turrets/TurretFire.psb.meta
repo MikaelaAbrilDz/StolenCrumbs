@@ -109,15 +109,24 @@ ScriptedImporter:
       height: 60
     spriteID: 530f63c07d2cb7744bcc47df33ad1118
     spriteBone:
-    - name: Turret_Canon
+    - name: CanonPivot
       guid: 0bf451682344b7a40a623d8b1921b30a
-      position: {x: 92.68939, y: 37.56752, z: 0}
-      rotation: {x: 0, y: 0, z: -0.24226186, w: 0.9702109}
-      length: 63.761623
+      position: {x: 63.462112, y: 42.786667, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      length: 14.024094
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4294901760
+    - name: Turret_Canon_1
+      guid: 8ba56de41168cce4b9b5c51149157c09
+      position: {x: 14.024094, y: -0.000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: -0.21869408, w: 0.9757935}
+      length: 76.31333
+      parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294959616
     spriteOutline: []
     vertices:
     - position: {x: 150.249, y: 3.4659996}
@@ -126,7 +135,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -136,7 +145,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -146,7 +155,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -156,7 +165,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -166,7 +175,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -176,7 +185,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -186,7 +195,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -196,7 +205,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -206,7 +215,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -216,7 +225,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -226,17 +235,17 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
     - position: {x: 66.979996, y: 29.023}
       boneWeight:
-        weight0: 0
-        weight1: 1
+        weight0: 1
+        weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -246,7 +255,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -256,7 +265,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -266,7 +275,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -276,7 +285,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -286,7 +295,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -296,7 +305,7 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
@@ -306,12 +315,12 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 0
+        boneIndex0: 1
         boneIndex1: 0
         boneIndex2: 0
         boneIndex3: 0
     spritePhysicsOutline: []
-    indices: 000000001100000001000000070000000900000008000000060000000c0000000a000000060000000a00000007000000050000000e0000000d000000050000000d0000000c000000050000000c00000006000000070000000a00000009000000040000000e00000005000000030000000f0000000e000000030000000e0000000400000002000000100000000300000001000000110000001000000001000000100000000200000000000000120000001100000003000000100000000f0000000a0000000c0000000b000000
+    indices: 000000001100000001000000000000001200000011000000010000001000000002000000010000001100000010000000020000001000000003000000030000000e00000004000000030000000f0000000e00000003000000100000000f000000040000000e00000005000000050000000c00000006000000050000000d0000000c000000050000000e0000000d000000060000000a00000007000000060000000c0000000a000000070000000900000008000000070000000a000000090000000a0000000c0000000b000000
     edges:
     - {x: 0, y: 1}
     - {x: 0, y: 18}
@@ -2804,15 +2813,24 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255360
-    - name: Turret_Canon
+    - name: CanonPivot
       guid: 0bf451682344b7a40a623d8b1921b30a
-      position: {x: 179.68939, y: 225.56752, z: 0}
-      rotation: {x: 0, y: 0, z: -0.24226186, w: 0.9702109}
-      length: 63.761623
+      position: {x: 150.46211, y: 230.78667, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      length: 14.024094
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4294901760
+    - name: Turret_Canon_1
+      guid: 8ba56de41168cce4b9b5c51149157c09
+      position: {x: 14.024094, y: -0.000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: -0.21869408, w: 0.9757935}
+      length: 76.31333
+      parentId: 3
+      color:
+        serializedVersion: 2
+        rgba: 4294959616
     parts:
     - spritePosition:
         x: 87
@@ -2820,7 +2838,7 @@ ScriptedImporter:
         width: 153
         height: 60
       spriteId: 530f63c07d2cb7744bcc47df33ad1118
-      bones: 03000000
+      bones: 0300000004000000
       parentGroup: 0
       order: 0
     - spritePosition:
