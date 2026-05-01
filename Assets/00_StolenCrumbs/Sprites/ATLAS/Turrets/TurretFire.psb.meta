@@ -111,22 +111,13 @@ ScriptedImporter:
     spriteBone:
     - name: Turret_Canon
       guid: 0bf451682344b7a40a623d8b1921b30a
-      position: {x: 43.504482, y: 0.00000545898, z: 0}
-      rotation: {x: 0, y: 0, z: -0.0034399242, w: 0.9999941}
+      position: {x: 92.68939, y: 37.56752, z: 0}
+      rotation: {x: 0, y: 0, z: -0.24226186, w: 0.9702109}
       length: 63.761623
-      parentId: 1
-      color:
-        serializedVersion: 2
-        rgba: 4294901760
-    - name: Turret_Canon_Base
-      guid: 222f8c5829c86334e8ec19ef692e337b
-      position: {x: 54.15175, y: 57.75389, z: 0}
-      rotation: {x: 0, y: 0, z: -0.23892297, w: 0.9710385}
-      length: 43.50448
       parentId: -1
       color:
         serializedVersion: 2
-        rgba: 4294967040
+        rgba: 4294901760
     spriteOutline: []
     vertices:
     - position: {x: 150.249, y: 3.4659996}
@@ -205,50 +196,50 @@ ScriptedImporter:
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 1
-        boneIndex1: 1
-        boneIndex2: 1
-        boneIndex3: 1
+        boneIndex0: 0
+        boneIndex1: 0
+        boneIndex2: 0
+        boneIndex3: 0
     - position: {x: 75.073, y: 59.07}
       boneWeight:
         weight0: 1
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 1
-        boneIndex1: 1
-        boneIndex2: 1
-        boneIndex3: 1
+        boneIndex0: 0
+        boneIndex1: 0
+        boneIndex2: 0
+        boneIndex3: 0
     - position: {x: 72.968, y: 53.107}
       boneWeight:
         weight0: 1
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 1
-        boneIndex1: 1
-        boneIndex2: 1
-        boneIndex3: 1
+        boneIndex0: 0
+        boneIndex1: 0
+        boneIndex2: 0
+        boneIndex3: 0
     - position: {x: 70.321, y: 37.735}
       boneWeight:
         weight0: 1
         weight1: 0
         weight2: 0
         weight3: 0
-        boneIndex0: 1
-        boneIndex1: 1
-        boneIndex2: 1
-        boneIndex3: 1
+        boneIndex0: 0
+        boneIndex1: 0
+        boneIndex2: 0
+        boneIndex3: 0
     - position: {x: 66.979996, y: 29.023}
       boneWeight:
-        weight0: 0.8783761
-        weight1: 0.12162387
+        weight0: 0
+        weight1: 1
         weight2: 0
         weight3: 0
-        boneIndex0: 1
+        boneIndex0: 0
         boneIndex1: 0
-        boneIndex2: 1
-        boneIndex3: 1
+        boneIndex2: 0
+        boneIndex3: 0
     - position: {x: 82.413, y: 20.485}
       boneWeight:
         weight0: 1
@@ -358,15 +349,15 @@ ScriptedImporter:
       height: 60
     spriteID: c61b486cf68d7ed4890b711f5df5dc37
     spriteBone:
-    - name: Turret_Canon_Base
-      guid: 222f8c5829c86334e8ec19ef692e337b
-      position: {x: 14.151733, y: 50.75389, z: 0}
-      rotation: {x: 0, y: 0, z: -0.23892297, w: 0.9710385}
-      length: 43.50448
+    - name: Turret_Base
+      guid: c82460bed819bff4eacc21b0ff86d93e
+      position: {x: 2.835144, y: -134.5938, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7148051, w: 0.6993237}
+      length: 125.73624
       parentId: -1
       color:
         serializedVersion: 2
-        rgba: 4294967040
+        rgba: 4278255615
     spriteOutline: []
     vertices:
     - position: {x: 24.065, y: 0.47500038}
@@ -630,7 +621,7 @@ ScriptedImporter:
         boneIndex2: 0
         boneIndex3: 0
     spritePhysicsOutline: []
-    indices: 0000000003000000010000001500000019000000160000001400000019000000150000000e00000011000000100000000e000000100000000f0000000a0000000c0000000b000000090000000c0000000a000000080000000d0000000c000000080000000c0000000900000005000000120000001100000005000000110000000e000000050000000e0000000d000000050000000d00000008000000050000000800000007000000050000000700000006000000040000001300000012000000040000001200000005000000030000001900000014000000030000001400000013000000030000001300000004000000010000000300000002000000000000001900000003000000160000001800000017000000160000001900000018000000
+    indices: 000000000300000001000000000000001900000003000000010000000300000002000000030000001300000004000000030000001400000013000000030000001900000014000000040000001200000005000000040000001300000012000000050000000700000006000000050000000800000007000000050000000d00000008000000050000000e0000000d00000005000000110000000e000000050000001200000011000000080000000c00000009000000080000000d0000000c000000090000000c0000000a0000000a0000000c0000000b0000000e000000100000000f0000000e0000001100000010000000140000001900000015000000150000001900000016000000160000001800000017000000160000001900000018000000
     edges:
     - {x: 0, y: 1}
     - {x: 0, y: 25}
@@ -1342,7 +1333,7 @@ ScriptedImporter:
       height: 54
     spriteID: ea2cf6c9554c1b546abbd7da570d1dcf
     spriteBone:
-    - name: Turret^Platform
+    - name: Turret_Platform
       guid: e0a31c5e12f444e438e51acd4c7d6843
       position: {x: 94.54004, y: -47.75389, z: 0}
       rotation: {x: 0, y: 0, z: 0.71896017, w: 0.6950514}
@@ -1708,7 +1699,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255615
-    - name: Turret^Platform
+    - name: Turret_Platform
       guid: e0a31c5e12f444e438e51acd4c7d6843
       position: {x: 88.54004, y: -57.75389, z: 0}
       rotation: {x: 0, y: 0, z: 0.71896017, w: 0.6950514}
@@ -2395,7 +2386,7 @@ ScriptedImporter:
       height: 159
     spriteID: 366ef1b0d82aa764ab046e01cd739770
     spriteBone:
-    - name: Turret^Platform
+    - name: Turret_Platform
       guid: e0a31c5e12f444e438e51acd4c7d6843
       position: {x: 138.54004, y: 5.246107, z: 0}
       rotation: {x: 0, y: 0, z: 0.71896017, w: 0.6950514}
@@ -2786,7 +2777,7 @@ ScriptedImporter:
     boneReadOnly: 0
   characterData:
     bones:
-    - name: Turret^Platform
+    - name: Turret_Platform
       guid: e0a31c5e12f444e438e51acd4c7d6843
       position: {x: 140.54004, y: 10.246107, z: 0}
       rotation: {x: 0, y: 0, z: 0.71896017, w: 0.6950514}
@@ -2813,21 +2804,12 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255360
-    - name: Turret_Canon_Base
-      guid: 222f8c5829c86334e8ec19ef692e337b
-      position: {x: 141.15175, y: 245.75389, z: 0}
-      rotation: {x: 0, y: 0, z: -0.23892297, w: 0.9710385}
-      length: 43.50448
-      parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 4294967040
     - name: Turret_Canon
       guid: 0bf451682344b7a40a623d8b1921b30a
-      position: {x: 43.504482, y: 0.000007485538, z: 0}
-      rotation: {x: 0, y: 0, z: -0.0034399242, w: 0.9999941}
+      position: {x: 179.68939, y: 225.56752, z: 0}
+      rotation: {x: 0, y: 0, z: -0.24226186, w: 0.9702109}
       length: 63.761623
-      parentId: 3
+      parentId: -1
       color:
         serializedVersion: 2
         rgba: 4294901760
@@ -2838,7 +2820,7 @@ ScriptedImporter:
         width: 153
         height: 60
       spriteId: 530f63c07d2cb7744bcc47df33ad1118
-      bones: 0400000003000000
+      bones: 03000000
       parentGroup: 0
       order: 0
     - spritePosition:
@@ -2847,7 +2829,7 @@ ScriptedImporter:
         width: 50
         height: 60
       spriteId: c61b486cf68d7ed4890b711f5df5dc37
-      bones: 03000000
+      bones: 01000000
       parentGroup: 0
       order: 0
     - spritePosition:
