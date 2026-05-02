@@ -18786,15 +18786,40 @@ MonoBehaviour:
   spawns: []
   firstWaveRounds:
   - {fileID: 11400000, guid: 19cbf477a9e728649bf1599bce609547, type: 2}
-  secondWaveRounds:
   - {fileID: 11400000, guid: bfe2782239d137a48b84e4a9a87dfb75, type: 2}
   - {fileID: 11400000, guid: e1b2b233d5cd7e5449f5a6de1799b4c2, type: 2}
   - {fileID: 11400000, guid: 61c399b73c4d30640bb8ec6746a00b9a, type: 2}
   - {fileID: 11400000, guid: 1816ceb9edba39d45908885998f33566, type: 2}
-  thirdWaveRounds: []
-  fourthWaveRounds: []
-  fifthWaveRounds: []
-  sixthWaveRounds: []
+  secondWaveRounds:
+  - {fileID: 11400000, guid: 949db1b99fff2364eb51746819bc863f, type: 2}
+  - {fileID: 11400000, guid: a58d38719c3f50f41a655612d61bfd93, type: 2}
+  - {fileID: 11400000, guid: 53e4ab7e93e8dde42ad6d7755b874fc0, type: 2}
+  - {fileID: 11400000, guid: e7f70da70873f7f44bc802771e20f425, type: 2}
+  - {fileID: 11400000, guid: 8a42c840d9abdff44a777005a86e75eb, type: 2}
+  thirdWaveRounds:
+  - {fileID: 11400000, guid: 864630b04878bd6449be18433a3aaa5e, type: 2}
+  - {fileID: 11400000, guid: cc3b441aa6677b3499bd487d976eef69, type: 2}
+  - {fileID: 11400000, guid: 82192b705c317bf41b477413ecd7c1ae, type: 2}
+  - {fileID: 11400000, guid: b89c320d4fe528f409263d8b1cd6dcde, type: 2}
+  - {fileID: 11400000, guid: 547f6eca51a6ba84d9f4a471302980be, type: 2}
+  fourthWaveRounds:
+  - {fileID: 11400000, guid: cbf3c0c3c04057242ae0bea35aa25597, type: 2}
+  - {fileID: 11400000, guid: a1d62ac1313219a4db798b97725fc147, type: 2}
+  - {fileID: 11400000, guid: d21f945d39a966a4b8405646baa8de0e, type: 2}
+  - {fileID: 11400000, guid: 4372992c4e449e74da125424c1e7e036, type: 2}
+  - {fileID: 11400000, guid: df50c664a3387614da91e4340cb5e10c, type: 2}
+  fifthWaveRounds:
+  - {fileID: 11400000, guid: dcbd9d8e593613e4fad179290bb2f72a, type: 2}
+  - {fileID: 11400000, guid: 634ffcf9836226447a8e9f2fa952f11b, type: 2}
+  - {fileID: 11400000, guid: 6cad30029a11fc44897c3b671dd3d24b, type: 2}
+  - {fileID: 11400000, guid: 587861dc1ccbd56458c9cb991722317b, type: 2}
+  - {fileID: 11400000, guid: 6efba7563e80cb84bb4a96b4ddaedc12, type: 2}
+  sixthWaveRounds:
+  - {fileID: 11400000, guid: b23c3447923a79246a33d1665bc0dac2, type: 2}
+  - {fileID: 11400000, guid: d71e6722f995b1c42a15434e83d81281, type: 2}
+  - {fileID: 11400000, guid: 3cddaae5bc96f6642aba6da34c9398e0, type: 2}
+  - {fileID: 11400000, guid: ee407b813a89e9d43bdec3ee054289fc, type: 2}
+  - {fileID: 11400000, guid: b08c1b538f27bd84baa0bbd9b3b71874, type: 2}
 --- !u!114 &1510302098
 MonoBehaviour:
   m_ObjectHideFlags: 0
