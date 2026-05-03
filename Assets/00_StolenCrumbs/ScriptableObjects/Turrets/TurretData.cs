@@ -17,7 +17,7 @@ public class TurretData : ScriptableObject
     public float moneyMultiplier = 0.5f;
     public enum damageType
     {
-        gas, electric, water, fire, explosion, floor
+        gas, electric, water, fire, sticky, explosion, floor
     }
     public damageType[] damageTypes;
     public float[] damageTimes;
