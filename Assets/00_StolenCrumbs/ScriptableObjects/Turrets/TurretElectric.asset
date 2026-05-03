@@ -23,7 +23,7 @@ MonoBehaviour:
   hitVisualPrefab: {fileID: 7879344167108214069, guid: bea89a0134aad7742a51cacdb875899f, type: 3}
   basePrice: 25
   placedTurrets: 0
-  moneyMultiplier: 0.4
+  moneyMultiplier: 0.5
   damageTypes: 01000000
   damageTimes:
   - 0.7
