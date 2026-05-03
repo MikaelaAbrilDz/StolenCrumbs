@@ -24,6 +24,11 @@ public class TurretData : ScriptableObject
 
     public int FinalPrice()
     {
-        return basePrice + ((int)(basePrice * moneyMultiplier) * placedTurrets);
+        int finalPrice = basePrice;
+        for (int i = 0 ; i < placedTurrets; i++)
+        {
+            finalPrice += (int)(finalPrice * moneyMultiplier);
+        }
+        return finalPrice;
     }
 }

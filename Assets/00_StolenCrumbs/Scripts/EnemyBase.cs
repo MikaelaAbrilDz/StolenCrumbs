@@ -109,6 +109,7 @@ public class EnemyBase : CheckerPlaceable
 	}
 	void Die()
 	{
+		if (isDead) return;
 		isDead = true;
 		LeanTween.cancel(gameObject);
 		anim.SetBool("isDead", true);
