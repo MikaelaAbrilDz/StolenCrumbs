@@ -79,7 +79,7 @@ public class TurretPlacer : MonoBehaviour
 				SetData();
 
 				placedturret.GetComponent<Turret>().SetParentChecker(finalChecker);
-				placedturret.transform.localPosition = Vector3.zero - Vector3.forward;
+				placedturret.transform.localPosition = Vector3.zero;
 
             }
 

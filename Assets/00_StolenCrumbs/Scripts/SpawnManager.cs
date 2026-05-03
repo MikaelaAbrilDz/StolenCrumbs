@@ -86,7 +86,8 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
-                FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
+                //FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
+                WinLoseManager._gameState = WinLoseManager.GameState.Won; //SOLO PARA LA BETA, QUITAR LINEA EN GOLD RELEASE
                 FindAnyObjectByType<PathGenerationManager>().CreatePath();
             }
         }
