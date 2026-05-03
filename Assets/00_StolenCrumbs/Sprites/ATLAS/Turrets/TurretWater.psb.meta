@@ -111,17 +111,17 @@ ScriptedImporter:
     spriteBone:
     - name: Turret_Bottle_Canon
       guid: 8d5f84651de65584e86cc45fb1178c8d
-      position: {x: 24.167067, y: 0.00002258685, z: 0}
-      rotation: {x: 0, y: 0, z: -0.022147607, w: 0.9997548}
-      length: 52.08687
+      position: {x: 26.450623, y: 17.599396, z: 0}
+      rotation: {x: 0, y: 0, z: -0.012263076, w: 0.99992484}
+      length: 47.48196
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4294902015
     - name: Turret_Bottle_Cap_01
       guid: e85efb2b8d7cd7e4f8e2a925d1d19838
-      position: {x: -23.622314, y: 20.801514, z: 0}
-      rotation: {x: 0, y: 0, z: -0.039653204, w: 0.9992135}
+      position: {x: -22.194763, y: 1.9579926, z: 0}
+      rotation: {x: 0, y: 0, z: -4.2272313e-10, w: 1}
       length: 24.167067
       parentId: -1
       color:
@@ -482,16 +482,16 @@ ScriptedImporter:
     - name: Turret_Bottle_Cap
       guid: 788bfff6b8d84bd4ca66dd1efccf3a42
       position: {x: 29.90683, y: -25.805252, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7173058, w: 0.6967585}
-      length: 52.628986
+      rotation: {x: 0, y: 0, z: 0.7035518, w: 0.71064395}
+      length: 41.131737
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4278255615
     - name: Turret_Bottle_Cap_01
       guid: e85efb2b8d7cd7e4f8e2a925d1d19838
-      position: {x: 52.62898, y: 0.00000012434612, z: 0}
-      rotation: {x: 0, y: 0, z: -0.74437034, w: 0.66776705}
+      position: {x: 33.76052, y: 0.44022042, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7035519, w: 0.710644}
       length: 24.167063
       parentId: 0
       color:
@@ -499,18 +499,18 @@ ScriptedImporter:
         rgba: 4278255360
     - name: Turret_Bottle_Trigger
       guid: 6537fc199ee999c42999c205727e4e7a
-      position: {x: 14.489498, y: -13.348997, z: 0}
-      rotation: {x: 0, y: 0, z: -0.44970524, w: 0.89317703}
-      length: 34.62508
+      position: {x: 12.204966, y: 5.3924146, z: 0}
+      rotation: {x: 0, y: 0, z: -0.44970527, w: 0.8931771}
+      length: 34.625084
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4294901760
     - name: Turret_Bottle_Canon
       guid: 8d5f84651de65584e86cc45fb1178c8d
-      position: {x: 24.167057, y: 0.0000015674232, z: 0}
-      rotation: {x: 0, y: 0, z: -0.022147607, w: 0.9997548}
-      length: 52.086857
+      position: {x: 26.450628, y: 17.599386, z: 0}
+      rotation: {x: 0, y: 0, z: -0.012263075, w: 0.9999248}
+      length: 47.481953
       parentId: 1
       color:
         serializedVersion: 2
@@ -869,9 +869,9 @@ ScriptedImporter:
     spriteBone:
     - name: Turret_Bottle_Trigger
       guid: 6537fc199ee999c42999c205727e4e7a
-      position: {x: 14.489567, y: -13.349023, z: 0}
-      rotation: {x: 0, y: 0, z: -0.4497053, w: 0.8931771}
-      length: 34.625084
+      position: {x: 12.204956, y: 5.392426, z: 0}
+      rotation: {x: 0, y: 0, z: -0.44970524, w: 0.89317703}
+      length: 34.625088
       parentId: 2
       color:
         serializedVersion: 2
@@ -887,8 +887,8 @@ ScriptedImporter:
         rgba: 4286578943
     - name: Turret_Bottle_Cap_01
       guid: e85efb2b8d7cd7e4f8e2a925d1d19838
-      position: {x: -6.6223145, y: 46.801514, z: 0}
-      rotation: {x: 0, y: 0, z: -0.039653204, w: 0.9992135}
+      position: {x: -5.194763, y: 27.957993, z: 0}
+      rotation: {x: 0, y: 0, z: -4.2272313e-10, w: 1}
       length: 24.167067
       parentId: -1
       color:
@@ -1224,8 +1224,8 @@ ScriptedImporter:
         rgba: 4286578943
     - name: Turret_Bottle_Trigger
       guid: 6537fc199ee999c42999c205727e4e7a
-      position: {x: -5.236206, y: 114.34628, z: 0}
-      rotation: {x: 0, y: 0, z: -0.4847689, w: 0.87464225}
+      position: {x: -4.989807, y: 115.35042, z: 0}
+      rotation: {x: 0, y: 0, z: -0.44970524, w: 0.89317703}
       length: 34.625088
       parentId: -1
       color:
@@ -1656,9 +1656,9 @@ ScriptedImporter:
     spriteBone:
     - name: Turret_Low_Rope_02
       guid: 5e5b342413910f448a26809fd8a6f08e
-      position: {x: 36.88377, y: -0.000015642858, z: 0}
+      position: {x: 36.883766, y: -0.000015040332, z: 0}
       rotation: {x: 0, y: 0, z: -0.93347746, w: 0.35863605}
-      length: 49.208256
+      length: 49.20827
       parentId: 1
       color:
         serializedVersion: 2
@@ -1683,9 +1683,9 @@ ScriptedImporter:
         rgba: 4278190335
     - name: Turret_Low_Rope_03
       guid: 8d6c3d6e982fbfb43bd18ea84fb7277b
-      position: {x: 49.20816, y: 0.000037202117, z: 0}
-      rotation: {x: 0, y: 0, z: 0.10790379, w: 0.99416137}
-      length: 38.920433
+      position: {x: 49.20819, y: 0.000041952208, z: 0}
+      rotation: {x: 0, y: 0, z: 0.10790384, w: 0.99416137}
+      length: 38.920437
       parentId: 0
       color:
         serializedVersion: 2
@@ -2590,8 +2590,8 @@ ScriptedImporter:
     - name: Turret_Bottle_Cap
       guid: 788bfff6b8d84bd4ca66dd1efccf3a42
       position: {x: 41.90683, y: 98.19475, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7173058, w: 0.6967585}
-      length: 52.628986
+      rotation: {x: 0, y: 0, z: 0.7035518, w: 0.71064395}
+      length: 41.131737
       parentId: -1
       color:
         serializedVersion: 2
@@ -2997,9 +2997,9 @@ ScriptedImporter:
         rgba: 4278190335
     - name: Turret_Low_Rope_03
       guid: 8d6c3d6e982fbfb43bd18ea84fb7277b
-      position: {x: 49.208183, y: 0.000019265419, z: 0}
-      rotation: {x: 0, y: 0, z: 0.107903816, w: 0.99416137}
-      length: 38.920433
+      position: {x: 49.208214, y: 0.000026842972, z: 0}
+      rotation: {x: 0, y: 0, z: 0.10790384, w: 0.99416137}
+      length: 38.920437
       parentId: 6
       color:
         serializedVersion: 2
@@ -3024,9 +3024,9 @@ ScriptedImporter:
         rgba: 4294967040
     - name: Turret_Low_Rope_02
       guid: 5e5b342413910f448a26809fd8a6f08e
-      position: {x: 36.883823, y: -0.000010507781, z: 0}
+      position: {x: 36.88382, y: -0.000008097678, z: 0}
       rotation: {x: 0, y: 0, z: -0.93347746, w: 0.35863605}
-      length: 49.208256
+      length: 49.20827
       parentId: 0
       color:
         serializedVersion: 2
@@ -3415,17 +3415,17 @@ ScriptedImporter:
     - name: Turret_Bottle_Cap
       guid: 788bfff6b8d84bd4ca66dd1efccf3a42
       position: {x: 17.90683, y: 3.194748, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7173058, w: 0.6967585}
-      length: 52.628986
+      rotation: {x: 0, y: 0, z: 0.7035518, w: 0.71064395}
+      length: 41.131737
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4278255615
     - name: Turret_Bottle_Trigger
       guid: 6537fc199ee999c42999c205727e4e7a
-      position: {x: 14.489513, y: -13.349002, z: 0}
+      position: {x: 12.204935, y: 5.392418, z: 0}
       rotation: {x: 0, y: 0, z: -0.44970527, w: 0.8931771}
-      length: 34.62508
+      length: 34.625084
       parentId: 4
       color:
         serializedVersion: 2
@@ -3441,8 +3441,8 @@ ScriptedImporter:
         rgba: 4286578943
     - name: Turret_Bottle_Cap_01
       guid: e85efb2b8d7cd7e4f8e2a925d1d19838
-      position: {x: 52.628983, y: 0.000008826624, z: 0}
-      rotation: {x: 0, y: 0, z: -0.74437034, w: 0.66776705}
+      position: {x: 33.760532, y: 0.4402395, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7035519, w: 0.710644}
       length: 24.167063
       parentId: 1
       color:
@@ -3809,18 +3809,18 @@ ScriptedImporter:
         rgba: 4278223103
     - name: Turret_Low_Rope_02
       guid: 5e5b342413910f448a26809fd8a6f08e
-      position: {x: 36.88383, y: -0.00000055380474, z: 0}
+      position: {x: 36.883827, y: 0.0000018562978, z: 0}
       rotation: {x: 0, y: 0, z: -0.93347746, w: 0.35863605}
-      length: 49.208256
+      length: 49.20827
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278255488
     - name: Turret_Low_Rope_03
       guid: 8d6c3d6e982fbfb43bd18ea84fb7277b
-      position: {x: 49.208218, y: 0.000008353471, z: 0}
-      rotation: {x: 0, y: 0, z: 0.10790379, w: 0.99416137}
-      length: 38.920433
+      position: {x: 49.20825, y: 0.0000131035595, z: 0}
+      rotation: {x: 0, y: 0, z: 0.10790384, w: 0.99416137}
+      length: 38.920437
       parentId: 2
       color:
         serializedVersion: 2
@@ -4398,16 +4398,16 @@ ScriptedImporter:
     - name: Turret_Bottle_Cap
       guid: 788bfff6b8d84bd4ca66dd1efccf3a42
       position: {x: 117.90682, y: 185.19475, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7173058, w: 0.6967585}
-      length: 52.628986
+      rotation: {x: 0, y: 0, z: 0.7035518, w: 0.71064395}
+      length: 41.131737
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4278255615
     - name: Turret_Bottle_Cap_01
       guid: e85efb2b8d7cd7e4f8e2a925d1d19838
-      position: {x: 52.628986, y: -0.0000046440255, z: 0}
-      rotation: {x: 0, y: -0, z: -0.74437034, w: 0.66776705}
+      position: {x: 33.76053, y: 0.44023138, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7035519, w: 0.710644}
       length: 24.167063
       parentId: 1
       color:
@@ -4424,8 +4424,8 @@ ScriptedImporter:
         rgba: 4294967040
     - name: Turret_Bottle_Trigger
       guid: 6537fc199ee999c42999c205727e4e7a
-      position: {x: 14.489524, y: -13.348998, z: 0}
-      rotation: {x: 0, y: 0, z: -0.4497053, w: 0.8931771}
+      position: {x: 12.204948, y: 5.3924255, z: 0}
+      rotation: {x: 0, y: 0, z: -0.44970527, w: 0.8931771}
       length: 34.62508
       parentId: 2
       color:
@@ -4433,9 +4433,9 @@ ScriptedImporter:
         rgba: 4294901760
     - name: Turret_Bottle_Canon
       guid: 8d5f84651de65584e86cc45fb1178c8d
-      position: {x: 24.167068, y: -0.0000008167626, z: 0}
-      rotation: {x: 0, y: 0, z: -0.022147607, w: 0.9997548}
-      length: 52.086864
+      position: {x: 26.450615, y: 17.599396, z: 0}
+      rotation: {x: 0, y: 0, z: -0.012263057, w: 0.99992484}
+      length: 47.481953
       parentId: 2
       color:
         serializedVersion: 2
@@ -4451,17 +4451,17 @@ ScriptedImporter:
         rgba: 4278223103
     - name: Turret_Low_Rope_02
       guid: 5e5b342413910f448a26809fd8a6f08e
-      position: {x: 36.88385, y: 0.0000134014535, z: 0}
+      position: {x: 36.883846, y: 0.000015811556, z: 0}
       rotation: {x: 0, y: -0, z: -0.93347746, w: 0.35863605}
-      length: 49.208252
+      length: 49.208267
       parentId: 6
       color:
         serializedVersion: 2
         rgba: 4278255488
     - name: Turret_Low_Rope_03
       guid: 8d6c3d6e982fbfb43bd18ea84fb7277b
-      position: {x: 49.208244, y: 0.000008028503, z: 0}
-      rotation: {x: 0, y: 0, z: 0.107903786, w: 0.99416137}
+      position: {x: 49.20826, y: 0.0000028189002, z: 0}
+      rotation: {x: 0, y: 0, z: 0.10790387, w: 0.99416137}
       length: 38.920433
       parentId: 7
       color:
