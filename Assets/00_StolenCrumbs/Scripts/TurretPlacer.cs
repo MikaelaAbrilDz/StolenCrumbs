@@ -31,10 +31,12 @@ public class TurretPlacer : MonoBehaviour
 
 	public void GrabTurret()
 	{
+
 		TurretData data = turretPrefab.GetComponent<Turret>().turretData;
 
         if (CurrencyManager.RemoveCurrency(data.FinalPrice()))
         {
+			FindAnyObjectByType<TurretShopManager>().GetComponent<AppearDisappearUI_Manager>().Disppear();
 	        isPicked = true;
 			previsualizer.Using(iconTurret.sprite);    
         }
@@ -44,6 +46,7 @@ public class TurretPlacer : MonoBehaviour
 	{
 		if (isPicked && context.canceled)
 		{
+			FindAnyObjectByType<TurretShopManager>().GetComponent<AppearDisappearUI_Manager>().Appear();
 			isPicked=false;
 			previsualizer.StopUsing();
 
