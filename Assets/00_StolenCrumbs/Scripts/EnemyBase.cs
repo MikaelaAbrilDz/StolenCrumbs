@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using static TurretData;
@@ -22,6 +23,8 @@ public class EnemyBase : CheckerPlaceable
 	[SerializeField] GameObject explosionVisual;
 
 	Animator anim;
+	[SerializeField] Slider lifeBar;
+	[SerializeField] Image lifeBarFill;
 
 	public enum bugType
 	{
@@ -31,6 +34,8 @@ public class EnemyBase : CheckerPlaceable
     private void Start()
     {
         anim = GetComponentInChildren<Animator>();
+		lifeBar.maxValue = currentLife;
+		lifeBar.value = currentLife;
     }
     private void OnEnable()
 	{
@@ -108,7 +113,8 @@ public class EnemyBase : CheckerPlaceable
 		}
 		anim.SetTrigger("damaged");
 		currentLife = Mathf.Max(currentLife - damage, 0);
-
+		lifeBar.value = currentLife;
+		if (lifeBar.value <= lifeBar.maxValue / 3) lifeBarFill.color = Color.red;
 		if (hitVisual) Instantiate(hitVisual, transform.position, Quaternion.identity);
 
 		if (currentLife == 0) Die();
