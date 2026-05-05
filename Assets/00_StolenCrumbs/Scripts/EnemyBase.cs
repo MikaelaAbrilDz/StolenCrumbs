@@ -79,10 +79,10 @@ public class EnemyBase : CheckerPlaceable
     }
     public void GetDamaged(int damage, damageType[] damageTypes, GameObject hitVisual)
 	{
-
+		int finalDamage = damage;
 		foreach (var damageType in damageTypes) //Checks synergies
 		{
-			foreach (var statusEffect in statusEffects) 
+			foreach (var statusEffect in new List<damageType>(statusEffects)) 
 			{
 				if (damageType == TurretData.damageType.explosion && statusEffect == TurretData.damageType.water)
 				{
@@ -122,13 +122,17 @@ public class EnemyBase : CheckerPlaceable
                 }
 				if (damageType == TurretData.damageType.water && statusEffect == TurretData.damageType.soap)
 				{
-					statusEffectsTimeLeft[statusEffects.IndexOf(TurretData.damageType.soap)] = 1;
+					statusEffectsTimeLeft[statusEffects.IndexOf(TurretData.damageType.soap)] += 0.5f;
+                }
+				if (damageType == TurretData.damageType.soap && statusEffect == TurretData.damageType.water)
+				{
+					finalDamage *= 2;
                 }
 
             }
 		}
 		anim.SetTrigger("damaged");
-		currentLife = Mathf.Max(currentLife - damage, 0);
+		currentLife = Mathf.Max(currentLife - finalDamage, 0);
 		lifeBar.value = currentLife;
 		if (lifeBar.value <= lifeBar.maxValue / 3) lifeBarFill.color = Color.red;
 		if (hitVisual) Instantiate(hitVisual, transform.position, Quaternion.identity);
