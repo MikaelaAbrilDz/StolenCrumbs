@@ -36,6 +36,7 @@ public class EnemyBase : CheckerPlaceable
         anim = GetComponentInChildren<Animator>();
 		lifeBar.maxValue = currentLife;
 		lifeBar.value = currentLife;
+		InvokeRepeating(nameof(GetStatusConditions, 0, 1))
     }
     private void OnEnable()
 	{
@@ -45,6 +46,17 @@ public class EnemyBase : CheckerPlaceable
     {
 		WearOffStatus();
     }
+	private void GetStatusConditions()
+	{
+		if (statusEffects.Contains(TurretData.damageType.fire))
+		{
+			GetDamaged(1, null, null);
+		}
+		if (statusEffects.Contains(TurretData.damageType.soap))
+		{
+			GetDamaged(2, null, null);
+		}
+	}
 	private void WearOffStatus()
 	{
 		for (int i = 0; i < statusEffectsTimeLeft.Count; i++)
@@ -107,6 +119,10 @@ public class EnemyBase : CheckerPlaceable
 				{
 					statusEffects.Add(TurretData.damageType.sticky);
 					statusEffectsTimeLeft.Add(3);
+                }
+				if (damageType == TurretData.damageType.water && statusEffect == TurretData.damageType.soap)
+				{
+					statusEffectsTimeLeft[statusEffects.IndexOf(TurretData.damageType.soap)] = 1;
                 }
 
             }
