@@ -95,28 +95,6 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
-  - name: Hue/Saturation 1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 252
-      width: 0
-      height: 0
-    spriteID: 53f5b24c00107724cb2b19949f5543d2
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 252}
-    spritePosition: {x: 0, y: 128}
   - name: Capa 26 - copia
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5009,16 +4987,6 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: Hue/Saturation 1
-    spriteName: Hue/Saturation 1
-    isGroup: 0
-    parentIndex: 0
-    spriteID: 53f5b24c00107724cb2b19949f5543d2
-    layerID: 338
-    mosaicPosition: {x: 4, y: 252}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
   - name: Antena1
     spriteName: 
     isGroup: 1
@@ -5032,7 +5000,7 @@ ScriptedImporter:
   - name: Capa 26 - copia
     spriteName: Capa 26 - copia
     isGroup: 0
-    parentIndex: 2
+    parentIndex: 1
     spriteID: 1565addae21beab439ca7794e97a2b45
     layerID: 256
     mosaicPosition: {x: 78, y: 4}
@@ -5052,7 +5020,7 @@ ScriptedImporter:
   - name: Capa 26
     spriteName: Capa 26
     isGroup: 0
-    parentIndex: 4
+    parentIndex: 3
     spriteID: 90bbbb5b659013142af68587b931dc2a
     layerID: 253
     mosaicPosition: {x: 4, y: 60}
@@ -5072,7 +5040,7 @@ ScriptedImporter:
   - name: Capa 22 - copia
     spriteName: Capa 22 - copia
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 5
     spriteID: ad16576adfb7fa144ab739ce33e7ded2
     layerID: 250
     mosaicPosition: {x: 4, y: 118}
@@ -5092,7 +5060,7 @@ ScriptedImporter:
   - name: Capa 22
     spriteName: Capa 22
     isGroup: 0
-    parentIndex: 8
+    parentIndex: 7
     spriteID: 12345ef5df85462468674cbf1416bb99
     layerID: 247
     mosaicPosition: {x: 4, y: 184}
@@ -5112,7 +5080,7 @@ ScriptedImporter:
   - name: Capa 20
     spriteName: Capa 20
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 9
     spriteID: 0f309b41899360b42965b000d60568b5
     layerID: 244
     mosaicPosition: {x: 36, y: 184}
@@ -5132,7 +5100,7 @@ ScriptedImporter:
   - name: Capa 6
     spriteName: Capa 6
     isGroup: 0
-    parentIndex: 12
+    parentIndex: 11
     spriteID: 18455c74fd2d0a14cb9c4ebfda0deb7e
     layerID: 241
     mosaicPosition: {x: 203, y: 60}
@@ -5152,7 +5120,7 @@ ScriptedImporter:
   - name: Capa 5
     spriteName: Capa 5
     isGroup: 0
-    parentIndex: 14
+    parentIndex: 13
     spriteID: bc18b12f987eed74a947595d418167e0
     layerID: 238
     mosaicPosition: {x: 4, y: 4}
@@ -5172,7 +5140,7 @@ ScriptedImporter:
   - name: Capa 7
     spriteName: Capa 7
     isGroup: 0
-    parentIndex: 16
+    parentIndex: 15
     spriteID: 034a2bdb2ebe32d40b99aa7209a9a9f8
     layerID: 235
     mosaicPosition: {x: 63, y: 184}
@@ -5192,7 +5160,7 @@ ScriptedImporter:
   - name: Capa 9
     spriteName: Capa 9
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 17
     spriteID: 71bba79dbf953474aaccb9958bcc584e
     layerID: 232
     mosaicPosition: {x: 61, y: 60}
@@ -5212,7 +5180,7 @@ ScriptedImporter:
   - name: Capa 8
     spriteName: Capa 8
     isGroup: 0
-    parentIndex: 20
+    parentIndex: 19
     spriteID: c2df2ec469d2e6d4b8c204a94ed3f0f3
     layerID: 229
     mosaicPosition: {x: 101, y: 60}
@@ -5232,7 +5200,7 @@ ScriptedImporter:
   - name: Capa 18
     spriteName: Capa 18
     isGroup: 0
-    parentIndex: 22
+    parentIndex: 21
     spriteID: ecc9e85c452658e4cbcd27c05bf4d841
     layerID: 226
     mosaicPosition: {x: 191, y: 4}
@@ -5252,7 +5220,7 @@ ScriptedImporter:
   - name: Capa 20 - copia
     spriteName: Capa 20 - copia
     isGroup: 0
-    parentIndex: 24
+    parentIndex: 23
     spriteID: 5c3fb8db07b1f6b4db52adb9d4e6a1d7
     layerID: 223
     mosaicPosition: {x: 140, y: 4}
@@ -5272,7 +5240,7 @@ ScriptedImporter:
   - name: Capa 24
     spriteName: Capa 24
     isGroup: 0
-    parentIndex: 26
+    parentIndex: 25
     spriteID: ecf4089558236f942ba827e40ba7b8d0
     layerID: 220
     mosaicPosition: {x: 171, y: 60}
@@ -5292,7 +5260,7 @@ ScriptedImporter:
   - name: Capa 24 - copia
     spriteName: Capa 24 - copia
     isGroup: 0
-    parentIndex: 28
+    parentIndex: 27
     spriteID: 9e75e609a2e4a5444a8d57335e933c49
     layerID: 217
     mosaicPosition: {x: 139, y: 60}
