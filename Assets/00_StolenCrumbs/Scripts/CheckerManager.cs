@@ -3,14 +3,26 @@ using UnityEngine;
 public class CheckerManager : MonoBehaviour
 {
 	float angle;
+	public SpriteRenderer rangeShower;
 
 	public CheckerManager[] sideCheckers;
 	void Awake()
 	{
 		//Sets angle to 30 (change that value if the angle changes) and converts it to radian to be used by sine and cosine functions
 		angle = 30 * Mathf.Deg2Rad;
-
 		SetReferences();
+	}
+
+	private void Update()
+	{
+		if (rangeShower.enabled)
+		{
+			if (!TurretPlacer.checkersInRange.Contains(this))
+			{
+				rangeShower.enabled = false;
+			}
+
+		}
 	}
 
 	private void SetReferences()
