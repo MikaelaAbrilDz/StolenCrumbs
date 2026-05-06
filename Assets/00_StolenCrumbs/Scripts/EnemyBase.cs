@@ -73,8 +73,15 @@ public class EnemyBase : CheckerPlaceable
     {
 		for (int i = 0; i < damageTypes.Length; i++)
 		{
-			statusEffects.Add(damageTypes[i]);
-			statusEffectsTimeLeft.Add(damageTimes[i]);
+			if (!statusEffects.Contains(damageTypes[i]))
+			{
+				statusEffects.Add(damageTypes[i]);
+				statusEffectsTimeLeft.Add(damageTimes[i]);
+			}
+			else
+			{
+				statusEffectsTimeLeft[statusEffects.IndexOf(damageTypes[i])] = damageTimes[i];
+            }
         }
     }
     public void GetDamaged(int damage, damageType[] damageTypes, GameObject hitVisual)
