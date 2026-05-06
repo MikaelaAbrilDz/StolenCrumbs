@@ -2,9 +2,12 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using NUnit.Framework;
+using System.Collections.Generic;
 
 public class TurretPlacer : MonoBehaviour
 {
+	[SerializeField] LayerMask checkerMask;
 	private TextMeshProUGUI nameText;
 	private Image iconTurret;
 	public GameObject turretPrefab;
@@ -12,6 +15,8 @@ public class TurretPlacer : MonoBehaviour
 	TurretPrevisualizer previsualizer;
 	private bool isPicked;
 	private float placingRange = 1f;
+	public static List<CheckerManager> checkersInRange = new List<CheckerManager>();
+	public static List<CheckerManager> checkersInRangePrep = new List<CheckerManager>();
 
     void Start()
 	{
@@ -19,6 +24,13 @@ public class TurretPlacer : MonoBehaviour
 		nameText = GetComponentInChildren<TextMeshProUGUI>();
 		previsualizer = FindAnyObjectByType<TurretPrevisualizer>(FindObjectsInactive.Include);
 		SetData();
+	}
+	private void Update()
+	{
+		if (isPicked)
+		{
+			CheckCurrentRange();
+		}
 	}
 
 	public void SetData()
@@ -29,6 +41,50 @@ public class TurretPlacer : MonoBehaviour
 		nameText.text = data.turretName + " ("+ data.FinalPrice() + " bolts)";
 	}
 
+	void CheckCurrentRange()
+	{
+		TurretData data = turretPrefab.GetComponent<Turret>().turretData;
+		
+		Camera mainCam = Camera.main;
+		Vector3 cursorPos = mainCam.ScreenToWorldPoint(Mouse.current.position.value); //Posición del cursor
+
+		Collider2D[] posibleCheckers = Physics2D.OverlapCircleAll(cursorPos, 5f, checkerMask);
+
+		Collider2D finalChecker = posibleCheckers[0];
+
+		foreach (Collider2D checker in posibleCheckers)
+		{
+			if ((finalChecker.transform.position - cursorPos).magnitude > (checker.transform.position - cursorPos).magnitude)
+			{
+				finalChecker = checker;
+			}
+		}
+		checkersInRangePrep.Clear();
+		GetSideCheckers(finalChecker.GetComponent<CheckerManager>(), data.range - 1);
+		checkersInRange.Clear();
+		checkersInRange = checkersInRangePrep;
+	}
+
+	void GetSideCheckers(CheckerManager finalChecker, int rangeLeft)
+	{
+		int newRange = rangeLeft - 1;
+		foreach (CheckerManager sideChecker in finalChecker.sideCheckers)
+		{
+			if (sideChecker != null)
+			{
+				sideChecker.rangeShower.enabled = true;
+				checkersInRangePrep.Add(sideChecker);
+				if (rangeLeft == 0)
+				{
+
+				}
+				else
+				{
+					GetSideCheckers(sideChecker, newRange);
+				}
+			}
+		}
+	}
 	public void GrabTurret()
 	{
 
