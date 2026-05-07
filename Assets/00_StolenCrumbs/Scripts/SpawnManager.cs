@@ -54,6 +54,7 @@ public class SpawnManager : MonoBehaviour
     }
     IEnumerator SpawnGenerator()
     {
+        CurrencyManager.SetCurrency(40);
         yield return new WaitForSeconds(3);
         if (wave == 1)
         {
