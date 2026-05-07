@@ -23254,8 +23254,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TurretUnlockManager
   allTurrets:
   - {fileID: 11400000, guid: 8c2ec250d5f477e4db624b326d2bb3ef, type: 2}
-  - {fileID: 11400000, guid: 40c02793a1c19e74182ff716acae89d9, type: 2}
   - {fileID: 11400000, guid: 01629c681f2d2f2449607ac08458ed57, type: 2}
+  - {fileID: 11400000, guid: 40c02793a1c19e74182ff716acae89d9, type: 2}
   - {fileID: 11400000, guid: 12c6bbee138646046b537e1f7caf45a3, type: 2}
   unlockedTurrets: []
   lockedTurrets: []

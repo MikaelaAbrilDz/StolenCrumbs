@@ -534,5 +534,6 @@ MonoBehaviour:
   statusEffects: 
   statusEffectsTimeLeft: []
   explosionVisual: {fileID: 7879344167108214069, guid: d278ac471300dc24e90c48ed056c9a78, type: 3}
+  soapExplosionVisual: {fileID: 7879344167108214069, guid: b24c21b6d2e746d44bea5fe9eb689679, type: 3}
   lifeBar: {fileID: 3557599678903338504}
   lifeBarFill: {fileID: 3489983252833196545}

@@ -20,7 +20,7 @@ public class EnemyBase : CheckerPlaceable
 	[HideInInspector] public List<float> statusEffectsTimeLeft = new List<float>();
     [HideInInspector] public LTDescr currentTween;
 
-	[SerializeField] GameObject explosionVisual;
+	[SerializeField] GameObject explosionVisual, soapExplosionVisual;
 
 	Animator anim;
 	[SerializeField] Slider lifeBar;
@@ -97,13 +97,27 @@ public class EnemyBase : CheckerPlaceable
                 }
 				if (damageType == TurretData.damageType.fire && statusEffect == TurretData.damageType.gas)
 				{
-                    GetDamaged(8, new damageType[1] { TurretData.damageType.explosion }, explosionVisual);
+                    GetDamaged(25, new damageType[1] { TurretData.damageType.explosion }, explosionVisual);
                     foreach (CheckerManager checker in parentChecker.sideCheckers)
 					{
 						foreach (EnemyBase sideEnemy in checker.GetComponentsInChildren<EnemyBase>())
 						{
 							sideEnemy.GetDamaged(25, new damageType[1] { TurretData.damageType.explosion }, null);
 						}
+						
+					}
+				}
+				if (damageType == TurretData.damageType.gas && statusEffect == TurretData.damageType.soap)
+				{
+                    GetStatusEffect(new damageType[1] { TurretData.damageType.soap }, new float[1] { 2f });
+                    GetDamaged(2, new damageType[1] { TurretData.damageType.soap }, soapExplosionVisual);
+                    foreach (CheckerManager checker in parentChecker.sideCheckers)
+					{
+						foreach (EnemyBase sideEnemy in checker.GetComponentsInChildren<EnemyBase>())
+						{
+							sideEnemy.GetStatusEffect(new damageType[1] { TurretData.damageType.soap }, new float[1] { 2f });
+                            sideEnemy.GetDamaged(2, new damageType[1] { TurretData.damageType.soap }, null);
+                        }
 						
 					}
 				}

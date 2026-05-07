@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SmallFlyAnim
+  m_Controller: {fileID: 9100000, guid: 314d75ae64f8209459acdf07bfe480f9, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: f6dd9e3674c795640acfe59de6bf7dd4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a37360f9608b40947adf7906c68edba5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3a7deeea5630c4f4882808682a57d263, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3a7deeea5630c4f4882808682a57d263, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d7dd29d78b417cb47a1bd8538325ded5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c6d566415298c5d4ebff02d2112178b1, type: 2}
