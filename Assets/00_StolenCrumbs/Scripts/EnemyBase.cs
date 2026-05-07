@@ -196,7 +196,7 @@ public class EnemyBase : CheckerPlaceable
 		LeanTween.cancel(gameObject);
 		anim.SetBool("isDead", true);
 		CurrencyManager.AddCurrency(prize);
-		Destroy(gameObject, 1.5f);
+		Destroy(gameObject, 2.5f);
 	}
 	void HitFort()
 	{
