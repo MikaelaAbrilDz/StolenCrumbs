@@ -50,11 +50,11 @@ public class SpawnManager : MonoBehaviour
     }
     void Start()
     {
+        CurrencyManager.SetCurrency(40);
         StartCoroutine(SpawnGenerator());
     }
     IEnumerator SpawnGenerator()
     {
-        CurrencyManager.SetCurrency(40);
         yield return new WaitForSeconds(3);
         if (wave == 1)
         {
@@ -87,8 +87,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
-                //FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
-                //SOLO PARA LA BETA, QUITAR LINEA EN GOLD RELEASE
+                FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
                 FindAnyObjectByType<PathGenerationManager>().CreatePath();
             }
         }
@@ -100,8 +99,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
-                //FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
-                WinLoseManager._gameState = WinLoseManager.GameState.Won;
+                FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
             }
         }
         if (wave == 5)
