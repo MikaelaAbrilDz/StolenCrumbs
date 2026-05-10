@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0570d89ddad1235459f3cfd410187371
+guid: 6ad5095e0b0cd45458135713d0963f31
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -138,10 +138,10 @@ TextureImporter:
       name: bocata_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 271
-        width: 991
-        height: 548
+        x: 23
+        y: 277
+        width: 978
+        height: 536
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: bocata_1
       rect:
         serializedVersion: 2
-        x: 164
-        y: 190
-        width: 81
-        height: 79
+        x: 171
+        y: 196
+        width: 68
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,10 +182,10 @@ TextureImporter:
       name: bocata_2
       rect:
         serializedVersion: 2
-        x: 244
-        y: 116
-        width: 104
-        height: 96
+        x: 250
+        y: 123
+        width: 91
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,10 +204,10 @@ TextureImporter:
       name: bocata_3
       rect:
         serializedVersion: 2
-        x: 372
-        y: 148
-        width: 92
-        height: 88
+        x: 379
+        y: 154
+        width: 78
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
