@@ -20,16 +20,8 @@ public class TurretUnlockManager : MonoBehaviour
     {
         instance = this;
         turretShopManager = FindAnyObjectByType<TurretShopManager>();
-    }
-
-    void Start()
-    {
         // Al empezar todas bloqueadas
         lockedTurrets = new List<TurretData>(allTurrets);
-
-        //desbloquear una inicial
-        if (lockedTurrets.Count > 0)
-            UnlockTurret(lockedTurrets[0]);
     }
 
     List<TurretData> GetRandomOptions(int amount) //Devuelve una lista de torretas aleatorias sin repetir

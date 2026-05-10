@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: 5da0e4ec80f2abe4ea5d84f8ccbd4d4f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 0ac45053e51cd2a48a7c9f8efba7c8f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: "Ca\xF1on"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 179
+      y: 169
+      width: 57
+      height: 52
+    spriteID: 4b49e469df73e354b9c9d0747e1cb9b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 179, y: 169}
+    spritePosition: {x: 172, y: 195}
+  - name: palanca
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 264
+      y: 162
+      width: 38
+      height: 63
+    spriteID: d37d869a7fcdeac4fbaff54536ba1f1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 264, y: 162}
+    spritePosition: {x: 50, y: 135}
+  - name: Planca grande
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 121
+      width: 32
+      height: 98
+    spriteID: 4e9f5db488c8b1f46bead4deb9218faa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 121}
+    spritePosition: {x: 39, y: 125}
+  - name: Cuerpo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 169
+      width: 167
+      height: 83
+    spriteID: 22b44e752c8d75f449e767f51356b2ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -32, y: 43}
+    spritePosition: {x: 36, y: 166}
+  - name: disco 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 54
+      width: 28
+      height: 37
+    spriteID: 98a96e35cac73784d9d877d568428649
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 54}
+    spritePosition: {x: 98, y: 192}
+  - name: Resorte delante
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 456
+      y: 98
+      width: 22
+      height: 15
+    spriteID: 3b4ce80fc0c4a6c46805a5411a9506af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 456, y: 98}
+    spritePosition: {x: 85, y: 201}
+  - name: disco 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 456
+      y: 54
+      width: 27
+      height: 36
+    spriteID: 167d30f8d5f8d2a478ca5655edb54c46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 456, y: 54}
+    spritePosition: {x: 72, y: 190}
+  - name: Resorte detras
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 227
+      width: 35
+      height: 18
+    spriteID: ace8eedcc4997e644b3f2d2dc30eb87f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 227}
+    spritePosition: {x: 53, y: 195}
+  - name: tubo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 264
+      y: 121
+      width: 179
+      height: 33
+    spriteID: f2c314a991067174b9c652587ef7c3f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 264, y: 121}
+    spritePosition: {x: 3, y: 192}
+  - name: pierna
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 4
+      width: 61
+      height: 42
+    spriteID: e0716e94e61a2a943a74d193f6b34f74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 4}
+    spritePosition: {x: 75, y: 141}
+  - name: Base torreta
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 264
+      y: 4
+      width: 148
+      height: 109
+    spriteID: 6433a6e783143664092d62854af9f4b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 264, y: 4}
+    spritePosition: {x: 56, y: 53}
+  - name: Base
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 252
+      height: 157
+    spriteID: 86d69bf52490e42479a26c1af7189204
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 2, y: 0}
+  spriteImportData: []
+  rigSpriteImportData: []
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Torreta pegamento
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 799e78b681b7fdc4e93b2457afeffbcb
+    layerID: 21
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "Ca\xF1on"
+    spriteName: "Ca\xF1on"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 4b49e469df73e354b9c9d0747e1cb9b2
+    layerID: 20
+    mosaicPosition: {x: 179, y: 169}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: palanca
+    spriteName: palanca
+    isGroup: 0
+    parentIndex: 0
+    spriteID: d37d869a7fcdeac4fbaff54536ba1f1c
+    layerID: 19
+    mosaicPosition: {x: 264, y: 162}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Planca grande
+    spriteName: Planca grande
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 4e9f5db488c8b1f46bead4deb9218faa
+    layerID: 18
+    mosaicPosition: {x: 451, y: 121}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Cuerpo
+    spriteName: Cuerpo
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 22b44e752c8d75f449e767f51356b2ef
+    layerID: 17
+    mosaicPosition: {x: 4, y: 169}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Pegamento 5
+    spriteName: 
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 5cfd6204b6abc054d80cc5ab685a725f
+    layerID: 16
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Pegamento 4
+    spriteName: 
+    isGroup: 0
+    parentIndex: 0
+    spriteID: ad3b3b6fd7efa1b4f93a11929fd1d886
+    layerID: 15
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Pegamento 3
+    spriteName: 
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 64e3b1f44d838d448a152f00984e71fe
+    layerID: 14
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Pegamento 2
+    spriteName: 
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 5ffce61e408a2c040829029aa419e5ee
+    layerID: 13
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Pegamento 1
+    spriteName: 
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 50e7bdcd5fe56f44891e7e59b46267c6
+    layerID: 12
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: disco 2
+    spriteName: disco 2
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 98a96e35cac73784d9d877d568428649
+    layerID: 11
+    mosaicPosition: {x: 420, y: 54}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Resorte delante
+    spriteName: Resorte delante
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 3b4ce80fc0c4a6c46805a5411a9506af
+    layerID: 10
+    mosaicPosition: {x: 456, y: 98}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: disco 1
+    spriteName: disco 1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 167d30f8d5f8d2a478ca5655edb54c46
+    layerID: 9
+    mosaicPosition: {x: 456, y: 54}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Resorte detras
+    spriteName: Resorte detras
+    isGroup: 0
+    parentIndex: 0
+    spriteID: ace8eedcc4997e644b3f2d2dc30eb87f
+    layerID: 8
+    mosaicPosition: {x: 451, y: 227}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: tubo
+    spriteName: tubo
+    isGroup: 0
+    parentIndex: 0
+    spriteID: f2c314a991067174b9c652587ef7c3f3
+    layerID: 7
+    mosaicPosition: {x: 264, y: 121}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: pierna
+    spriteName: pierna
+    isGroup: 0
+    parentIndex: 0
+    spriteID: e0716e94e61a2a943a74d193f6b34f74
+    layerID: 6
+    mosaicPosition: {x: 420, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Base torreta
+    spriteName: Base torreta
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 6433a6e783143664092d62854af9f4b5
+    layerID: 5
+    mosaicPosition: {x: 264, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Base
+    spriteName: Base
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 86d69bf52490e42479a26c1af7189204
+    layerID: 4
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Paleta
+    spriteName: 
+    isGroup: 0
+    parentIndex: 0
+    spriteID: a5ee552fa22d43c499e065daf9d1d4f3
+    layerID: 3
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Fondo
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2de3a8b9ff10a004291726d4d9388a78
+    layerID: 1
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  mosaicPSDLayers: []
+  rigPSDLayers: []
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

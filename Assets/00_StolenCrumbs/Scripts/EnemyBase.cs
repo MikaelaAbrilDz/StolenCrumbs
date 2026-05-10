@@ -89,6 +89,8 @@ public class EnemyBase : CheckerPlaceable
 		int finalDamage = damage;
 		foreach (var damageType in damageTypes) //Checks synergies
 		{
+			if (damageType == damageType.marked) finalDamage *= 2;
+
 			foreach (var statusEffect in new List<damageType>(statusEffects)) 
 			{
 				if (damageType == TurretData.damageType.explosion && statusEffect == TurretData.damageType.water)
@@ -121,7 +123,11 @@ public class EnemyBase : CheckerPlaceable
 						
 					}
 				}
-				if (damageType == TurretData.damageType.fire && statusEffect == TurretData.damageType.water)
+                if (damageType == TurretData.damageType.fire && statusEffect == TurretData.damageType.frozen)
+                {
+                    statusEffects[statusEffects.IndexOf(TurretData.damageType.frozen)] = TurretData.damageType.water;
+                }
+                if (damageType == TurretData.damageType.fire && statusEffect == TurretData.damageType.water)
 				{
                     statusEffectsTimeLeft.RemoveAt(statusEffects.IndexOf(TurretData.damageType.fire));
 					statusEffects.Remove(TurretData.damageType.fire);
@@ -149,6 +155,10 @@ public class EnemyBase : CheckerPlaceable
 				{
 					finalDamage *= 2;
                 }
+				if (damageType == TurretData.damageType.water && statusEffect == TurretData.damageType.frozen)
+				{
+					statusEffectsTimeLeft[statusEffects.IndexOf(TurretData.damageType.frozen)] += 1f;
+                }
 
             }
 		}
@@ -173,6 +183,10 @@ public class EnemyBase : CheckerPlaceable
             foreach (var statusEffect in statusEffects)
             {
                 if (statusEffect == TurretData.damageType.sticky)
+                {
+					currentMovementSpeed = movementSpeed * 3;
+                }
+                if (statusEffect == TurretData.damageType.frozen)
                 {
 					currentMovementSpeed = movementSpeed * 3;
                 }

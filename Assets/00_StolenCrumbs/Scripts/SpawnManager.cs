@@ -51,6 +51,7 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         CurrencyManager.SetCurrency(40);
+        FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
         StartCoroutine(SpawnGenerator());
     }
     IEnumerator SpawnGenerator()
@@ -76,6 +77,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                CurrencyManager.AddCurrency(100);
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
             }
         }
@@ -87,6 +89,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                CurrencyManager.AddCurrency(100);
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
                 FindAnyObjectByType<PathGenerationManager>().CreatePath();
             }
@@ -99,6 +102,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                CurrencyManager.AddCurrency(100);
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
             }
         }
@@ -110,7 +114,6 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
-                FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
                 FindAnyObjectByType<PathGenerationManager>().CreatePath();
             }
         }
