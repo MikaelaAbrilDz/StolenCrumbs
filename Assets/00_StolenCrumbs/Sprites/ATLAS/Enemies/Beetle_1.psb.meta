@@ -1,0 +1,586 @@
+fileFormatVersion: 2
+guid: ea6fa635bc66508458aac33a47f3cd69
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: e008cf738ede47a4a9b81f3b338d841a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: Cuerno
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 154
+      width: 25
+      height: 61
+    spriteID: 0f231756a8c5957439cf5e68f45d7eed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 154}
+    spritePosition: {x: 72, y: 64}
+  - name: Cabeza
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 66
+      width: 74
+      height: 80
+    spriteID: 42995ddb5b178554a9073647ae7b0aa3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 66}
+    spritePosition: {x: 71, y: 40}
+  - name: Cuerpo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 66
+      width: 91
+      height: 62
+    spriteID: eda8459ee20f71e4abd6340afd8ec17c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 66}
+    spritePosition: {x: 102, y: 57}
+  - name: Pata3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 154
+      width: 30
+      height: 62
+    spriteID: 14416aba85d513b45b358db0b11d54a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 154}
+    spritePosition: {x: 161, y: 19}
+  - name: Capa 37 - copia 10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 98
+      y: 154
+      width: 30
+      height: 62
+    spriteID: f2defeeed85e35d4c8b7756e9db91434
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 98, y: 154}
+    spritePosition: {x: 133, y: 9}
+  - name: Capa 31 - copia 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 185
+      y: 66
+      width: 48
+      height: 62
+    spriteID: 7f7f20dec72627249b146d19ecd2c01b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 185, y: 66}
+    spritePosition: {x: 51, y: 9}
+  - name: Capa 31 - copia 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 154
+      width: 48
+      height: 62
+    spriteID: 9cb75a175e8ae834fa6781fee69a7191
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 154}
+    spritePosition: {x: 73, y: 2}
+  - name: Capa 37 - copia 11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 154
+      width: 30
+      height: 62
+    spriteID: 2052441fcdf948842920389efda57040
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 154}
+    spritePosition: {x: 97, y: 29}
+  - name: Capa 37 - copia 12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 154
+      width: 30
+      height: 62
+    spriteID: 9540817f519ca3147b45d46cd6a843d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 154}
+    spritePosition: {x: 126, y: 38}
+  - name: Elipse 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 146
+      height: 54
+    spriteID: a3a8b26424bfad54a84e892197eaba43
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2, y: 2}
+    spritePosition: {x: 63, y: 2}
+  spriteImportData: []
+  rigSpriteImportData: []
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Escarabajo 1 - copia 3
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: c7bedf2faf8d4e04e983894a45d9b3ba
+    layerID: 30
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Cuerno
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 18618ee31bb9f3a4abd7c3fdc055ab8a
+    layerID: 29
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Cuerno
+    spriteName: Cuerno
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 0f231756a8c5957439cf5e68f45d7eed
+    layerID: 28
+    mosaicPosition: {x: 212, y: 154}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Cabeza
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 1a52d63caa71f9c489a9e40e66b699df
+    layerID: 26
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Cabeza
+    spriteName: Cabeza
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 42995ddb5b178554a9073647ae7b0aa3
+    layerID: 25
+    mosaicPosition: {x: 4, y: 66}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Cuerpo
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: afd24c1f932e76e44b200a0232c89b75
+    layerID: 23
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Cuerpo
+    spriteName: Cuerpo
+    isGroup: 0
+    parentIndex: 5
+    spriteID: eda8459ee20f71e4abd6340afd8ec17c
+    layerID: 22
+    mosaicPosition: {x: 86, y: 66}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Pata3
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: c2e1ad072d7c82946be6f3acae47758e
+    layerID: 20
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Pata3
+    spriteName: Pata3
+    isGroup: 0
+    parentIndex: 7
+    spriteID: 14416aba85d513b45b358db0b11d54a0
+    layerID: 19
+    mosaicPosition: {x: 60, y: 154}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Pata2
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 5f85d2ccaf753ed4f9e0c8dca10fe1d2
+    layerID: 17
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Capa 37 - copia 10
+    spriteName: Capa 37 - copia 10
+    isGroup: 0
+    parentIndex: 9
+    spriteID: f2defeeed85e35d4c8b7756e9db91434
+    layerID: 16
+    mosaicPosition: {x: 98, y: 154}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Pata4
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 179e403eaa8928b4eadca406c6061b87
+    layerID: 14
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Capa 31 - copia 5
+    spriteName: Capa 31 - copia 5
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 7f7f20dec72627249b146d19ecd2c01b
+    layerID: 13
+    mosaicPosition: {x: 185, y: 66}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Pata1
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 24c9c72c82edbdb45ab5dc681b59613e
+    layerID: 11
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Capa 31 - copia 6
+    spriteName: Capa 31 - copia 6
+    isGroup: 0
+    parentIndex: 13
+    spriteID: 9cb75a175e8ae834fa6781fee69a7191
+    layerID: 10
+    mosaicPosition: {x: 4, y: 154}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Pata5
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 22f9eb0264d36fa44b52d45f8c6d7d6f
+    layerID: 8
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Capa 37 - copia 11
+    spriteName: Capa 37 - copia 11
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 2052441fcdf948842920389efda57040
+    layerID: 7
+    mosaicPosition: {x: 136, y: 154}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Pata6
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 01bcb117de211ad4e99f720cecd2f18c
+    layerID: 5
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Capa 37 - copia 12
+    spriteName: Capa 37 - copia 12
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 9540817f519ca3147b45d46cd6a843d7
+    layerID: 4
+    mosaicPosition: {x: 174, y: 154}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Sombra
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: f390edc881e17c64ab665a2928c65bd9
+    layerID: 33
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Elipse 1
+    spriteName: Elipse 1
+    isGroup: 0
+    parentIndex: 19
+    spriteID: a3a8b26424bfad54a84e892197eaba43
+    layerID: 32
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers: []
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

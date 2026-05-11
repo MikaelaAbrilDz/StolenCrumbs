@@ -580,7 +580,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: cf5af2a9bc8aa744aaf8651c52c88ad9, type: 3}
       propertyPath: m_Name
-      value: Ant_2
+      value: Ant_2_Visual
       objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: cf5af2a9bc8aa744aaf8651c52c88ad9, type: 3}
       propertyPath: m_IsActive
