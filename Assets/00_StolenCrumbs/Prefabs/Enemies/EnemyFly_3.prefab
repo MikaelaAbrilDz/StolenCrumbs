@@ -381,6 +381,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elipse
       objectReference: {fileID: 0}
+    - target: {fileID: 3506353442395270153, guid: bae1c5999ff183442b99ed25ddfa7dc5, type: 3}
+      propertyPath: m_Color.a
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506353442395270153, guid: bae1c5999ff183442b99ed25ddfa7dc5, type: 3}
+      propertyPath: m_Color.b
+      value: 0.13333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506353442395270153, guid: bae1c5999ff183442b99ed25ddfa7dc5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.11764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506353442395270153, guid: bae1c5999ff183442b99ed25ddfa7dc5, type: 3}
+      propertyPath: m_Color.r
+      value: 0.16470589
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
