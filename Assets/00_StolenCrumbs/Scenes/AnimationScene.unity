@@ -378,11 +378,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8203340463952610791, guid: 77b4e1f6bdcc1904f91d8bac4a758a48, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8203340463952610791, guid: 77b4e1f6bdcc1904f91d8bac4a758a48, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8962002682576190340, guid: 77b4e1f6bdcc1904f91d8bac4a758a48, type: 3}
       propertyPath: m_Icon
@@ -394,7 +394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8962002682576190340, guid: 77b4e1f6bdcc1904f91d8bac4a758a48, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -806,6 +806,10 @@ PrefabInstance:
     - target: {fileID: 3881553260850104248, guid: 9fbd3fed3dce3d2499a645511c8a18be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703754764021780300, guid: 9fbd3fed3dce3d2499a645511c8a18be, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8203340463952610791, guid: 9fbd3fed3dce3d2499a645511c8a18be, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1252,6 +1256,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1214110594477575252, guid: 3f5ecaf937ad1934fb2ea2a34786d494, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3217047579920587590, guid: 3f5ecaf937ad1934fb2ea2a34786d494, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
@@ -1296,13 +1304,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8203340463952610791, guid: 3f5ecaf937ad1934fb2ea2a34786d494, type: 3}
-      propertyPath: m_AnchorMax.x
+    - target: {fileID: 4226527690471629670, guid: 3f5ecaf937ad1934fb2ea2a34786d494, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6012353093093447919, guid: 3f5ecaf937ad1934fb2ea2a34786d494, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649731251146623273, guid: 3f5ecaf937ad1934fb2ea2a34786d494, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8203340463952610791, guid: 3f5ecaf937ad1934fb2ea2a34786d494, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203340463952610791, guid: 3f5ecaf937ad1934fb2ea2a34786d494, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8962002682576190340, guid: 3f5ecaf937ad1934fb2ea2a34786d494, type: 3}
       propertyPath: m_Icon
@@ -1314,7 +1334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8962002682576190340, guid: 3f5ecaf937ad1934fb2ea2a34786d494, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
