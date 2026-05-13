@@ -13,16 +13,15 @@ MonoBehaviour:
   m_Name: TurretFire
   m_EditorClassIdentifier: Assembly-CSharp::TurretData
   turretUiPrefab: {fileID: 6474176572579707037, guid: 8358f03e567400b4fbc9edfea03e2510, type: 3}
-  turretPrefab: {fileID: 4316312361366573387, guid: dd54fc389c0ddc042b4e08b1c9da3a6c, type: 3}
   turretName: Lighter
   icon: {fileID: 21300000, guid: b049c5f15688e48498c4b6503b0f0937, type: 3}
   bulletYield: 0.4
-  fireRate: 15
+  fireRate: 13
   damage: 15
   range: 1
   bulletPrefab: {fileID: 6129253312025661718, guid: 374cda5a8f7df134589b3bbd6cd06927, type: 3}
   hitVisualPrefab: {fileID: 7879344167108214069, guid: 6e0937f6e61f357428af6cead48e306e, type: 3}
-  basePrice: 35
+  basePrice: 30
   placedTurrets: 1
   moneyMultiplier: 0.4
   damageTypes: 03000000

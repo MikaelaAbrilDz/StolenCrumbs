@@ -16,14 +16,14 @@ MonoBehaviour:
   turretName: Electric
   icon: {fileID: 2735028436908637532, guid: 0e3ce981fe2d4f24cb3df3ac6151c9e7, type: 3}
   bulletYield: 0.5
-  fireRate: 14
-  damage: 4
+  fireRate: 11
+  damage: 3
   range: 1
   bulletPrefab: {fileID: 6129253312025661718, guid: 8ba6ef7a5c4b8e1449007eb7cfbec010, type: 3}
   hitVisualPrefab: {fileID: 7879344167108214069, guid: bea89a0134aad7742a51cacdb875899f, type: 3}
   basePrice: 25
   placedTurrets: 0
-  moneyMultiplier: 0.5
+  moneyMultiplier: 0.4
   damageTypes: 01000000
   damageTimes:
   - 0.5

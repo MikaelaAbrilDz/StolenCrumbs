@@ -17,14 +17,14 @@ MonoBehaviour:
   turretName: Slush Maker
   icon: {fileID: 21300000, guid: a4242eefdf4dd94408f03dbaec242f39, type: 3}
   bulletYield: 0.5
-  fireRate: 12
-  damage: 5
-  range: 3
+  fireRate: 10
+  damage: 6
+  range: 2
   bulletPrefab: {fileID: 6129253312025661718, guid: 2a37d84abacc0bf4083a9bcedbc50a09, type: 3}
   hitVisualPrefab: {fileID: 7879344167108214069, guid: 9f21b7cbe9aad3a44be05e9cc64bc79f, type: 3}
-  basePrice: 25
-  placedTurrets: 0
-  moneyMultiplier: 0.5
+  basePrice: 30
+  placedTurrets: 4
+  moneyMultiplier: 0.4
   damageTypes: 07000000
   damageTimes:
-  - 0.8
+  - 1
