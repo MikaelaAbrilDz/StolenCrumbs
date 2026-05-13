@@ -16,14 +16,14 @@ MonoBehaviour:
   turretName: Pesticide Spray
   icon: {fileID: 21300000, guid: e66e02582cb75bb4abbdfd542c5671db, type: 3}
   bulletYield: 0.3
-  fireRate: 10
-  damage: 6
+  fireRate: 11
+  damage: 5
   range: 3
   bulletPrefab: {fileID: 6129253312025661718, guid: 52ee3561eb982e34cb467135dee22abb, type: 3}
   hitVisualPrefab: {fileID: 7879344167108214069, guid: 0716d84ed1baa9444a2225079d9ffc1a, type: 3}
   basePrice: 20
-  placedTurrets: 0
-  moneyMultiplier: 0.5
+  placedTurrets: 1
+  moneyMultiplier: 0.6
   damageTypes: 00000000
   damageTimes:
   - 1.5

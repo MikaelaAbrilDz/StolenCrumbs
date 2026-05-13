@@ -16,13 +16,13 @@ MonoBehaviour:
   turretName: Graffiti Can
   icon: {fileID: 21300000, guid: 8e5e7082c091b8a4e8552ea528c431cf, type: 3}
   bulletYield: 0.3
-  fireRate: 9
+  fireRate: 10
   damage: 2
   range: 4
   bulletPrefab: {fileID: 6129253312025661718, guid: 1281d6489da340b4eadef6c54ede92ed, type: 3}
   hitVisualPrefab: {fileID: 7879344167108214069, guid: 1a8702420a2474f47b9011f24ce20543, type: 3}
-  basePrice: 20
-  placedTurrets: 1
+  basePrice: 25
+  placedTurrets: 2
   moneyMultiplier: 0.6
   damageTypes: 06000000
   damageTimes:

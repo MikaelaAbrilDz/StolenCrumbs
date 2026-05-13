@@ -16,7 +16,7 @@ MonoBehaviour:
   turretName: Tape
   icon: {fileID: -6967981779641598073, guid: fa60ec96af928b94d86dadda126269b0, type: 3}
   bulletYield: 0.5
-  fireRate: 0
+  fireRate: 3
   damage: 0
   range: 1
   bulletPrefab: {fileID: 6129253312025661718, guid: 6fd5b5141b6ff094cb440b52a7844822, type: 3}

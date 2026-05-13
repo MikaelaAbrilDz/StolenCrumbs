@@ -17,6 +17,8 @@ public class SpawnManager : MonoBehaviour
     int round = 0;
     int wave = 1;
 
+    int roundPrize = 30;
+
     struct EnemiesToBeUsed
     {
         public EnemiesToBeUsed(int lenght, Round.EnemyType[] enemies, float[] frequencies)
@@ -77,7 +79,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
-                CurrencyManager.AddCurrency(100);
+                CurrencyManager.AddCurrency(roundPrize);
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
             }
         }
@@ -89,7 +91,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
-                CurrencyManager.AddCurrency(100);
+                CurrencyManager.AddCurrency(roundPrize);
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
                 FindAnyObjectByType<PathGenerationManager>().CreatePath();
             }
@@ -102,7 +104,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
-                CurrencyManager.AddCurrency(100);
+                CurrencyManager.AddCurrency(roundPrize);
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
             }
         }
