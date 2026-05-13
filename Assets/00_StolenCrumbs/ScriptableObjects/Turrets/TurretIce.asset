@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TurretIce
   m_EditorClassIdentifier: Assembly-CSharp::TurretData
   turretUiPrefab: {fileID: 6474176572579707037, guid: 5c50dcade337c9c40b1870274e32904a, type: 3}
+  turretPrefab: {fileID: 4316312361366573387, guid: 822d4bb1aca21cf4185d42cb2cf9da0d, type: 3}
   turretName: Slush Maker
   icon: {fileID: 21300000, guid: a4242eefdf4dd94408f03dbaec242f39, type: 3}
   bulletYield: 0.5

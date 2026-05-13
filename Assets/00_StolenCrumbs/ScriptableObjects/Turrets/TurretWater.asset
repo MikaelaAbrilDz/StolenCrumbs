@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TurretWater
   m_EditorClassIdentifier: Assembly-CSharp::TurretData
   turretUiPrefab: {fileID: 6474176572579707037, guid: 72d95992b750aae4eb4bd7826c19b5eb, type: 3}
+  turretPrefab: {fileID: 4316312361366573387, guid: de337b1839833fb499dfa530a8a3a87a, type: 3}
   turretName: Water Spray
   icon: {fileID: 21300000, guid: af3bac9dfec69ba4797e8b45ade5d2c3, type: 3}
   bulletYield: 0.4
@@ -22,7 +23,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6129253312025661718, guid: 8ba6ef7a5c4b8e1449007eb7cfbec010, type: 3}
   hitVisualPrefab: {fileID: 7879344167108214069, guid: c3d51ee1561c1d54ca1b709daa076b8e, type: 3}
   basePrice: 15
-  placedTurrets: 4
+  placedTurrets: 1
   moneyMultiplier: 0.4
   damageTypes: 02000000
   damageTimes:
