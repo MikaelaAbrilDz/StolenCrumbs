@@ -718,6 +718,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.5134242
       objectReference: {fileID: 0}
+    - target: {fileID: 8016661109256282684, guid: 59f1b1c3c0bed5845ad95b826fa1a50b, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8203340463952610791, guid: 59f1b1c3c0bed5845ad95b826fa1a50b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
