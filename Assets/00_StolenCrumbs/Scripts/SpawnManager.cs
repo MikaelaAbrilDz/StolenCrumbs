@@ -67,6 +67,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while(FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                CurrencyManager.AddCurrency(roundPrize);
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
                 FindAnyObjectByType<PathGenerationManager>().CreatePath();
             } 
