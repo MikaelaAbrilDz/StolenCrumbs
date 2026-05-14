@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TurretGas
   m_EditorClassIdentifier: Assembly-CSharp::TurretData
   turretUiPrefab: {fileID: 6474176572579707037, guid: aa4368946841838449c38a5d273df3ce, type: 3}
+  turretPrefab: {fileID: 4316312361366573387, guid: 13a74a59037c5cb4aa9518a1426add8d, type: 3}
   turretName: Pesticide Spray
   icon: {fileID: 21300000, guid: e66e02582cb75bb4abbdfd542c5671db, type: 3}
   bulletYield: 0.3

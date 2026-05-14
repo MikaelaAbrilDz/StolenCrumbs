@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Round
   numberOfEnemies: 40
   rate: 3
-  enemies: 07000000040000000600000001000000
+  enemies: 04000000000000000700000006000000
   enemiesProbs:
   - 0.3
   - 0.2
-  - 0.3
   - 0.2
+  - 0.3

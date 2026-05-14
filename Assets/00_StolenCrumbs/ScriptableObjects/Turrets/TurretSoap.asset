@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TurretSoap
   m_EditorClassIdentifier: Assembly-CSharp::TurretData
   turretUiPrefab: {fileID: 6474176572579707037, guid: c9aac8e633d814848a9df4a4c2fb0cbf, type: 3}
+  turretPrefab: {fileID: 4316312361366573387, guid: d9695d13f658fb84baa461439a86a126, type: 3}
   turretName: Soap Shooter
   icon: {fileID: 21300000, guid: 02b75368a6e2e4c42bb10fa7357a8b06, type: 3}
   bulletYield: 0.5
