@@ -87,9 +87,7 @@ public class TurretPlacer : MonoBehaviour
 	}
 	public void GrabTurret()
 	{
-
 		TurretData data = turretPrefab.GetComponent<Turret>().turretData;
-
         if (CurrencyManager.RemoveCurrency(data.FinalPrice()))
         {
 			FindAnyObjectByType<TurretShopManager>().GetComponent<AppearDisappearUI_Manager>().Disppear();
