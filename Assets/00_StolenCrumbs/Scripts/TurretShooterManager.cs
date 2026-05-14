@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class TurretShooterManager : MonoBehaviour
 {
     float timeFrequency = 0.1f;
-    int maxFrequencies = 20;
+    int maxFrequencies = 30;
 
     float counter = 0;
     int frequencyCounter = 0;

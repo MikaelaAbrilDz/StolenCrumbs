@@ -9,6 +9,7 @@ public class TurretMover : MonoBehaviour
 {
     [SerializeField] LayerMask checkerMask;
     [SerializeField] Camera cam;
+    [SerializeField] Image panel, icon;
     public TurretData turretData;
     int movePrice = 5;
     public bool isInEditMode = false;
@@ -98,6 +99,7 @@ public class TurretMover : MonoBehaviour
     }
     public void GrabTurret(TurretData data)
     {
+        if (data == null) return;
         turretData = data;
         if (CurrencyManager.RemoveCurrency(movePrice))
         {
@@ -152,5 +154,17 @@ public class TurretMover : MonoBehaviour
     public void ChangeEditMode()
     {
         isInEditMode = !isInEditMode;
+        panel.gameObject.SetActive(isInEditMode);
+        if (isInEditMode)
+        {
+            icon.transform.localScale = new Vector3(-1, 1, 1);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            icon.transform.localScale = new Vector3(1, 1, 1);
+            Time.timeScale = 1;
+        } 
+
     }
 }
