@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436045171936713060}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.6571603, w: 0.7537509}
+  m_LocalRotation: {x: -0, y: -0, z: 0.34868568, w: 0.93723977}
   m_LocalPosition: {x: 0.289, y: -0.002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -183,7 +183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2616359982792192900}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.8294163, w: 0.5586311}
+  m_LocalRotation: {x: -0, y: -0, z: 0.3183655, w: 0.9479681}
   m_LocalPosition: {x: 0.304, y: -0.001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -278,7 +278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5773129811159710922}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.5694343, w: 0.82203686}
+  m_LocalRotation: {x: -0, y: -0, z: 0.738994, w: 0.673712}
   m_LocalPosition: {x: 0.304, y: 0.002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -309,7 +309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6102611805467265116}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.798698, w: 0.60173213}
+  m_LocalRotation: {x: -0, y: -0, z: 0.3343659, w: 0.9424434}
   m_LocalPosition: {x: 0.291, y: -0.003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -340,7 +340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6253935750097626899}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.65196043, w: 0.758253}
+  m_LocalRotation: {x: -0, y: -0, z: 0.787827, w: 0.6158965}
   m_LocalPosition: {x: 0.285, y: -0.002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -499,7 +499,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8575313578236409356}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.61280847, w: 0.7902316}
+  m_LocalRotation: {x: -0, y: -0, z: 0.8707595, w: 0.4917093}
   m_LocalPosition: {x: 0.336, y: 0.007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -734,6 +734,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.2570561
       objectReference: {fileID: 0}
+    - target: {fileID: -3093502158772675596, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 44.193
+      objectReference: {fileID: 0}
     - target: {fileID: -2514675780195716830, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
@@ -748,7 +752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2375029722452784792, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 29.16
+      value: 50.066
       objectReference: {fileID: 0}
     - target: {fileID: -1406736754831263328, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -761,6 +765,10 @@ PrefabInstance:
     - target: {fileID: -832207899375293477, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.41536686
+      objectReference: {fileID: 0}
+    - target: {fileID: -832207899375293477, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 79.317
       objectReference: {fileID: 0}
     - target: {fileID: 3506353442395270153, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
       propertyPath: m_Color.a
@@ -785,6 +793,10 @@ PrefabInstance:
     - target: {fileID: 6748254174010994713, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.56420517
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748254174010994713, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 59.481
       objectReference: {fileID: 0}
     - target: {fileID: 7918879881808523886, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
       propertyPath: m_Icon
