@@ -84,7 +84,7 @@ public class TurretMover : MonoBehaviour
             {
                 Turret turretToSell = finalChecker.GetComponentInChildren<Turret>();
                 if (turretToSell == null) return;
-                int sellPrice = turretToSell.turretData.FinalPrice() / 2; //Se le devuelve al jugador la mitad del precio final de la torreta, para que no se abuse de vender torretas para ganar dinero
+                int sellPrice = turretToSell.turretData.LastPlacedPrice() / 2; //Se le devuelve al jugador la mitad del precio final de la torreta, para que no se abuse de vender torretas para ganar dinero
                 CurrencyManager.AddCurrency(sellPrice); //Se le devuelve al jugador el dinero de la torreta
                 turretToSell.turretData.placedTurrets--; //Se le resta a la torreta el numero de torretas colocadas, para que se pueda volver a colocar si es necesario
                 Destroy(turretToSell.gameObject);

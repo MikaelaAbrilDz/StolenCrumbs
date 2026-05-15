@@ -32,4 +32,14 @@ public class TurretData : ScriptableObject
         }
         return finalPrice;
     }
+
+    public int LastPlacedPrice()
+    {
+        int finalPrice = basePrice;
+        for (int i = 0 ; i < placedTurrets - 1; i++)
+        {
+            finalPrice += (int)(finalPrice * moneyMultiplier);
+        }
+        return finalPrice;
+    }
 }
