@@ -54,6 +54,44 @@ public class TurretMover : MonoBehaviour
             finalChecker.GetComponentInChildren<Turret>()?.gameObject.SetActive(false);
         }
     }
+
+    public void OnSell(InputAction.CallbackContext ctx)
+    {
+        if (!isInEditMode) return;
+
+        if( !ctx.performed) return;
+
+        if (isInEditMode && !isPicked && ctx.performed)
+        {
+            Vector3 mousePos = cam.ScreenToWorldPoint(Mouse.current.position.value) + Vector3.forward;
+            Collider2D[] avalaibleCheckers = Physics2D.OverlapCircleAll(mousePos, placingRange, checkerMask);
+            CheckerManager finalChecker = null;
+            foreach (Collider2D checker in avalaibleCheckers)
+            {
+                if (checker.GetComponentInChildren<Turret>() != null)
+                {
+                    if (finalChecker == null)
+                    {
+                        finalChecker = checker.GetComponent<CheckerManager>();
+                    }
+                    else if ((finalChecker.transform.position - mousePos).magnitude > (checker.transform.position - mousePos).magnitude)
+                    {
+                        finalChecker = checker.GetComponent<CheckerManager>();
+                    }
+                }
+            }
+            if (finalChecker != null)
+            {
+                Turret turretToSell = finalChecker.GetComponentInChildren<Turret>();
+                if (turretToSell == null) return;
+                int sellPrice = turretToSell.turretData.LastPlacedPrice() / 2; //Se le devuelve al jugador la mitad del precio final de la torreta, para que no se abuse de vender torretas para ganar dinero
+                CurrencyManager.AddCurrency(sellPrice); //Se le devuelve al jugador el dinero de la torreta
+                turretToSell.turretData.placedTurrets--; //Se le resta a la torreta el numero de torretas colocadas, para que se pueda volver a colocar si es necesario
+                Destroy(turretToSell.gameObject);
+                Debug.Log("Sold turret for " + sellPrice + " currency.");
+            }
+        }
+    }
     void CheckCurrentRange()
     {
 
