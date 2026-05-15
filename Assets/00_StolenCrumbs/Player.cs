@@ -100,6 +100,15 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SellTap"",
+                    ""type"": ""Button"",
+                    ""id"": ""86423893-7fb1-4bbc-8ba6-f5e5e7c9a49c"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -111,6 +120,17 @@ public partial class @Player: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""MainTap"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f5e4a361-c196-42ed-8631-3ef19d5b643b"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SellTap"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -183,6 +203,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
         // PlayerInput
         m_PlayerInput = asset.FindActionMap("PlayerInput", throwIfNotFound: true);
         m_PlayerInput_MainTap = m_PlayerInput.FindAction("MainTap", throwIfNotFound: true);
+        m_PlayerInput_SellTap = m_PlayerInput.FindAction("SellTap", throwIfNotFound: true);
         // SoundMenu
         m_SoundMenu = asset.FindActionMap("SoundMenu", throwIfNotFound: true);
         m_SoundMenu_OpenCloseMenu = m_SoundMenu.FindAction("OpenCloseMenu", throwIfNotFound: true);
@@ -268,6 +289,7 @@ public partial class @Player: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_PlayerInput;
     private List<IPlayerInputActions> m_PlayerInputActionsCallbackInterfaces = new List<IPlayerInputActions>();
     private readonly InputAction m_PlayerInput_MainTap;
+    private readonly InputAction m_PlayerInput_SellTap;
     /// <summary>
     /// Provides access to input actions defined in input action map "PlayerInput".
     /// </summary>
@@ -283,6 +305,10 @@ public partial class @Player: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "PlayerInput/MainTap".
         /// </summary>
         public InputAction @MainTap => m_Wrapper.m_PlayerInput_MainTap;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerInput/SellTap".
+        /// </summary>
+        public InputAction @SellTap => m_Wrapper.m_PlayerInput_SellTap;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -312,6 +338,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @MainTap.started += instance.OnMainTap;
             @MainTap.performed += instance.OnMainTap;
             @MainTap.canceled += instance.OnMainTap;
+            @SellTap.started += instance.OnSellTap;
+            @SellTap.performed += instance.OnSellTap;
+            @SellTap.canceled += instance.OnSellTap;
         }
 
         /// <summary>
@@ -326,6 +355,9 @@ public partial class @Player: IInputActionCollection2, IDisposable
             @MainTap.started -= instance.OnMainTap;
             @MainTap.performed -= instance.OnMainTap;
             @MainTap.canceled -= instance.OnMainTap;
+            @SellTap.started -= instance.OnSellTap;
+            @SellTap.performed -= instance.OnSellTap;
+            @SellTap.canceled -= instance.OnSellTap;
         }
 
         /// <summary>
@@ -469,6 +501,13 @@ public partial class @Player: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnMainTap(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SellTap" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSellTap(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "SoundMenu" which allows adding and removing callbacks.
