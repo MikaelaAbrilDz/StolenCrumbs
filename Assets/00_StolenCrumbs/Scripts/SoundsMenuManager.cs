@@ -33,4 +33,10 @@ public class SoundsMenuManager : MonoBehaviour
             Time.timeScale = 0f;
         }
     }
+
+    public void ComeBack()
+    {
+        SoundMenuManager.SetActive(false);
+        Time.timeScale = 1f;
+    }
 }

@@ -9,7 +9,7 @@ public class TurretMover : MonoBehaviour
 {
     [SerializeField] LayerMask checkerMask;
     [SerializeField] Camera cam;
-    [SerializeField] Image panel, icon;
+    [SerializeField] GameObject panel, icon;
     public TurretData turretData;
     int movePrice = 5;
     public bool isInEditMode = false;
@@ -19,7 +19,7 @@ public class TurretMover : MonoBehaviour
     private float placingRange = 1f;
     public static List<CheckerManager> checkersInRange = new List<CheckerManager>();
     public static List<CheckerManager> checkersInRangePrep = new List<CheckerManager>();
-
+    GameObject lastTurret;
 
     void Start()
     {
@@ -51,6 +51,7 @@ public class TurretMover : MonoBehaviour
                     }
             }
             GrabTurret(finalChecker.GetComponentInChildren<Turret>()?.turretData);
+            lastTurret = finalChecker.GetComponentInChildren<Turret>()?.gameObject;
             finalChecker.GetComponentInChildren<Turret>()?.gameObject.SetActive(false);
         }
     }
@@ -144,6 +145,10 @@ public class TurretMover : MonoBehaviour
             isPicked = true;
             previsualizer.Using(turretData.icon);
         }
+        else
+        {
+            lastTurret.SetActive(true);
+        }
     }
 
     public void PlaceTurret(InputAction.CallbackContext context)
@@ -177,10 +182,11 @@ public class TurretMover : MonoBehaviour
             {
                 CurrencyManager.AddCurrency(movePrice);
                 Destroy(placedturret);
+                lastTurret.SetActive(true);
             }
             else
             {
-                turretData.placedTurrets++;
+                Destroy(lastTurret);
 
                 placedturret.GetComponent<Turret>().SetParentChecker(finalChecker);
                 placedturret.transform.localPosition = Vector3.zero;
