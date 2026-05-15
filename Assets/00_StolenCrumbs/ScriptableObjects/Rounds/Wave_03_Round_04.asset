@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wave_03_Round_04
   m_EditorClassIdentifier: Assembly-CSharp::Round
   numberOfEnemies: 20
-  rate: 1.5
+  rate: 2.5
   enemies: 030000000100000007000000
   enemiesProbs:
   - 0.5
