@@ -27,6 +27,9 @@ public class EnemyBase : CheckerPlaceable
 	[SerializeField] Slider lifeBar;
 	[SerializeField] Image lifeBarFill;
 
+	[SerializeField] Image[] statusIcons;
+	[SerializeField] Sprite fireIcon, waterIcon, gasIcon, stickyIcon, frozenIcon, markedIcon, soapIcon;
+
 	public enum bugType
 	{
 		flyer, armored
@@ -46,7 +49,41 @@ public class EnemyBase : CheckerPlaceable
     private void Update()
     {
 		WearOffStatus();
+		UpdateIcons();
     }
+	private void UpdateIcons()
+	{
+		foreach (var icon in statusIcons) icon.gameObject.SetActive(false);
+
+		for (int i = 0; i < statusEffects.Count; i++)
+		{
+            statusIcons[i].gameObject.SetActive(true);
+            switch (statusEffects[i])
+			{
+				case damageType.gas:
+					statusIcons[i].sprite = gasIcon;
+					break;
+				case damageType.water:
+                    statusIcons[i].sprite = waterIcon;
+                    break;
+				case damageType.fire:
+                    statusIcons[i].sprite = fireIcon;
+                    break;
+				case damageType.soap:
+                    statusIcons[i].sprite = soapIcon;
+                    break;
+				case damageType.sticky:
+                    statusIcons[i].sprite = stickyIcon;
+                    break;
+				case damageType.frozen:
+                    statusIcons[i].sprite = frozenIcon;
+                    break;
+				case damageType.marked:
+                    statusIcons[i].sprite = markedIcon;
+                    break;
+			}
+		}
+	}
 	private void GetStatusConditions()
 	{
 		if (statusEffects.Contains(TurretData.damageType.fire))
@@ -126,7 +163,9 @@ public class EnemyBase : CheckerPlaceable
 				}
                 if (damageType == TurretData.damageType.fire && statusEffect == TurretData.damageType.frozen)
                 {
-                    statusEffects[statusEffects.IndexOf(TurretData.damageType.frozen)] = TurretData.damageType.water;
+                    statusEffectsTimeLeft.RemoveAt(statusEffects.IndexOf(TurretData.damageType.frozen));
+                    statusEffects.Remove(TurretData.damageType.frozen);
+                    GetStatusEffect(new damageType[1] { TurretData.damageType.water }, new float[1] { 1f });
                 }
                 if (damageType == TurretData.damageType.fire && statusEffect == TurretData.damageType.water)
 				{
@@ -140,13 +179,11 @@ public class EnemyBase : CheckerPlaceable
                 }
 				if (damageType == TurretData.damageType.gas && statusEffect == TurretData.damageType.water)
 				{
-					statusEffects.Add(TurretData.damageType.sticky);
-					statusEffectsTimeLeft.Add(3);
+					GetStatusEffect(new damageType[1] { TurretData.damageType.sticky }, new float[1] { 3 });
                 }
 				if (damageType == TurretData.damageType.water && statusEffect == TurretData.damageType.gas)
 				{
-					statusEffects.Add(TurretData.damageType.sticky);
-					statusEffectsTimeLeft.Add(3);
+                    GetStatusEffect(new damageType[1] { TurretData.damageType.sticky }, new float[1] { 3 });
                 }
 				if (damageType == TurretData.damageType.water && statusEffect == TurretData.damageType.soap)
 				{

@@ -18,7 +18,7 @@ public class SortingLayerManager : MonoBehaviour
     {
         for (int i = 0; i < sprites.Length; i++)
         {
-            sprites[i].sortingOrder = sortingOrders[i] - (int)(transform.position.y * 10) * 100;
+            if (sprites[i].sortingLayerName != "BG") sprites[i].sortingOrder = sortingOrders[i] - (int)(transform.position.y * 10) * 100;
         }
     }
 }
