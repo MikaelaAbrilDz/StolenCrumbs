@@ -110,7 +110,7 @@ public class TurretPlacer : MonoBehaviour
 			CheckerManager finalChecker = null;
 			foreach (Collider2D checker in avalaibleCheckers)
 			{
-				if (checker.GetComponentInChildren<Path>() == null && checker.GetComponentInChildren<Fort>() == null && checker.GetComponentInChildren<Turret>() == null)
+				if (checker.GetComponent<CheckerManager>().isTurretPlaceable && checker.GetComponentInChildren<Path>() == null && checker.GetComponentInChildren<Fort>() == null && checker.GetComponentInChildren<Turret>() == null)
 				{
 					if (finalChecker == null)
 					{

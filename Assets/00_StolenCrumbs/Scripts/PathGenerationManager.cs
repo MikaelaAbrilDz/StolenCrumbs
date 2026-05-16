@@ -3,6 +3,7 @@ using UnityEngine;
 public class PathGenerationManager : MonoBehaviour
 {
     [SerializeField] PathOrigin[] origin;
+    int originIndex = -1;
 
     private void Start()
     {
@@ -10,6 +11,11 @@ public class PathGenerationManager : MonoBehaviour
     }
     public void CreatePath()
     {
-        origin[Random.Range(0, origin.Length)].GeneratePath();
+        if (originIndex == -1) originIndex = Random.Range(0, origin.Length);
+        else originIndex = (originIndex + Random.Range(1, 3)) % origin.Length;
+
+        print(originIndex);
+
+        origin[originIndex].GeneratePath();
     }
 }

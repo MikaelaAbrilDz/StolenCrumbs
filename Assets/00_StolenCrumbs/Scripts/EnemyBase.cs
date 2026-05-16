@@ -20,7 +20,7 @@ public class EnemyBase : CheckerPlaceable
 	[HideInInspector] public List<float> statusEffectsTimeLeft = new List<float>();
     [HideInInspector] public LTDescr currentTween;
 
-	[SerializeField] GameObject explosionVisual, soapExplosionVisual;
+	[SerializeField] GameObject explosionVisual, soapExplosionVisual, boltsExplosionVisual;
 
 	Animator anim;
 	[SerializeField] Slider lifeBar;
@@ -209,8 +209,15 @@ public class EnemyBase : CheckerPlaceable
 		isDead = true;
 		LeanTween.cancel(gameObject);
 		anim.SetBool("isDead", true);
+		StartCoroutine(GetTheBolts());
+	}
+	IEnumerator GetTheBolts()
+	{
+        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+		Instantiate(boltsExplosionVisual, transform.position, Quaternion.identity);
+		yield return new WaitForSeconds(1);
 		CurrencyManager.AddCurrency(prize);
-		Destroy(gameObject, 2.5f);
+		Destroy(gameObject);
 	}
 	void HitFort()
 	{

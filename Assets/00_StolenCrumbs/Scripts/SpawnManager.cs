@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] GameObject[] enemyPrefab;
+    [SerializeField] GameObject roundPassObj;
     public List<Spawn> spawns = new List<Spawn>();
 
     public List<Round> firstWaveRounds = new List<Round>();
@@ -67,6 +68,10 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while(FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                Time.timeScale = 1;
+                roundPassObj.SetActive(true);
+                yield return new WaitForSeconds(2);
+                roundPassObj.SetActive(false);
                 CurrencyManager.AddCurrency(roundPrize);
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
                 FindAnyObjectByType<PathGenerationManager>().CreatePath();
@@ -80,6 +85,10 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                Time.timeScale = 1;
+                roundPassObj.SetActive(true);
+                yield return new WaitForSeconds(2);
+                roundPassObj.SetActive(false);
                 CurrencyManager.AddCurrency(roundPrize);
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
             }
@@ -92,6 +101,10 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                Time.timeScale = 1;
+                roundPassObj.SetActive(true);
+                yield return new WaitForSeconds(2);
+                roundPassObj.SetActive(false);
                 CurrencyManager.AddCurrency(roundPrize);
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
                 FindAnyObjectByType<PathGenerationManager>().CreatePath();
@@ -105,6 +118,10 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                Time.timeScale = 1;
+                roundPassObj.SetActive(true);
+                yield return new WaitForSeconds(2);
+                roundPassObj.SetActive(false);
                 CurrencyManager.AddCurrency(roundPrize);
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
             }
@@ -117,6 +134,10 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                Time.timeScale = 1;
+                roundPassObj.SetActive(true);
+                yield return new WaitForSeconds(2);
+                roundPassObj.SetActive(false);
                 FindAnyObjectByType<PathGenerationManager>().CreatePath();
             }
         }
@@ -128,6 +149,10 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
+                Time.timeScale = 1;
+                roundPassObj.SetActive(true);
+                yield return new WaitForSeconds(2);
+                roundPassObj.SetActive(false);
             }
         }
         if (wave == 7)

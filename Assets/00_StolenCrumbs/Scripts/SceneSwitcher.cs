@@ -7,4 +7,8 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene(index);
     }
+    public static void SwitchScene(string name)
+    {
+        SceneManager.LoadScene(name);
+    }
 }

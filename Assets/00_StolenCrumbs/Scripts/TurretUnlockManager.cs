@@ -12,6 +12,7 @@ public class TurretUnlockManager : MonoBehaviour
 
 
     [SerializeField] private TurretOption[] turretSlots;
+    [SerializeField] private GameObject bg;
     TurretData[] currentOptions = new TurretData[3];
     //AÑADIR: referencias instancias torretas elegibles (poner en array)
 
@@ -58,6 +59,7 @@ public class TurretUnlockManager : MonoBehaviour
                 turretSlots[i].gameObject.SetActive(false);
             }
         }
+        bg.SetActive(true);
         Time.timeScale = 0f;
     }
 
@@ -74,6 +76,7 @@ public class TurretUnlockManager : MonoBehaviour
         }
         turretShopManager.AddToShop(turret);
         turret.placedTurrets = 0;
+        bg.SetActive(false);
         Time.timeScale = 1f;
         Debug.Log("Desbloqueada: " + turret.turretName);
     }

@@ -57,7 +57,7 @@ public class WinLoseManager : MonoBehaviour
     private IEnumerator WinCo()
     {
         yield return new WaitForSeconds(1);
-        SceneSwitcher.SwitchScene(1);
+        SceneSwitcher.SwitchScene("WinScreen");
     }
     private void Lose()
     {
@@ -66,6 +66,6 @@ public class WinLoseManager : MonoBehaviour
     private IEnumerator LoseCo()
     {
         yield return new WaitForSeconds(1);
-        SceneSwitcher.SwitchScene(2);
+        SceneSwitcher.SwitchScene("LoseScreen");
     }
 }
