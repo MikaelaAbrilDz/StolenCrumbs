@@ -12,13 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbe5feb53da7da4db452c33f975915f, type: 3}
   m_Name: Wave_06_Round_05
   m_EditorClassIdentifier: Assembly-CSharp::Round
-  numberOfEnemies: 100
+  numberOfEnemies: 40
   rate: 1
-  enemies: 000000000100000003000000040000000600000007000000
+  enemies: 000000000300000006000000010000000700000004000000020000000500000008000000
   enemiesProbs:
-  - 0.25
-  - 0.15
-  - 0.15
-  - 0.15
-  - 0.15
-  - 0.15
+  - 0
+  - 0
+  - 0
+  - 0.2
+  - 0.3
+  - 0.5
+  - 0
+  - 0
+  - 0

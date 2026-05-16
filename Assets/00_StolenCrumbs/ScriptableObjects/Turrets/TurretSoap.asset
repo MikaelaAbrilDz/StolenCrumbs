@@ -19,11 +19,11 @@ MonoBehaviour:
   bulletYield: 0.5
   fireRate: 9
   damage: 4
-  range: 2
+  range: 3
   bulletPrefab: {fileID: 6129253312025661718, guid: 042234199d23130489f74e801adbee40, type: 3}
   hitVisualPrefab: {fileID: 7879344167108214069, guid: c8a74445e62afab42b6fe5264ea6c077, type: 3}
   basePrice: 20
-  placedTurrets: 2
+  placedTurrets: 3
   moneyMultiplier: 0.5
   damageTypes: 05000000
   damageTimes:

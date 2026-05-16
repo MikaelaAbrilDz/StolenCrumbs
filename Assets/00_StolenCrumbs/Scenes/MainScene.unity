@@ -22462,12 +22462,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6cad30029a11fc44897c3b671dd3d24b, type: 2}
   - {fileID: 11400000, guid: 587861dc1ccbd56458c9cb991722317b, type: 2}
   - {fileID: 11400000, guid: 6efba7563e80cb84bb4a96b4ddaedc12, type: 2}
+  - {fileID: 11400000, guid: 84bff6bbef904d14cb79618a1a4d400f, type: 2}
   sixthWaveRounds:
   - {fileID: 11400000, guid: b23c3447923a79246a33d1665bc0dac2, type: 2}
-  - {fileID: 11400000, guid: d71e6722f995b1c42a15434e83d81281, type: 2}
-  - {fileID: 11400000, guid: 3cddaae5bc96f6642aba6da34c9398e0, type: 2}
-  - {fileID: 11400000, guid: ee407b813a89e9d43bdec3ee054289fc, type: 2}
-  - {fileID: 11400000, guid: b08c1b538f27bd84baa0bbd9b3b71874, type: 2}
+  - {fileID: 11400000, guid: 20f5e124ed56b1b4f84fa444b1be82c5, type: 2}
+  - {fileID: 11400000, guid: 51f061b6b971a674bb96e83ab9b0508f, type: 2}
+  - {fileID: 11400000, guid: 0a7cc880c162bb749a9e0cf52b8547ec, type: 2}
+  - {fileID: 11400000, guid: bc67fb1f570cca74f9a19214c080e11d, type: 2}
+  - {fileID: 11400000, guid: a56097a12ab46044db263a2d463884e9, type: 2}
+  - {fileID: 11400000, guid: 3fe0a76bf4ac44d4a8684f45cc42ef80, type: 2}
+  - {fileID: 11400000, guid: d85786ae156ffb34f92fb10ff83d1b63, type: 2}
 --- !u!114 &1510302098
 MonoBehaviour:
   m_ObjectHideFlags: 0

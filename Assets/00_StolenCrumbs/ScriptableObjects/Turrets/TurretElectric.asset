@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: TurretElectric
   m_EditorClassIdentifier: Assembly-CSharp::TurretData
   turretUiPrefab: {fileID: 0}
+  turretPrefab: {fileID: 0}
   turretName: Electric
   icon: {fileID: 2735028436908637532, guid: 0e3ce981fe2d4f24cb3df3ac6151c9e7, type: 3}
   bulletYield: 0.5
-  fireRate: 11
+  fireRate: 12
   damage: 3
   range: 1
   bulletPrefab: {fileID: 6129253312025661718, guid: 8ba6ef7a5c4b8e1449007eb7cfbec010, type: 3}
@@ -26,4 +27,4 @@ MonoBehaviour:
   moneyMultiplier: 0.4
   damageTypes: 01000000
   damageTimes:
-  - 0.5
+  - 0.8

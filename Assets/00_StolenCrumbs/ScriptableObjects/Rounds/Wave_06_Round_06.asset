@@ -10,10 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7dbe5feb53da7da4db452c33f975915f, type: 3}
-  m_Name: Wave_03_Round_02
+  m_Name: Wave_06_Round_06
   m_EditorClassIdentifier: Assembly-CSharp::Round
-  numberOfEnemies: 10
+  numberOfEnemies: 75
   rate: 1.5
-  enemies: 03000000
+  enemies: 080000000700000000000000030000000600000001000000040000000200000005000000
   enemiesProbs:
-  - 1
+  - 0.3
+  - 0.2
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0.3
+  - 0
+  - 0.2
