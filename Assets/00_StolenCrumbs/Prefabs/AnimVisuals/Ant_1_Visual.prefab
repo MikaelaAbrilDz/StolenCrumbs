@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262304723578186765}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.80642164, w: -0.59134096}
+  m_LocalRotation: {x: -0, y: -0, z: -0.8064218, w: -0.5913408}
   m_LocalPosition: {x: 0.309, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -214,7 +214,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161186202616706337}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.61879265, w: -0.78555435}
+  m_LocalRotation: {x: -0, y: -0, z: -0.6187926, w: -0.7855544}
   m_LocalPosition: {x: 0.33, y: -0.003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -652,11 +652,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4206273858736073775, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.74529755
+      value: 0.74529743
       objectReference: {fileID: 0}
     - target: {fileID: -4206273858736073775, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.6667321
+      value: 0.66673225
       objectReference: {fileID: 0}
     - target: {fileID: -4186209688155008217, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       propertyPath: m_LocalRotation.w
@@ -668,11 +668,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3430402976815367523, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.90870315
+      value: 0.9087032
       objectReference: {fileID: 0}
     - target: {fileID: -3430402976815367523, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.41744298
+      value: -0.4174429
       objectReference: {fileID: 0}
     - target: {fileID: -3430402976815367523, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -704,11 +704,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2172141121779275668, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.97082955
+      value: 0.9708294
       objectReference: {fileID: 0}
     - target: {fileID: 2172141121779275668, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.23977092
+      value: -0.23977126
       objectReference: {fileID: 0}
     - target: {fileID: 2172141121779275668, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -725,6 +725,14 @@ PrefabInstance:
     - target: {fileID: 3250902616639445037, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.80821687
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506353442395270153, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506353442395270153, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1136437851
       objectReference: {fileID: 0}
     - target: {fileID: 6324803374262562024, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       propertyPath: m_LocalRotation.w
@@ -780,6 +788,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7506913051651953594}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7397437983793447094}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}
 --- !u!4 &284152576532994216 stripped
 Transform:
@@ -852,6 +863,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7397437983793447094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957679854267588920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9e1f4a08ff6fb47ab4f374790cf692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SortingLayerManager
 --- !u!4 &3388332006056576981 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 137856725351565136, guid: cb4e94b69560dc34485fc1dbd834cd34, type: 3}

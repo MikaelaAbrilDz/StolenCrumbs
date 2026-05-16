@@ -171,7 +171,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 8146115235160784425}
@@ -182,7 +182,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 8287474007804673339}
@@ -193,7 +193,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 1193135951489482652}
@@ -204,7 +204,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 4653737830170942637}
@@ -215,7 +215,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 3599735603961462204}
@@ -226,7 +226,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 8793659868177482475}
@@ -237,7 +237,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 5357383795695978456}
@@ -248,7 +248,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 5861975139472096493}
@@ -259,7 +259,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 6130993665294061840}
@@ -270,7 +270,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 6267098639579506940}
@@ -281,7 +281,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 8140479902165990149}
@@ -292,7 +292,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 1642196485472419345}
@@ -303,7 +303,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 5776309232517105061}
@@ -314,7 +314,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   renderStyle: 1
   outlineParameters:

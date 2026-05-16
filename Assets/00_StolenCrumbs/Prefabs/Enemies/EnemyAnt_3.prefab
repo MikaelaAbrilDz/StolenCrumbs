@@ -8,6 +8,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3881553260850104248}
     m_Modifications:
+    - target: {fileID: 1251085365242159583, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.30712238
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251085365242159583, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.95167
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742715553816393388, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.59133995
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742715553816393388, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.8064225
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545942301583428712, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.22113204
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545942301583428712, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.9752439
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786477927724205689, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.6384773
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786477927724205689, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7696406
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775402167710732767, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7855539
+      objectReference: {fileID: 0}
+    - target: {fileID: 5775402167710732767, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.61879325
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252537057671153229, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.29926568
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252537057671153229, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.95416987
+      objectReference: {fileID: 0}
     - target: {fileID: 20548387764965399, guid: 50b5c53083a7c3348a666957e2768f02, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9420553
@@ -191,54 +239,6 @@ PrefabInstance:
     - target: {fileID: 8214656247632575595, guid: 50b5c53083a7c3348a666957e2768f02, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.61879313
-      objectReference: {fileID: 0}
-    - target: {fileID: 1251085365242159583, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.30712238
-      objectReference: {fileID: 0}
-    - target: {fileID: 1251085365242159583, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.95167
-      objectReference: {fileID: 0}
-    - target: {fileID: 1742715553816393388, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.59133995
-      objectReference: {fileID: 0}
-    - target: {fileID: 1742715553816393388, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.8064225
-      objectReference: {fileID: 0}
-    - target: {fileID: 4545942301583428712, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.22113204
-      objectReference: {fileID: 0}
-    - target: {fileID: 4545942301583428712, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.9752439
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786477927724205689, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.6384773
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786477927724205689, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.7696406
-      objectReference: {fileID: 0}
-    - target: {fileID: 5775402167710732767, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.7855539
-      objectReference: {fileID: 0}
-    - target: {fileID: 5775402167710732767, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.61879325
-      objectReference: {fileID: 0}
-    - target: {fileID: 6252537057671153229, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.29926568
-      objectReference: {fileID: 0}
-    - target: {fileID: 6252537057671153229, guid: faf516e2c2775e94dbc3f221302da1a1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.95416987
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -763,7 +763,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 4337145181562401421}
@@ -774,7 +774,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 4485435174599782815}
@@ -785,7 +785,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 6751648898582983480}
@@ -796,7 +796,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 984344189105328137}
@@ -807,7 +807,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 8991619453645484312}
@@ -818,7 +818,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 3978131176734248527}
@@ -829,7 +829,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 532887210489383804}
@@ -840,7 +840,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 2046210249933893705}
@@ -851,7 +851,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 1741160723975822772}
@@ -862,7 +862,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 2001083912545985624}
@@ -873,7 +873,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 4450886162319046561}
@@ -884,7 +884,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 6626540208518034101}
@@ -895,7 +895,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 2095828118366898433}
@@ -906,7 +906,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   renderStyle: 1
   outlineParameters:

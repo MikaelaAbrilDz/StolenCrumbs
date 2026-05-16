@@ -153,7 +153,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 2138632348693033425}
@@ -164,7 +164,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 8846596324733235420}
@@ -175,7 +175,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 8038073233410717128}
@@ -186,7 +186,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 4359340420364995694}
@@ -197,7 +197,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 215917377924237689}
@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 277934805713085406}
@@ -219,7 +219,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   - CutoutMask: 8
     renderer: {fileID: 886188423945886965}
@@ -230,7 +230,7 @@ MonoBehaviour:
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
     CutoutThreshold: 0.5
     CullMode: 0
-    cutoutTextureName: 
+    cutoutTextureName: _MainTex
     cutoutTextureIndex: 0
   renderStyle: 1
   outlineParameters:
@@ -340,6 +340,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: bc2c5fc63033737478a9a33c4529b515, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1933568590412252013}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: bc2c5fc63033737478a9a33c4529b515, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4076783225072446952}
     - targetCorrespondingSourceObject: {fileID: 5296303086188880468, guid: bc2c5fc63033737478a9a33c4529b515, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4821621110141730772}
@@ -559,6 +562,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4076783225072446952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5233615354650087205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9e1f4a08ff6fb47ab4f374790cf692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SortingLayerManager
 --- !u!1 &6182752531267060784 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1912844684233697960, guid: bc2c5fc63033737478a9a33c4529b515, type: 3}

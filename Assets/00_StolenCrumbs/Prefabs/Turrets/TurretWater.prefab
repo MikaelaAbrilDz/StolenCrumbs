@@ -117,6 +117,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: f81d9bb2acb925e49a8d8d2c92986c92, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6885879908957107567}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: f81d9bb2acb925e49a8d8d2c92986c92, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 540471438897457386}
     - targetCorrespondingSourceObject: {fileID: 5296303086188880468, guid: f81d9bb2acb925e49a8d8d2c92986c92, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7030073750000553815}
@@ -175,6 +178,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &540471438897457386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172306400380088296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9e1f4a08ff6fb47ab4f374790cf692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SortingLayerManager
 --- !u!1 &417536268446705791 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 20419150432921130, guid: f81d9bb2acb925e49a8d8d2c92986c92, type: 3}

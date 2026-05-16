@@ -806,6 +806,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.16470589
       objectReference: {fileID: 0}
+    - target: {fileID: 3506353442395270153, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506353442395270153, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1136437851
+      objectReference: {fileID: 0}
     - target: {fileID: 3855972761846177348, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -884,6 +892,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6013546724752126889}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7797508285012899068}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}
 --- !u!4 &748254279328819854 stripped
 Transform:
@@ -968,7 +979,7 @@ Animator:
   m_GameObject: {fileID: 4283819617333907558}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8670ff2e3fb4e8b49a4cb44f860f18c1, type: 2}
+  m_Controller: {fileID: 22100000, guid: 41473db1c1c96d14089c889246a4ddea, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -980,6 +991,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7797508285012899068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4283819617333907558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9e1f4a08ff6fb47ab4f374790cf692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SortingLayerManager
 --- !u!4 &4491544639082386607 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -9024706862833474188, guid: ea6fa635bc66508458aac33a47f3cd69, type: 3}

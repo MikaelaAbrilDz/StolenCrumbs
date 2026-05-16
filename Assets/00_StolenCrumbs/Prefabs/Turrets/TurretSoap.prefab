@@ -39,14 +39,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8243837933905653111}
     m_Modifications:
-    - target: {fileID: 9143616968959265730, guid: 5bfea6fb990761d468afab7fecbb075d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.997
-      objectReference: {fileID: 0}
-    - target: {fileID: 9143616968959265730, guid: 5bfea6fb990761d468afab7fecbb075d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.001
-      objectReference: {fileID: 0}
     - target: {fileID: -6363656351098249853, guid: f81d9bb2acb925e49a8d8d2c92986c92, type: 3}
       propertyPath: m_Color.b
       value: 0.938196
@@ -134,6 +126,14 @@ PrefabInstance:
     - target: {fileID: 8479117380366263393, guid: f81d9bb2acb925e49a8d8d2c92986c92, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9143616968959265730, guid: 5bfea6fb990761d468afab7fecbb075d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.997
+      objectReference: {fileID: 0}
+    - target: {fileID: 9143616968959265730, guid: 5bfea6fb990761d468afab7fecbb075d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: 63ef90161b9434a4997c487762310d8d, type: 3}
       propertyPath: m_Name
@@ -285,6 +285,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 63ef90161b9434a4997c487762310d8d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6885879908957107567}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 63ef90161b9434a4997c487762310d8d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4069222476923003367}
     - targetCorrespondingSourceObject: {fileID: -5681993693824435003, guid: 63ef90161b9434a4997c487762310d8d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7030073750000553815}
@@ -334,6 +337,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4069222476923003367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172306400380088296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9e1f4a08ff6fb47ab4f374790cf692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SortingLayerManager
 --- !u!1 &1141143333746232221 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 744729793648330184, guid: 63ef90161b9434a4997c487762310d8d, type: 3}

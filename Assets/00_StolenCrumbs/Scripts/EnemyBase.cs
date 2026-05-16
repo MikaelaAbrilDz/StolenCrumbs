@@ -7,6 +7,7 @@ using System;
 
 public class EnemyBase : CheckerPlaceable
 {
+	public float visualSize = 0.7f;
 	public bool isDead = false;
 	int maxLife;
 	[SerializeField] int currentLife = 40;
@@ -176,8 +177,8 @@ public class EnemyBase : CheckerPlaceable
 		Path path = parentChecker.GetComponentInChildren<Path>();
         if (path != null)
 		{
-			if (path.direction > 2) anim.gameObject.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
-			else anim.gameObject.transform.localScale = new Vector3(-0.7f, 0.7f, 0.7f);
+			if (path.direction > 2) anim.gameObject.transform.localScale = new Vector3(visualSize, visualSize, visualSize);
+			else anim.gameObject.transform.localScale = new Vector3(-visualSize, visualSize, visualSize);
 
 			currentMovementSpeed = movementSpeed;
             foreach (var statusEffect in statusEffects)
@@ -215,14 +216,15 @@ public class EnemyBase : CheckerPlaceable
 	{
         yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
 		Instantiate(boltsExplosionVisual, transform.position, Quaternion.identity);
-		yield return new WaitForSeconds(1);
+		yield return new WaitForSeconds(1.2f);
 		CurrencyManager.AddCurrency(prize);
 		Destroy(gameObject);
 	}
 	void HitFort()
 	{
-		gameObject.SetActive(false);
-		Destroy(gameObject);
+		isDead = true;
+		anim.SetTrigger("ate");
+		Destroy(gameObject, 2);
 	}
 
 	IEnumerator PassNextChecker(float delay, CheckerManager parent)
