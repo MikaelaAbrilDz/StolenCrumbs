@@ -20,6 +20,8 @@ public class SpawnManager : MonoBehaviour
 
     int roundPrize = 30;
 
+    [SerializeField] AudioClip earnMoneySound;
+
     struct EnemiesToBeUsed
     {
         public EnemiesToBeUsed(int lenght, Round.EnemyType[] enemies, float[] frequencies)
@@ -73,6 +75,10 @@ public class SpawnManager : MonoBehaviour
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
                 CurrencyManager.AddCurrency(roundPrize);
+                if (FindAnyObjectByType<SFXManager>() != null)
+                {
+                    FindAnyObjectByType<SFXManager>().PlaySoundFXClip(earnMoneySound, transform, 1f);
+                }
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
                 FindAnyObjectByType<PathGenerationManager>().CreatePath();
             } 
@@ -90,6 +96,10 @@ public class SpawnManager : MonoBehaviour
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
                 CurrencyManager.AddCurrency(roundPrize);
+                if (FindAnyObjectByType<SFXManager>() != null)
+                {
+                    FindAnyObjectByType<SFXManager>().PlaySoundFXClip(earnMoneySound, transform, 1f);
+                }
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
             }
         }
@@ -106,6 +116,10 @@ public class SpawnManager : MonoBehaviour
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
                 CurrencyManager.AddCurrency(roundPrize);
+                if (FindAnyObjectByType<SFXManager>() != null)
+                {
+                    FindAnyObjectByType<SFXManager>().PlaySoundFXClip(earnMoneySound, transform, 1f);
+                }
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
                 FindAnyObjectByType<PathGenerationManager>().CreatePath();
             }
@@ -123,6 +137,10 @@ public class SpawnManager : MonoBehaviour
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
                 CurrencyManager.AddCurrency(roundPrize);
+                if (FindAnyObjectByType<SFXManager>() != null)
+                {
+                    FindAnyObjectByType<SFXManager>().PlaySoundFXClip(earnMoneySound, transform, 1f);
+                }
                 FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
             }
         }

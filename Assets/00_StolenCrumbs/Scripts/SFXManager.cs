@@ -14,6 +14,7 @@ public class SFXManager : MonoBehaviour
 
     [SerializeField] AudioSource globalAudioSource;
     [SerializeField] public AudioClip loseSound;
+    [SerializeField] public AudioClip winSound;
     private void Awake()
     {
         if (instance == null)

@@ -60,7 +60,9 @@ public class WinLoseManager : MonoBehaviour
     }
     private IEnumerator WinCo()
     {
-        yield return new WaitForSeconds(1);
+        SFXManager sfx = FindAnyObjectByType<SFXManager>();
+        sfx.PlayGlobalSoundFXClip(sfx.winSound, 0.5f);
+        yield return new WaitForSeconds(sfx.winSound.length);
         SceneSwitcher.SwitchScene("WinScreen");
     }
     private void Lose()

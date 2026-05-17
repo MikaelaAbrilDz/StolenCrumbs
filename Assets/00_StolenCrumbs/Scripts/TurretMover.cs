@@ -23,6 +23,7 @@ public class TurretMover : MonoBehaviour
 
     [SerializeField] AudioClip turretPlaced;
     [SerializeField] AudioClip noMoneySound;
+    [SerializeField] AudioClip sellTurretSound;
     void Start()
     {
         previsualizer = FindAnyObjectByType<TurretPrevisualizer>(FindObjectsInactive.Include);
@@ -93,6 +94,10 @@ public class TurretMover : MonoBehaviour
                 turretToSell.turretData.placedTurrets--; //Se le resta a la torreta el numero de torretas colocadas, para que se pueda volver a colocar si es necesario
                 FindAnyObjectByType<TurretShooterManager>().turrets.Remove(turretToSell.GetComponent<Turret>());
                 Destroy(turretToSell.gameObject);
+                if(FindAnyObjectByType<SFXManager>() != null)
+                {
+                    FindAnyObjectByType<SFXManager>().PlaySoundFXClip(sellTurretSound, transform, 1f);
+                }
                 Debug.Log("Sold turret for " + sellPrice + " currency.");
             }
         }
