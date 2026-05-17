@@ -52,9 +52,9 @@ public class Turret : CheckerPlaceable
 
     public void Shoot()
 	{
-        FindAnyObjectByType<SFXManager>().PlaySoundFXClip(shootSound, transform, 1f);
         target = FindTarget();
 		if (target == null) return;
+        if (shootSound != null) FindAnyObjectByType<SFXManager>().PlaySoundFXClip(shootSound, transform, 1f);
         StartCoroutine(DealDamage(target, turretData.bulletYield));
         bullet.SetActive(true);
 		tween = LeanTween.move(bullet, target.transform.position, turretData.bulletYield);

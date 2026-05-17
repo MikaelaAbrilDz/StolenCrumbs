@@ -210,7 +210,6 @@ public class EnemyBase : CheckerPlaceable
         if (takeDamageSound != null)
         {
             FindAnyObjectByType<SFXManager>().PlaySoundFXClip(takeDamageSound, transform, 1f);
-
         }
         if (hitSound != null)
         {
@@ -260,11 +259,11 @@ public class EnemyBase : CheckerPlaceable
     }
     void Die()
     {
-        FindAnyObjectByType<SFXManager>().PlaySoundFXClip(deadSound, transform, 1f);
         if (isDead) return;
         isDead = true;
         LeanTween.cancel(gameObject);
         anim.SetBool("isDead", true);
+        FindAnyObjectByType<SFXManager>().PlaySoundFXClip(deadSound, transform, 1f);
         StartCoroutine(GetTheBolts());
     }
     IEnumerator GetTheBolts()
