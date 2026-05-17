@@ -29,6 +29,12 @@ public class EnemyBase : CheckerPlaceable
 
 	[SerializeField] Image[] statusIcons;
 	[SerializeField] Sprite fireIcon, waterIcon, gasIcon, stickyIcon, frozenIcon, markedIcon, soapIcon;
+	[SerializeField] AudioClip deadSound;
+	[SerializeField] AudioClip takeDamageSound;
+	[SerializeField] AudioClip eatSound;
+	[SerializeField] AudioClip explosionSound;
+	[SerializeField] AudioClip soapExplosionSound;
+
 
 	public enum bugType
 	{
@@ -88,11 +94,11 @@ public class EnemyBase : CheckerPlaceable
 	{
 		if (statusEffects.Contains(TurretData.damageType.fire))
 		{
-			GetDamaged(1, new damageType[0], null);
+			GetDamaged(1, new damageType[0], null, null);
 		}
 		if (statusEffects.Contains(TurretData.damageType.soap))
 		{
-			GetDamaged(2, new damageType[0], null);
+			GetDamaged(2, new damageType[0], null, null);
 		}
 	}
 	private void WearOffStatus()
@@ -122,7 +128,7 @@ public class EnemyBase : CheckerPlaceable
             }
         }
     }
-    public void GetDamaged(int damage, damageType[] damageTypes, GameObject hitVisual)
+    public void GetDamaged(int damage, damageType[] damageTypes, GameObject hitVisual, AudioClip hitSound)
 	{
 		int finalDamage = damage;
 		foreach (var damageType in damageTypes) //Checks synergies
@@ -137,12 +143,12 @@ public class EnemyBase : CheckerPlaceable
                 }
 				if (damageType == TurretData.damageType.fire && statusEffect == TurretData.damageType.gas)
 				{
-                    GetDamaged(25, new damageType[1] { TurretData.damageType.explosion }, explosionVisual);
+                    GetDamaged(25, new damageType[1] { TurretData.damageType.explosion }, explosionVisual, explosionSound);
                     foreach (CheckerManager checker in parentChecker.sideCheckers)
 					{
 						foreach (EnemyBase sideEnemy in checker.GetComponentsInChildren<EnemyBase>())
 						{
-							sideEnemy.GetDamaged(25, new damageType[1] { TurretData.damageType.explosion }, null);
+							sideEnemy.GetDamaged(25, new damageType[1] { TurretData.damageType.explosion}, null,null);
 						}
 						
 					}
@@ -150,13 +156,13 @@ public class EnemyBase : CheckerPlaceable
 				if (damageType == TurretData.damageType.gas && statusEffect == TurretData.damageType.soap)
 				{
                     GetStatusEffect(new damageType[1] { TurretData.damageType.soap }, new float[1] { 2f });
-                    GetDamaged(2, new damageType[1] { TurretData.damageType.soap }, soapExplosionVisual);
+                    GetDamaged(2, new damageType[1] { TurretData.damageType.soap }, soapExplosionVisual, soapExplosionSound);
                     foreach (CheckerManager checker in parentChecker.sideCheckers)
 					{
 						foreach (EnemyBase sideEnemy in checker.GetComponentsInChildren<EnemyBase>())
 						{
 							sideEnemy.GetStatusEffect(new damageType[1] { TurretData.damageType.soap }, new float[1] { 2f });
-                            sideEnemy.GetDamaged(2, new damageType[1] { TurretData.damageType.soap }, null);
+                            sideEnemy.GetDamaged(2, new damageType[1] { TurretData.damageType.soap }, null, null);
                         }
 						
 					}
@@ -200,10 +206,16 @@ public class EnemyBase : CheckerPlaceable
 
             }
 		}
-		anim.SetTrigger("damaged");
+		if (takeDamageSound != null)
+        {
+            FindAnyObjectByType<SFXManager>().PlaySoundFXClip(takeDamageSound, transform, 1f);
+
+        }
+        DamageNumberManager.instance.SpawnDamageNumber(transform.position + Vector3.up * 1.5f, finalDamage);
+        anim.SetTrigger("damaged");
 		currentLife = Mathf.Max(currentLife - finalDamage, 0);
 		lifeBar.value = currentLife;
-		if (lifeBar.value <= lifeBar.maxValue / 3) lifeBarFill.color = Color.red;
+        if (lifeBar.value <= lifeBar.maxValue / 3) lifeBarFill.color = Color.red;
 		if (hitVisual) Instantiate(hitVisual, transform.position, Quaternion.identity);
 
 		if (currentLife == 0) Die();
@@ -259,7 +271,8 @@ public class EnemyBase : CheckerPlaceable
 	}
 	void HitFort()
 	{
-		isDead = true;
+        FindAnyObjectByType<SFXManager>().PlaySoundFXClip(eatSound, transform, 1f);
+        isDead = true;
 		anim.SetTrigger("ate");
 		Destroy(gameObject, 2);
 	}

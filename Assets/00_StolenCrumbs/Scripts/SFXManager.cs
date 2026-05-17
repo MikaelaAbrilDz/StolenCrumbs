@@ -24,4 +24,8 @@ public class SFXManager : MonoBehaviour
         float clipLength = audioClip.length;  
         Destroy(audioSource.gameObject, audioClip.length);
     }
+    public void PlaySoundFXClip(AudioClip audioClip)
+    {
+        PlaySoundFXClip(audioClip, transform, 1f);
+    }
 }

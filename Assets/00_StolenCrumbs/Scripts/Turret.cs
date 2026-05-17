@@ -17,7 +17,8 @@ public class Turret : CheckerPlaceable
 
 	LTDescr tween;
 
-
+	[SerializeField] AudioClip shootSound;
+	[SerializeField] AudioClip hitSound;
     void Start()
 	{
         bullet = Instantiate(turretData.bulletPrefab, shootPoint);
@@ -64,7 +65,7 @@ public class Turret : CheckerPlaceable
         bullet.transform.localPosition = Vector3.zero;
 		target.GetStatusEffect(turretData.damageTypes, turretData.damageTimes);
 		yield return new WaitForEndOfFrame();
-		if (target) target.GetDamaged(turretData.damage, turretData.damageTypes, turretData.hitVisualPrefab);
+		if (target) target.GetDamaged(turretData.damage, turretData.damageTypes, turretData.hitVisualPrefab, hitSound);
 	}
 
 	EnemyBase FindTarget()
