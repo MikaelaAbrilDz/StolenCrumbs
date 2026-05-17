@@ -264,7 +264,7 @@ public class EnemyBase : CheckerPlaceable
         isDead = true;
         LeanTween.cancel(gameObject);
         anim.SetBool("isDead", true);
-        FindAnyObjectByType<SFXManager>().PlaySoundFXClip(deadSound, transform, 1f);
+        if (deadSound != null) FindAnyObjectByType<SFXManager>().PlaySoundFXClip(deadSound, transform, 1f);
         StartCoroutine(GetTheBolts());
     }
     IEnumerator GetTheBolts()
@@ -273,7 +273,7 @@ public class EnemyBase : CheckerPlaceable
         Instantiate(boltsExplosionVisual, transform.position, Quaternion.identity);
         yield return new WaitForSeconds(1.2f);
         CurrencyManager.AddCurrency(prize);
-        if (FindAnyObjectByType<SFXManager>() != null)
+        if (earnMoneySound != null)
         {
             FindAnyObjectByType<SFXManager>().PlaySoundFXClip(earnMoneySound, transform, 1f);
         }

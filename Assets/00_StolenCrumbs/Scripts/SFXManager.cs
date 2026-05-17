@@ -30,6 +30,7 @@ public class SFXManager : MonoBehaviour
 
     public void PlaySoundFXClip(AudioClip audioClip, Transform spawnTransform, float volume)
     {
+        if (audioClip == null) return;
         //spawn in gameobject with audio source component, set the clip to the provided one and play it, then destroy the gameobject after the clip is done
         AudioSource audioSource = Instantiate(soundFXObject, spawnTransform.position, Quaternion.identity);
         audioSource.clip = audioClip;
