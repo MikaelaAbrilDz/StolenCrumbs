@@ -26,7 +26,7 @@ public class TurretShooterManager : MonoBehaviour
                 {
                     foreach (Turret turret in turrets)
                     {
-                        if (turret.turretData.fireRate == i) turret.Shoot();
+                        if (turret != null && turret.turretData.fireRate == i) turret.Shoot();
                     }
                 }
             }
