@@ -12,4 +12,8 @@ public class MenuManager : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
