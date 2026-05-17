@@ -393,6 +393,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3821230410421600972}
     - target: {fileID: -3126376009769802477, guid: d10f72b8aa7729f40ab991c383356431, type: 3}
+      propertyPath: shootSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73bff7fc6bd0ea540961ad8f16381c88, type: 3}
+    - target: {fileID: -3126376009769802477, guid: d10f72b8aa7729f40ab991c383356431, type: 3}
       propertyPath: turretData
       value: 
       objectReference: {fileID: 11400000, guid: 8c2ec250d5f477e4db624b326d2bb3ef, type: 2}

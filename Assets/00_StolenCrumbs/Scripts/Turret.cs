@@ -52,7 +52,8 @@ public class Turret : CheckerPlaceable
 
     public void Shoot()
 	{
-		target = FindTarget();
+        FindAnyObjectByType<SFXManager>().PlaySoundFXClip(shootSound, transform, 1f);
+        target = FindTarget();
 		if (target == null) return;
         StartCoroutine(DealDamage(target, turretData.bulletYield));
         bullet.SetActive(true);
@@ -113,9 +114,5 @@ public class Turret : CheckerPlaceable
             }
 		}
 		else return;
-	}
-	public void Sell()
-	{
-
 	}
 }

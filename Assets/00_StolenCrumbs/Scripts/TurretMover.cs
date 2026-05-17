@@ -21,6 +21,8 @@ public class TurretMover : MonoBehaviour
     public static List<CheckerManager> checkersInRangePrep = new List<CheckerManager>();
     GameObject lastTurret;
 
+    [SerializeField] AudioClip turretPlaced;
+    [SerializeField] AudioClip noMoneySound;
     void Start()
     {
         previsualizer = FindAnyObjectByType<TurretPrevisualizer>(FindObjectsInactive.Include);
@@ -50,6 +52,7 @@ public class TurretMover : MonoBehaviour
                         finalChecker = checker.GetComponent<CheckerManager>();
                     }
             }
+            
             GrabTurret(finalChecker.GetComponentInChildren<Turret>()?.turretData);
             lastTurret = finalChecker.GetComponentInChildren<Turret>()?.gameObject;
             finalChecker.GetComponentInChildren<Turret>()?.gameObject.SetActive(false);
@@ -148,6 +151,7 @@ public class TurretMover : MonoBehaviour
         }
         else
         {
+            FindAnyObjectByType<SFXManager>().PlaySoundFXClip(noMoneySound, transform, 1f);
             lastTurret.SetActive(true);
         }
     }
@@ -187,6 +191,7 @@ public class TurretMover : MonoBehaviour
             }
             else
             {
+                FindAnyObjectByType<SFXManager>().PlaySoundFXClip(turretPlaced, transform, 1f);
                 FindAnyObjectByType<TurretShooterManager>().turrets.Remove(lastTurret.GetComponent<Turret>());
                 Destroy(lastTurret);
 

@@ -677,6 +677,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1155427605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1155427607}
+  - component: {fileID: 1155427606}
+  m_Layer: 0
+  m_Name: SFXManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1155427606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155427605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f9d1d4d7e4d2341bc12b2627323329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXManager
+  soundFXObject: {fileID: 7663414976012283317, guid: 874523dfc746b0941a62ce2fbf30986a, type: 3}
+  turretPlaced: {fileID: 8300000, guid: 3586bd643f73ecf41ba3b54da7173281, type: 3}
+  noMoneySound: {fileID: 8300000, guid: b1e3fe874f43a71428b92e047604ff9c, type: 3}
+  clickSound: {fileID: 0}
+  startGameSound: {fileID: 0}
+  buyTurretSound: {fileID: 8300000, guid: fe56173dc8979d744bbd5e68e230649d, type: 3}
+  loseSound: {fileID: 8300000, guid: c6955248b1849814680c439e756394c8, type: 3}
+--- !u!4 &1155427607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155427605}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.4927, y: -0.70708, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1242688051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,3 +1454,4 @@ SceneRoots:
   - {fileID: 1242688054}
   - {fileID: 695434899}
   - {fileID: 1064894963}
+  - {fileID: 1155427607}

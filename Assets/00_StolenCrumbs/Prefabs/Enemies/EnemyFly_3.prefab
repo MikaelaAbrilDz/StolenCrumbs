@@ -13,6 +13,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 954168487731782906, guid: bdaf926275db52040ab0169715d21e54, type: 3}
+      propertyPath: eatSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7227a2d069b32654a8de1fc3b6f87536, type: 3}
+    - target: {fileID: 954168487731782906, guid: bdaf926275db52040ab0169715d21e54, type: 3}
+      propertyPath: deadSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ed6075311c145b74caf5ab774969f4bc, type: 3}
+    - target: {fileID: 954168487731782906, guid: bdaf926275db52040ab0169715d21e54, type: 3}
       propertyPath: visualSize
       value: 0.75
       objectReference: {fileID: 0}
@@ -24,6 +32,10 @@ PrefabInstance:
       propertyPath: movementSpeed
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 954168487731782906, guid: bdaf926275db52040ab0169715d21e54, type: 3}
+      propertyPath: soapExplosionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: abb1f231d5db9b2429c8eb4328cbe5e7, type: 3}
     - target: {fileID: 4385873864694005593, guid: bdaf926275db52040ab0169715d21e54, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

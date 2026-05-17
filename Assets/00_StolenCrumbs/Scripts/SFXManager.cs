@@ -6,11 +6,24 @@ public class SFXManager : MonoBehaviour
 
     [SerializeField] private AudioSource soundFXObject;
 
+    [SerializeField] public AudioClip turretPlaced;
+    [SerializeField] public AudioClip noMoneySound;
+    [SerializeField] public AudioClip clickSound;
+    [SerializeField] public AudioClip startGameSound;
+    [SerializeField] public AudioClip buyTurretSound;
+
+    [SerializeField] AudioSource globalAudioSource;
+    [SerializeField] public AudioClip loseSound;
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -27,5 +40,12 @@ public class SFXManager : MonoBehaviour
     public void PlaySoundFXClip(AudioClip audioClip)
     {
         PlaySoundFXClip(audioClip, transform, 1f);
+    }
+
+    public void PlayGlobalSoundFXClip(AudioClip audioClip, float volume)
+    {
+        globalAudioSource.clip = audioClip;
+        globalAudioSource.volume = volume;
+        globalAudioSource.Play();
     }
 }

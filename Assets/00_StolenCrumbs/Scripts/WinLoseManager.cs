@@ -11,6 +11,10 @@ public class WinLoseManager : MonoBehaviour
         Lost
     }
     static GameState gameState = GameState.Playing;
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     private void Start()
     {
         isFinalWave = false;
@@ -65,7 +69,9 @@ public class WinLoseManager : MonoBehaviour
     }
     private IEnumerator LoseCo()
     {
-        yield return new WaitForSeconds(1);
+        SFXManager sfx = FindAnyObjectByType<SFXManager>();
+        sfx.PlayGlobalSoundFXClip(sfx.loseSound, 0.5f);
+        yield return new WaitForSeconds((sfx.loseSound.length));
         SceneSwitcher.SwitchScene("LoseScreen");
     }
 }

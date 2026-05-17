@@ -14,8 +14,8 @@ public class TurretUnlockManager : MonoBehaviour
     [SerializeField] private TurretOption[] turretSlots;
     [SerializeField] private GameObject bg;
     TurretData[] currentOptions = new TurretData[3];
-    //AÑADIR: referencias instancias torretas elegibles (poner en array)
 
+    [SerializeField] AudioClip turretSelection;
 
     private void Awake()
     {
@@ -27,6 +27,7 @@ public class TurretUnlockManager : MonoBehaviour
 
     List<TurretData> GetRandomOptions(int amount) //Devuelve una lista de torretas aleatorias sin repetir
     {
+        FindAnyObjectByType<SFXManager>().PlaySoundFXClip(turretSelection, transform, 1f);
         List<TurretData> options = new List<TurretData>();
         List<TurretData> copy = new List<TurretData>(lockedTurrets);
 
@@ -35,8 +36,6 @@ public class TurretUnlockManager : MonoBehaviour
             int index = Random.Range(0, copy.Count);
             options.Add(copy[index]);
             copy.RemoveAt(index);
-            //AÑADIR: a cada indice su torreta
-
         }
 
         return options;
@@ -44,6 +43,7 @@ public class TurretUnlockManager : MonoBehaviour
 
     public void ShowUnlockOptions() //Muestra las opciones de torretas desbloqueables en el canvas
     {
+
         List<TurretData> options = GetRandomOptions(3);
         for (int i = 0; i < currentOptions.Length; i++)
         {
@@ -78,6 +78,7 @@ public class TurretUnlockManager : MonoBehaviour
         turret.placedTurrets = 0;
         bg.SetActive(false);
         Time.timeScale = 1f;
+        FindAnyObjectByType<SFXManager>().PlaySoundFXClip(turretSelection, transform, 1f);
         Debug.Log("Desbloqueada: " + turret.turretName);
     }
 }

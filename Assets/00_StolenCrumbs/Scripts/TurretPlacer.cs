@@ -17,7 +17,6 @@ public class TurretPlacer : MonoBehaviour
 	private float placingRange = 1f;
 	public static List<CheckerManager> checkersInRange = new List<CheckerManager>();
 	public static List<CheckerManager> checkersInRangePrep = new List<CheckerManager>();
-
     void Start()
 	{
         iconTurret = GetComponent<Image>();
@@ -90,9 +89,16 @@ public class TurretPlacer : MonoBehaviour
 		TurretData data = turretPrefab.GetComponent<Turret>().turretData;
         if (CurrencyManager.RemoveCurrency(data.FinalPrice()))
         {
-			FindAnyObjectByType<TurretShopManager>().GetComponent<AppearDisappearUI_Manager>().Disppear();
+            SFXManager sfx = FindAnyObjectByType<SFXManager>();
+			sfx.PlaySoundFXClip(sfx.buyTurretSound, transform, 0.5f);
+            FindAnyObjectByType<TurretShopManager>().GetComponent<AppearDisappearUI_Manager>().Disppear();
 	        isPicked = true;
 			previsualizer.Using(iconTurret.sprite);    
+        }
+		else
+		{
+			SFXManager sfx = FindAnyObjectByType<SFXManager>();
+			sfx.PlaySoundFXClip(sfx.noMoneySound, transform, 0.5f);
         }
 	}
 
@@ -132,7 +138,9 @@ public class TurretPlacer : MonoBehaviour
 			}
 			else 
 			{
-				data.placedTurrets++;
+				SFXManager sfx = FindAnyObjectByType<SFXManager>();
+				sfx.PlaySoundFXClip(sfx.turretPlaced, transform, 0.5f);
+                data.placedTurrets++;
 				SetData();
 
 				placedturret.GetComponent<Turret>().SetParentChecker(finalChecker);
