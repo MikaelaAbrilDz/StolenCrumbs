@@ -48,9 +48,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4495774063442478254, guid: 300da5fde2cafd24cacbf3b124af38c0, type: 3}
+      propertyPath: isTurretPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8456811084168725349, guid: 300da5fde2cafd24cacbf3b124af38c0, type: 3}
       propertyPath: m_Name
-      value: Checker Variant
+      value: CheckerLimit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
