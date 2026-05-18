@@ -17,7 +17,6 @@ public class TurretPlacer : MonoBehaviour
 	private float placingRange = 1f;
 	public static List<CheckerManager> checkersInRange = new List<CheckerManager>();
 	public static List<CheckerManager> checkersInRangePrep = new List<CheckerManager>();
-	[SerializeField] SpriteRenderer boltsSprite;
     void Start()
 	{
         iconTurret = GetComponent<Image>();
@@ -38,7 +37,7 @@ public class TurretPlacer : MonoBehaviour
         TurretData data = turretPrefab.GetComponent<Turret>().turretData;
 
 		iconTurret.sprite = turretPrefab.GetComponent<Turret>().turretData.icon;
-		nameText.text = data.turretName + " (" + data.FinalPrice() + boltsSprite + " )";
+		nameText.text = data.turretName + " ("+ data.FinalPrice() + " bolts)";
 	}
 
 	void CheckCurrentRange()
