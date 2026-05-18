@@ -6,7 +6,7 @@ public class SortingLayerManager : MonoBehaviour
     int[] sortingOrders;
     void Start()
     {
-        sprites = GetComponentsInChildren<SpriteRenderer>();
+        sprites = GetComponentsInChildren<SpriteRenderer>(true);
         sortingOrders = new int[sprites.Length];
         for (int i = 0; i < sprites.Length; i++)
         {
