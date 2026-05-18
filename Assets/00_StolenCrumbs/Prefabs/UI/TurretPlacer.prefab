@@ -96,6 +96,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   turretPrefab: {fileID: 4316312361366573387, guid: 13a74a59037c5cb4aa9518a1426add8d, type: 3}
+  boltsSprite: {fileID: 0}
 --- !u!114 &5362418936173046847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +186,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 0b530356-f393-4ae1-be61-07bd4811cd61
     m_ActionName: 'SoundMenu/OpenCloseMenu[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 86423893-7fb1-4bbc-8ba6-f5e5e7c9a49c
+    m_ActionName: 'PlayerInput/SellTap[/Mouse/rightButton]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerInput
@@ -286,8 +291,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f7d5ee3a36a4c9a45b8d29458e3dae00, type: 2}
+  m_sharedMaterial: {fileID: -875461992966387074, guid: f7d5ee3a36a4c9a45b8d29458e3dae00, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
