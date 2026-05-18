@@ -1009,3 +1009,8 @@ MonoBehaviour:
   frozenIcon: {fileID: 21300000, guid: ed8c3921b2998c44e83baee09a5da6c6, type: 3}
   markedIcon: {fileID: 21300000, guid: 6f2e3ef7ab3dc5b41ad3c9570363f260, type: 3}
   soapIcon: {fileID: 21300000, guid: 8834caabc5089fb4a80b63e320d8fcca, type: 3}
+  deadSound: {fileID: 8300000, guid: f5bf77b5dc2298a41949e7f25840a096, type: 3}
+  takeDamageSound: {fileID: 0}
+  eatSound: {fileID: 0}
+  explosionSound: {fileID: 8300000, guid: 170f94d3f1c68d04fb5cfdef12a411ed, type: 3}
+  soapExplosionSound: {fileID: 0}

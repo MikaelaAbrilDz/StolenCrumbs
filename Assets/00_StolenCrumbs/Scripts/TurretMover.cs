@@ -23,7 +23,8 @@ public class TurretMover : MonoBehaviour
 
     [SerializeField] AudioClip turretPlaced;
     [SerializeField] AudioClip noMoneySound;
-    [SerializeField] AudioClip sellTurretSound;
+    [SerializeField] AudioClip loseMoneySound;
+    [SerializeField] AudioClip gainMoneySound;
     void Start()
     {
         previsualizer = FindAnyObjectByType<TurretPrevisualizer>(FindObjectsInactive.Include);
@@ -96,7 +97,7 @@ public class TurretMover : MonoBehaviour
                 Destroy(turretToSell.gameObject);
                 if(FindAnyObjectByType<SFXManager>() != null)
                 {
-                    FindAnyObjectByType<SFXManager>().PlaySoundFXClip(sellTurretSound, transform, 1f);
+                    FindAnyObjectByType<SFXManager>().PlaySoundFXClip(gainMoneySound, transform, 1f);
                 }
                 Debug.Log("Sold turret for " + sellPrice + " currency.");
             }
@@ -151,6 +152,7 @@ public class TurretMover : MonoBehaviour
         turretData = data;
         if (CurrencyManager.RemoveCurrency(movePrice))
         {
+            FindAnyObjectByType<SFXManager>().PlaySoundFXClip(loseMoneySound, transform, 1f);
             isPicked = true;
             previsualizer.Using(turretData.icon);
         }

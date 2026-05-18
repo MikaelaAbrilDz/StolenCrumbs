@@ -27,7 +27,6 @@ public class TurretUnlockManager : MonoBehaviour
 
     List<TurretData> GetRandomOptions(int amount) //Devuelve una lista de torretas aleatorias sin repetir
     {
-        FindAnyObjectByType<SFXManager>().PlaySoundFXClip(turretSelection, transform, 1f);
         List<TurretData> options = new List<TurretData>();
         List<TurretData> copy = new List<TurretData>(lockedTurrets);
 

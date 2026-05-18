@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class SFXManager : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class SFXManager : MonoBehaviour
     [SerializeField] public AudioClip noMoneySound;
     [SerializeField] public AudioClip clickSound;
     [SerializeField] public AudioClip startGameSound;
-    [SerializeField] public AudioClip buyTurretSound;
+    [SerializeField] public AudioClip loseMoneySound;
+    [SerializeField] public AudioClip gainMoneySound;
 
     [SerializeField] AudioSource globalAudioSource;
     [SerializeField] public AudioClip loseSound;
@@ -34,7 +36,7 @@ public class SFXManager : MonoBehaviour
         //spawn in gameobject with audio source component, set the clip to the provided one and play it, then destroy the gameobject after the clip is done
         AudioSource audioSource = Instantiate(soundFXObject, spawnTransform.position, Quaternion.identity);
         audioSource.clip = audioClip;
-        audioSource.volume = volume;
+        audioSource.volume = volume/3;
         audioSource.Play();
         Destroy(audioSource.gameObject, audioClip.length);
     }
@@ -42,11 +44,14 @@ public class SFXManager : MonoBehaviour
     {
         PlaySoundFXClip(audioClip, transform, 1f);
     }
-
+    public void PlayGlobalSoundFXClip(AudioClip audioClip)
+    {
+        PlayGlobalSoundFXClip(audioClip, 1);
+    }
     public void PlayGlobalSoundFXClip(AudioClip audioClip, float volume)
     {
         globalAudioSource.clip = audioClip;
-        globalAudioSource.volume = volume;
+        globalAudioSource.volume = volume/3;
         globalAudioSource.Play();
     }
 }

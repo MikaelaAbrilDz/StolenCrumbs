@@ -74,6 +74,8 @@ public class SpawnManager : MonoBehaviour
                 roundPassObj.SetActive(true);
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
+                SFXManager sfx = FindAnyObjectByType<SFXManager>();
+                sfx.PlaySoundFXClip(sfx.gainMoneySound, transform, 1f);
                 CurrencyManager.AddCurrency(roundPrize);
                 if (FindAnyObjectByType<SFXManager>() != null)
                 {
@@ -95,6 +97,8 @@ public class SpawnManager : MonoBehaviour
                 roundPassObj.SetActive(true);
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
+                SFXManager sfx = FindAnyObjectByType<SFXManager>();
+                sfx.PlaySoundFXClip(sfx.gainMoneySound, transform, 1f);
                 CurrencyManager.AddCurrency(roundPrize);
                 if (FindAnyObjectByType<SFXManager>() != null)
                 {
@@ -115,6 +119,8 @@ public class SpawnManager : MonoBehaviour
                 roundPassObj.SetActive(true);
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
+                SFXManager sfx = FindAnyObjectByType<SFXManager>();
+                sfx.PlaySoundFXClip(sfx.gainMoneySound, transform, 1f);
                 CurrencyManager.AddCurrency(roundPrize);
                 if (FindAnyObjectByType<SFXManager>() != null)
                 {
@@ -136,6 +142,8 @@ public class SpawnManager : MonoBehaviour
                 roundPassObj.SetActive(true);
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
+                SFXManager sfx = FindAnyObjectByType<SFXManager>();
+                sfx.PlaySoundFXClip(sfx.gainMoneySound, transform, 1f);
                 CurrencyManager.AddCurrency(roundPrize);
                 if (FindAnyObjectByType<SFXManager>() != null)
                 {
@@ -156,6 +164,9 @@ public class SpawnManager : MonoBehaviour
                 roundPassObj.SetActive(true);
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
+                SFXManager sfx = FindAnyObjectByType<SFXManager>();
+                sfx.PlaySoundFXClip(sfx.gainMoneySound, transform, 1f);
+                CurrencyManager.AddCurrency(roundPrize);
                 FindAnyObjectByType<PathGenerationManager>().CreatePath();
             }
         }

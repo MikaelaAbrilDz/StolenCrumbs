@@ -35,7 +35,6 @@ public class EnemyBase : CheckerPlaceable
     [SerializeField] AudioClip eatSound;
     [SerializeField] AudioClip explosionSound;
     [SerializeField] AudioClip soapExplosionSound;
-    [SerializeField] AudioClip earnMoneySound;
 
 
     public enum bugType
@@ -273,10 +272,8 @@ public class EnemyBase : CheckerPlaceable
         Instantiate(boltsExplosionVisual, transform.position, Quaternion.identity);
         yield return new WaitForSeconds(1.2f);
         CurrencyManager.AddCurrency(prize);
-        if (earnMoneySound != null)
-        {
-            FindAnyObjectByType<SFXManager>().PlaySoundFXClip(earnMoneySound, transform, 1f);
-        }
+        SFXManager sfx = FindAnyObjectByType<SFXManager>();
+        sfx.PlaySoundFXClip(sfx.gainMoneySound, transform, 1f);
         Destroy(gameObject);
     }
     void HitFort()

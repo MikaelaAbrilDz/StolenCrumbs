@@ -385,6 +385,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -3126376009769802477, guid: d10f72b8aa7729f40ab991c383356431, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 62bbde5aef8cee84ebbd6142d95c27a3, type: 3}
+    - target: {fileID: -3126376009769802477, guid: d10f72b8aa7729f40ab991c383356431, type: 3}
       propertyPath: canonPivot
       value: 
       objectReference: {fileID: 7280377570794828154}

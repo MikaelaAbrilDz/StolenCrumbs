@@ -536,7 +536,7 @@ PrefabInstance:
     - target: {fileID: -3126376009769802477, guid: d10f72b8aa7729f40ab991c383356431, type: 3}
       propertyPath: shootSound
       value: 
-      objectReference: {fileID: 8300000, guid: abb1f231d5db9b2429c8eb4328cbe5e7, type: 3}
+      objectReference: {fileID: 8300000, guid: bc187d22892b2b34c9e1e81d72f5891e, type: 3}
     - target: {fileID: -3126376009769802477, guid: d10f72b8aa7729f40ab991c383356431, type: 3}
       propertyPath: turretData
       value: 

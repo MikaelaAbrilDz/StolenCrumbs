@@ -22,7 +22,7 @@ public class TurretOption : MonoBehaviour
         turret = data;
         icon.sprite = data.icon;
         nameText.text = data.turretName;
-        descriptionText.text = $"Damage: {data.damage}\nFire Rate: {data.fireRate}\nRange: {data.range}";
+        descriptionText.text = $"Damage: {data.damage}\nCooldown: {data.fireRate}\nRange: {data.range}";
     }
 
     public void OnClick()

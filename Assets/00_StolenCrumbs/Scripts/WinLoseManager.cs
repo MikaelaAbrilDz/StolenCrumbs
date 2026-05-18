@@ -11,6 +11,8 @@ public class WinLoseManager : MonoBehaviour
         Lost
     }
     static GameState gameState = GameState.Playing;
+
+    [SerializeField] GameObject music;
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -61,7 +63,7 @@ public class WinLoseManager : MonoBehaviour
     private IEnumerator WinCo()
     {
         SFXManager sfx = FindAnyObjectByType<SFXManager>();
-        sfx.PlayGlobalSoundFXClip(sfx.winSound, 0.5f);
+        sfx.PlayGlobalSoundFXClip(sfx.winSound, 2f);
         yield return new WaitForSeconds(sfx.winSound.length);
         SceneSwitcher.SwitchScene("WinScreen");
     }
@@ -71,8 +73,9 @@ public class WinLoseManager : MonoBehaviour
     }
     private IEnumerator LoseCo()
     {
+        music.SetActive(false);
         SFXManager sfx = FindAnyObjectByType<SFXManager>();
-        sfx.PlayGlobalSoundFXClip(sfx.loseSound, 0.5f);
+        sfx.PlayGlobalSoundFXClip(sfx.loseSound, 2f);
         yield return new WaitForSeconds((sfx.loseSound.length));
         SceneSwitcher.SwitchScene("LoseScreen");
     }

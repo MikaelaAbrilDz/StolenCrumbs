@@ -27,4 +27,4 @@ MonoBehaviour:
   moneyMultiplier: 0.6
   damageTypes: 06000000
   damageTimes:
-  - 0.5
+  - 0.8

@@ -364,9 +364,10 @@ MonoBehaviour:
   soundFXObject: {fileID: 7663414976012283317, guid: 874523dfc746b0941a62ce2fbf30986a, type: 3}
   turretPlaced: {fileID: 8300000, guid: 3586bd643f73ecf41ba3b54da7173281, type: 3}
   noMoneySound: {fileID: 8300000, guid: b1e3fe874f43a71428b92e047604ff9c, type: 3}
-  clickSound: {fileID: 8300000, guid: 25bc3e29b3738d346bedb9742b555ba3, type: 3}
+  clickSound: {fileID: 8300000, guid: cbbc3d008628f234dbe52696c92b6631, type: 3}
   startGameSound: {fileID: 8300000, guid: b9aa8bb65debd4c4a8bb03ca214e659e, type: 3}
-  buyTurretSound: {fileID: 8300000, guid: fe56173dc8979d744bbd5e68e230649d, type: 3}
+  loseMoneySound: {fileID: 8300000, guid: 2d64433c4d01ffa4a8d31d84cd0b9503, type: 3}
+  gainMoneySound: {fileID: 8300000, guid: 6320c39b07760614bab95fe564b8bc4a, type: 3}
   globalAudioSource: {fileID: 1207012801}
   loseSound: {fileID: 8300000, guid: c6955248b1849814680c439e756394c8, type: 3}
   winSound: {fileID: 0}
@@ -1060,9 +1061,9 @@ RectTransform:
   m_Father: {fileID: 1717253064}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -270.71344, y: -523.70325}
-  m_SizeDelta: {x: 541.4268, y: -1047.4033}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -288, y: 24}
+  m_SizeDelta: {x: 541.4268, y: 32.59668}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2012081486
 MonoBehaviour:
@@ -1380,7 +1381,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1207012799}
         m_TargetAssemblyTypeName: SFXManager, Assembly-CSharp
-        m_MethodName: PlaySoundFXClip
+        m_MethodName: PlayGlobalSoundFXClip
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: b9aa8bb65debd4c4a8bb03ca214e659e, type: 3}

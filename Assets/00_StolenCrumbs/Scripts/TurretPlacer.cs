@@ -90,7 +90,7 @@ public class TurretPlacer : MonoBehaviour
         if (CurrencyManager.RemoveCurrency(data.FinalPrice()))
         {
             SFXManager sfx = FindAnyObjectByType<SFXManager>();
-			sfx.PlaySoundFXClip(sfx.buyTurretSound, transform, 0.5f);
+			sfx.PlaySoundFXClip(sfx.loseMoneySound, transform, 1);
             FindAnyObjectByType<TurretShopManager>().GetComponent<AppearDisappearUI_Manager>().Disppear();
 	        isPicked = true;
 			previsualizer.Using(iconTurret.sprite);    
@@ -98,7 +98,7 @@ public class TurretPlacer : MonoBehaviour
 		else
 		{
 			SFXManager sfx = FindAnyObjectByType<SFXManager>();
-			sfx.PlaySoundFXClip(sfx.noMoneySound, transform, 0.5f);
+			sfx.PlaySoundFXClip(sfx.noMoneySound, transform, 1f);
         }
 	}
 
@@ -133,13 +133,15 @@ public class TurretPlacer : MonoBehaviour
 
             if (finalChecker == null)
 			{
+                SFXManager sfx = FindAnyObjectByType<SFXManager>();
+                sfx.PlaySoundFXClip(sfx.gainMoneySound, transform, 1f);
                 CurrencyManager.AddCurrency(data.FinalPrice());
                 Destroy(placedturret);
 			}
 			else 
 			{
 				SFXManager sfx = FindAnyObjectByType<SFXManager>();
-				sfx.PlaySoundFXClip(sfx.turretPlaced, transform, 0.5f);
+				sfx.PlaySoundFXClip(sfx.turretPlaced, transform, 1f);
                 data.placedTurrets++;
 				SetData();
 
