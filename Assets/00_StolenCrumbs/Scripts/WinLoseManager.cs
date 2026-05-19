@@ -65,7 +65,7 @@ public class WinLoseManager : MonoBehaviour
         music.SetActive(false);
         SFXManager sfx = FindAnyObjectByType<SFXManager>();
         sfx.PlayGlobalSoundFXClip(sfx.winSound, 2f);
-        yield return new WaitForSeconds(sfx.winSound.length);
+        yield return new WaitForSeconds(1.5f);
         SceneSwitcher.SwitchScene("WinScreen");
     }
     private void Lose()
@@ -77,7 +77,7 @@ public class WinLoseManager : MonoBehaviour
         music.SetActive(false);
         SFXManager sfx = FindAnyObjectByType<SFXManager>();
         sfx.PlayGlobalSoundFXClip(sfx.loseSound, 2f);
-        yield return new WaitForSeconds((sfx.loseSound.length));
+        yield return new WaitForSeconds(1.5f);
         SceneSwitcher.SwitchScene("LoseScreen");
     }
 }

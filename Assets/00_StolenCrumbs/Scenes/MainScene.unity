@@ -693,7 +693,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28.9, y: 4}
+  m_AnchoredPosition: {x: 94.6, y: 4}
   m_SizeDelta: {x: 71.4641, y: 71.4641}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &32133924
@@ -1171,8 +1171,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 94, y: 60.3}
-  m_SizeDelta: {x: 124.798, y: 57.422}
+  m_AnchoredPosition: {x: 125.2207, y: 60.3}
+  m_SizeDelta: {x: 187.2395, y: 57.422}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &44645780
 MonoBehaviour:
@@ -16389,7 +16389,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.9390869, y: -5.2}
+  m_AnchoredPosition: {x: 1.9390869, y: 1}
   m_SizeDelta: {x: -60.5422, y: -40.6136}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1028476506
@@ -16416,8 +16416,8 @@ MonoBehaviour:
 
     Right click for deleting'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f7d5ee3a36a4c9a45b8d29458e3dae00, type: 2}
+  m_sharedMaterial: {fileID: -875461992966387074, guid: f7d5ee3a36a4c9a45b8d29458e3dae00, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16453,7 +16453,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 50
+  m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

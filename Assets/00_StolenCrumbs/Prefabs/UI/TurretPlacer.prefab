@@ -96,7 +96,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   turretPrefab: {fileID: 4316312361366573387, guid: 13a74a59037c5cb4aa9518a1426add8d, type: 3}
-  boltsSprite: {fileID: 0}
 --- !u!114 &5362418936173046847
 MonoBehaviour:
   m_ObjectHideFlags: 0
