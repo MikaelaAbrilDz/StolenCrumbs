@@ -370,7 +370,7 @@ MonoBehaviour:
   gainMoneySound: {fileID: 8300000, guid: 6320c39b07760614bab95fe564b8bc4a, type: 3}
   globalAudioSource: {fileID: 1207012801}
   loseSound: {fileID: 8300000, guid: c6955248b1849814680c439e756394c8, type: 3}
-  winSound: {fileID: 8300000, guid: c26572b041770d24c9b40f64077e6cf5, type: 3}
+  winSound: {fileID: 8300000, guid: 8ece3f4413a0e2e41bf1997d2c3e1453, type: 3}
 --- !u!4 &1207012800
 Transform:
   m_ObjectHideFlags: 0

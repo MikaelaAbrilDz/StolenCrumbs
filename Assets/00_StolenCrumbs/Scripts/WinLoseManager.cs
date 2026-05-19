@@ -62,6 +62,7 @@ public class WinLoseManager : MonoBehaviour
     }
     private IEnumerator WinCo()
     {
+        music.SetActive(false);
         SFXManager sfx = FindAnyObjectByType<SFXManager>();
         sfx.PlayGlobalSoundFXClip(sfx.winSound, 2f);
         yield return new WaitForSeconds(sfx.winSound.length);
