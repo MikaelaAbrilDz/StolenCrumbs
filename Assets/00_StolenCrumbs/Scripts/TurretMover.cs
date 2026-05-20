@@ -216,12 +216,12 @@ public class TurretMover : MonoBehaviour
         if (isInEditMode)
         {
             icon.transform.localScale = new Vector3(-1, 1, 1);
-            Time.timeScale = 0;
+            TimeScaleManager.PauseTime();
         }
         else
         {
             icon.transform.localScale = new Vector3(1, 1, 1);
-            Time.timeScale = 1;
+            TimeScaleManager.UnPauseTime();
         } 
 
     }
