@@ -13,10 +13,7 @@ public class WinLoseManager : MonoBehaviour
     static GameState gameState = GameState.Playing;
 
     [SerializeField] GameObject music;
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
+
     private void Start()
     {
         isFinalWave = false;
