@@ -265,6 +265,7 @@ public class EnemyBase : CheckerPlaceable
         LeanTween.cancel(gameObject);
         anim.SetBool("isDead", true);
         if (deadSound != null) FindAnyObjectByType<SFXManager>().PlaySoundFXClip(deadSound, transform, 1f);
+        lifeBar.transform.parent.gameObject.SetActive(false);
         StartCoroutine(GetTheBolts());
     }
     IEnumerator GetTheBolts()

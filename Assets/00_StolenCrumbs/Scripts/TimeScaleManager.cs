@@ -13,8 +13,9 @@ public abstract class TimeScaleManager : MonoBehaviour
     {
         Time.timeScale = scale;
     }
-    public static void SetTime(float scale)
+    public static void SetTime(float scaleToPut)
     {
-        Time.timeScale = scale;
+        Time.timeScale = scaleToPut;
+        scale = Time.timeScale;
     }
 }
