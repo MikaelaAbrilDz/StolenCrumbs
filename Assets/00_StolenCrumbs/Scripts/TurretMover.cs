@@ -190,7 +190,7 @@ public class TurretMover : MonoBehaviour
                 }
             }
 
-            if (finalChecker == null)
+            if (finalChecker == null || finalChecker == lastTurret.transform.parent.GetComponent<CheckerManager>())
             {
                 CurrencyManager.AddCurrency(movePrice);
                 Destroy(placedturret);

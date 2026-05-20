@@ -25,18 +25,18 @@ public class SoundsMenuManager : MonoBehaviour
         if (SoundMenuManager.activeSelf)
         {
             SoundMenuManager.SetActive(false);
-            Time.timeScale = 1f;
+            TimeScaleManager.UnPauseTime();
         }
         else
         {
             SoundMenuManager.SetActive(true);
-            Time.timeScale = 0f;
+            TimeScaleManager.PauseTime();
         }
     }
 
     public void ComeBack()
     {
         SoundMenuManager.SetActive(false);
-        Time.timeScale = 1f;
+        TimeScaleManager.UnPauseTime();
     }
 }

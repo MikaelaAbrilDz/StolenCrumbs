@@ -70,7 +70,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while(FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
-                Time.timeScale = 1;
+                TimeScaleManager.UnPauseTime();
                 roundPassObj.SetActive(true);
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
@@ -93,7 +93,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
-                Time.timeScale = 1;
+                TimeScaleManager.UnPauseTime();
                 roundPassObj.SetActive(true);
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
@@ -115,7 +115,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
-                Time.timeScale = 1;
+                TimeScaleManager.UnPauseTime();
                 roundPassObj.SetActive(true);
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
@@ -138,7 +138,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
-                Time.timeScale = 1;
+                TimeScaleManager.UnPauseTime();
                 roundPassObj.SetActive(true);
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
@@ -160,7 +160,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
-                Time.timeScale = 1;
+                TimeScaleManager.UnPauseTime();
                 roundPassObj.SetActive(true);
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);
@@ -178,7 +178,7 @@ public class SpawnManager : MonoBehaviour
                 round = 0;
                 wave++;
                 while (FindAnyObjectByType<EnemyBase>() != null) yield return new WaitForEndOfFrame();
-                Time.timeScale = 1;
+                TimeScaleManager.UnPauseTime();
                 roundPassObj.SetActive(true);
                 yield return new WaitForSeconds(2);
                 roundPassObj.SetActive(false);

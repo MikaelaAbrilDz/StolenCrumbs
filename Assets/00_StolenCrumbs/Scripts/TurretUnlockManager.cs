@@ -59,7 +59,7 @@ public class TurretUnlockManager : MonoBehaviour
             }
         }
         bg.SetActive(true);
-        Time.timeScale = 0f;
+        TimeScaleManager.PauseTime();
     }
 
     public void UnlockTurret(TurretData turret) //Mueve una torreta de bloqueadas a desbloqueadas
@@ -76,7 +76,7 @@ public class TurretUnlockManager : MonoBehaviour
         turretShopManager.AddToShop(turret);
         turret.placedTurrets = 0;
         bg.SetActive(false);
-        Time.timeScale = 1f;
+        TimeScaleManager.UnPauseTime();
         FindAnyObjectByType<SFXManager>().PlaySoundFXClip(turretSelection, transform, 1f);
         Debug.Log("Desbloqueada: " + turret.turretName);
     }

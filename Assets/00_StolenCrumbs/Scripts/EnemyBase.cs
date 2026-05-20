@@ -131,6 +131,7 @@ public class EnemyBase : CheckerPlaceable
     }
     public void GetDamaged(int damage, damageType[] damageTypes, GameObject hitVisual, AudioClip hitSound)
     {
+        if (isDead) return;
         int finalDamage = damage;
         foreach (var damageType in damageTypes) //Checks synergies
         {
