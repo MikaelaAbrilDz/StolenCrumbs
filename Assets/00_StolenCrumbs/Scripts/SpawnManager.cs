@@ -56,6 +56,7 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         CurrencyManager.SetCurrency(40);
+        TimeScaleManager.SetTime(1f);
         FindAnyObjectByType<TurretUnlockManager>().ShowUnlockOptions();
         StartCoroutine(SpawnGenerator());
     }
