@@ -8,8 +8,9 @@ using System.Collections.Generic;
 public class TurretPlacer : MonoBehaviour
 {
 	[SerializeField] LayerMask checkerMask;
-	private TextMeshProUGUI nameText;
-	private Image iconTurret;
+    [SerializeField] TextMeshProUGUI nameText;
+    [SerializeField] TextMeshProUGUI priceText;
+    [SerializeField] Image iconTurret;
 	public GameObject turretPrefab;
 
 	TurretPrevisualizer previsualizer;
@@ -19,8 +20,6 @@ public class TurretPlacer : MonoBehaviour
 	public static List<CheckerManager> checkersInRangePrep = new List<CheckerManager>();
     void Start()
 	{
-        iconTurret = GetComponent<Image>();
-		nameText = GetComponentInChildren<TextMeshProUGUI>();
 		previsualizer = FindAnyObjectByType<TurretPrevisualizer>(FindObjectsInactive.Include);
 		SetData();
 	}
@@ -37,7 +36,8 @@ public class TurretPlacer : MonoBehaviour
         TurretData data = turretPrefab.GetComponent<Turret>().turretData;
 
 		iconTurret.sprite = turretPrefab.GetComponent<Turret>().turretData.icon;
-		nameText.text = data.turretName + " ("+ data.FinalPrice() + " bolts)";
+		nameText.text = data.turretName;
+		priceText.text = "" + data.FinalPrice();
 	}
 
 	void CheckCurrentRange()
