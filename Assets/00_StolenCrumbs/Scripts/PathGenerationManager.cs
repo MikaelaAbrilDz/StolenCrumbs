@@ -16,6 +16,6 @@ public class PathGenerationManager : MonoBehaviour
 
         print(originIndex);
 
-        origin[originIndex].GeneratePath();
+        origin[originIndex].GeneratePath(35);
     }
 }
