@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class SpawnManager : MonoBehaviour
     int roundPrize = 30;
 
     [SerializeField] AudioClip earnMoneySound;
+    [SerializeField] TextMeshProUGUI currentWaveText;
 
     struct EnemiesToBeUsed
     {
@@ -65,6 +67,7 @@ public class SpawnManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         if (wave == 1)
         {
+            currentWaveText.text = "Wave 1";
             if (round < firstWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(firstWaveRounds[round].numberOfEnemies, firstWaveRounds[round].enemies, firstWaveRounds[round].enemiesProbs)), firstWaveRounds[round].rate));
             else
             {
@@ -87,7 +90,8 @@ public class SpawnManager : MonoBehaviour
         }
         if (wave == 2)
         {
-           if (round < secondWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(secondWaveRounds[round].numberOfEnemies, secondWaveRounds[round].enemies, secondWaveRounds[round].enemiesProbs)), secondWaveRounds[round].rate));
+            currentWaveText.text = "Wave 2";
+            if (round < secondWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(secondWaveRounds[round].numberOfEnemies, secondWaveRounds[round].enemies, secondWaveRounds[round].enemiesProbs)), secondWaveRounds[round].rate));
            else
            {
                 round = 0;
@@ -108,7 +112,8 @@ public class SpawnManager : MonoBehaviour
         }
         if (wave == 3)
         {
-           if (round < thirdWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(thirdWaveRounds[round].numberOfEnemies, thirdWaveRounds[round].enemies, thirdWaveRounds[round].enemiesProbs)), thirdWaveRounds[round].rate));
+            currentWaveText.text = "Wave 3";
+            if (round < thirdWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(thirdWaveRounds[round].numberOfEnemies, thirdWaveRounds[round].enemies, thirdWaveRounds[round].enemiesProbs)), thirdWaveRounds[round].rate));
            else
            {
                 round = 0;
@@ -130,7 +135,8 @@ public class SpawnManager : MonoBehaviour
         }
         if (wave == 4)
         {
-           if (round < fourthWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(fourthWaveRounds[round].numberOfEnemies, fourthWaveRounds[round].enemies, fourthWaveRounds[round].enemiesProbs)), fourthWaveRounds[round].rate));
+            currentWaveText.text = "Wave 4";
+            if (round < fourthWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(fourthWaveRounds[round].numberOfEnemies, fourthWaveRounds[round].enemies, fourthWaveRounds[round].enemiesProbs)), fourthWaveRounds[round].rate));
            else
            {
                 round = 0;
@@ -151,7 +157,8 @@ public class SpawnManager : MonoBehaviour
         }
         if (wave == 5)
         {
-           if (round < fifthWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(fifthWaveRounds[round].numberOfEnemies, fifthWaveRounds[round].enemies, fifthWaveRounds[round].enemiesProbs)), fifthWaveRounds[round].rate));
+            currentWaveText.text = "Wave 5";
+            if (round < fifthWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(fifthWaveRounds[round].numberOfEnemies, fifthWaveRounds[round].enemies, fifthWaveRounds[round].enemiesProbs)), fifthWaveRounds[round].rate));
            else
            {
                 round = 0;
@@ -168,7 +175,8 @@ public class SpawnManager : MonoBehaviour
         }
         if (wave == 6)
         {
-           if (round < sixthWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(sixthWaveRounds[round].numberOfEnemies, sixthWaveRounds[round].enemies, sixthWaveRounds[round].enemiesProbs)), sixthWaveRounds[round].rate));
+            currentWaveText.text = "Final wave";
+            if (round < sixthWaveRounds.Count) StartCoroutine(SpawnCo(GenerateEnemyQueue(new EnemiesToBeUsed(sixthWaveRounds[round].numberOfEnemies, sixthWaveRounds[round].enemies, sixthWaveRounds[round].enemiesProbs)), sixthWaveRounds[round].rate));
            else
            {
                 round = 0;
