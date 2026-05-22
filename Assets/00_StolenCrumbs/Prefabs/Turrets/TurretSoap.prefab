@@ -309,6 +309,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2093844495798543767, guid: 63ef90161b9434a4997c487762310d8d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5730827384435707068}
+    - targetCorrespondingSourceObject: {fileID: 3297364353584691495, guid: 63ef90161b9434a4997c487762310d8d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4191476640904388189}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 63ef90161b9434a4997c487762310d8d, type: 3}
 --- !u!1 &172306400380088296 stripped
 GameObject:
@@ -325,7 +328,7 @@ Animator:
   m_GameObject: {fileID: 172306400380088296}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 039ae1ca2a554164a97740f3755312d8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -393,6 +396,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 034bc47afcbf5e141a58d5c20b7808e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: EPO::EPOOutline.TargetStateListener
+--- !u!1 &2900739776024131442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3297364353584691495, guid: 63ef90161b9434a4997c487762310d8d, type: 3}
+  m_PrefabInstance: {fileID: 397416406908456533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4191476640904388189
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2900739776024131442}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 0b4a9f4f5c9c1e84db1b70af899a1fe1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3793834956491682448 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5681993693824435003, guid: 63ef90161b9434a4997c487762310d8d, type: 3}
@@ -521,6 +551,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3126376009769802477, guid: d10f72b8aa7729f40ab991c383356431, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 4191476640904388189}
     - target: {fileID: -3126376009769802477, guid: d10f72b8aa7729f40ab991c383356431, type: 3}
       propertyPath: hitSound
       value: 

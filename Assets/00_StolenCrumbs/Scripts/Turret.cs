@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class Turret : CheckerPlaceable
 {
 	[SerializeField] Transform canonPivot, shootPoint;
+    [SerializeField] Animator anim;
 
 	public TurretData turretData;
 
@@ -54,6 +55,7 @@ public class Turret : CheckerPlaceable
 	{
         target = FindTarget();
 		if (target == null) return;
+		anim.SetTrigger("shoot");
         if (shootSound != null) FindAnyObjectByType<SFXManager>().PlaySoundFXClip(shootSound, transform, 1f);
         StartCoroutine(DealDamage(target, turretData.bulletYield));
         bullet.SetActive(true);

@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TurretSoap
+  m_Controller: {fileID: 9100000, guid: baa6540fda2129e45b6b549f3e97eb4e, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ed03e94b742362e4994bf6ce195843b2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 46da39900e683b44aa0941a5804b5d05, type: 2}

@@ -40,6 +40,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -3126376009769802477, guid: d10f72b8aa7729f40ab991c383356431, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 5157766236379398640}
+    - target: {fileID: -3126376009769802477, guid: d10f72b8aa7729f40ab991c383356431, type: 3}
       propertyPath: hitSound
       value: 
       objectReference: {fileID: 8300000, guid: 7ba1f8a4102158c47bbdccc6266de341, type: 3}
@@ -443,7 +447,7 @@ Animator:
   m_GameObject: {fileID: 803493842988278250}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 66a7a53a0f6534b4f9d7271cfaff7203, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -558,7 +562,7 @@ Animator:
   m_GameObject: {fileID: 5233615354650087205}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 8b1cac4965bd4734591ea5067c9ff969, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
