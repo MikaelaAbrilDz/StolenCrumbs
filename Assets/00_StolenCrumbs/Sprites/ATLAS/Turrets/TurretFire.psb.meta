@@ -111,17 +111,17 @@ ScriptedImporter:
     spriteBone:
     - name: CanonPivot
       guid: 0bf451682344b7a40a623d8b1921b30a
-      position: {x: 63.462112, y: 42.786667, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      length: 14.024094
+      position: {x: 63.618286, y: 47.315933, z: 0}
+      rotation: {x: 0, y: 0, z: -0.15718542, w: 0.9875691}
+      length: 14.588803
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4294901760
     - name: Turret_Canon_1
       guid: 8ba56de41168cce4b9b5c51149157c09
-      position: {x: 14.024094, y: -0.000015258789, z: 0}
-      rotation: {x: 0, y: 0, z: -0.21869408, w: 0.9757935}
+      position: {x: 14.588798, y: -0.0000033902102, z: 0}
+      rotation: {x: 0, y: 0, z: -0.06259502, w: 0.998039}
       length: 76.31333
       parentId: 0
       color:
@@ -2815,17 +2815,17 @@ ScriptedImporter:
         rgba: 4278255360
     - name: CanonPivot
       guid: 0bf451682344b7a40a623d8b1921b30a
-      position: {x: 150.46211, y: 230.78667, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      length: 14.024094
+      position: {x: 150.61829, y: 235.31593, z: 0}
+      rotation: {x: 0, y: 0, z: -0.15718542, w: 0.9875691}
+      length: 14.588803
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4294901760
     - name: Turret_Canon_1
       guid: 8ba56de41168cce4b9b5c51149157c09
-      position: {x: 14.024094, y: -0.000015258789, z: 0}
-      rotation: {x: 0, y: 0, z: -0.21869408, w: 0.9757935}
+      position: {x: 14.588804, y: -0.000005863803, z: 0}
+      rotation: {x: 0, y: 0, z: -0.06259502, w: 0.998039}
       length: 76.31333
       parentId: 3
       color:
