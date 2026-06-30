@@ -34,8 +34,8 @@ public class TurretPlacer : MonoBehaviour
 	public void SetData()
 	{
         TurretData data = turretPrefab.GetComponent<Turret>().turretData;
-
-		iconTurret.sprite = turretPrefab.GetComponent<Turret>().turretData.icon;
+		if (!iconTurret || !nameText || !priceText) return;
+		iconTurret.sprite = data.icon;
 		nameText.text = data.turretName;
 		priceText.text = "" + data.FinalPrice();
 	}

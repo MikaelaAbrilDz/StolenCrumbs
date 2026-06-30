@@ -34125,9 +34125,37 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3956969967579289482, guid: cbbb9ad556976f945a926117f8dfee41, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956969967579289482, guid: cbbb9ad556976f945a926117f8dfee41, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956969967579289482, guid: cbbb9ad556976f945a926117f8dfee41, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1510302099}
+    - target: {fileID: 3956969967579289482, guid: cbbb9ad556976f945a926117f8dfee41, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956969967579289482, guid: cbbb9ad556976f945a926117f8dfee41, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlaySoundFXClip
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956969967579289482, guid: cbbb9ad556976f945a926117f8dfee41, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UiSfxManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956969967579289482, guid: cbbb9ad556976f945a926117f8dfee41, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: cbbc3d008628f234dbe52696c92b6631, type: 3}
+    - target: {fileID: 3956969967579289482, guid: cbbb9ad556976f945a926117f8dfee41, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6758683527615612545, guid: cbbb9ad556976f945a926117f8dfee41, type: 3}
       propertyPath: m_Name
       value: TurretOption

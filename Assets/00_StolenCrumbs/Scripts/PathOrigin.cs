@@ -15,14 +15,8 @@ public class PathOrigin : CheckerPlaceable
 
     List<GameObject> paths = new List<GameObject>();
     
-    public void GeneratePath(int fullCounter)
+    public bool GeneratePath()
     {
-        if (fullCounter == 0)
-        {
-            print("PATH GENERATION WAS IMPOSSIBLE");
-            return;
-        }
-
         paths.Clear();
 
         currentChecker = parentChecker.sideCheckers[initialDirection];
@@ -35,12 +29,22 @@ public class PathOrigin : CheckerPlaceable
             placedPath.GetComponent<Path>().SetParentChecker(currentChecker);
             paths.Add(placedPath);
 
-            int nextDirection = GenerateDirection(fullCounter, 25, currentDesviation);
+            int nextDirection = -1;
+            int directionCounter = 25;
+            while (nextDirection < 0 && directionCounter > 0)
+            {
+                nextDirection = GenerateDirection(currentDesviation);
+                directionCounter--;
+            }
 
             if (nextDirection == -1)
             {
                 print("PATH GENERATION WENT WRONG");
-                return;
+                foreach (GameObject path in paths)
+                {
+                    Destroy(path);
+                }
+                return false;
             }
 
             SetPath(placedPath.GetComponent<Path>(), nextDirection);
@@ -59,45 +63,34 @@ public class PathOrigin : CheckerPlaceable
         GameObject placedSpawn = Instantiate(spawnPrefab, currentChecker.transform);
         placedSpawn.GetComponent<Spawn>().SetParentChecker(currentChecker);
         FindAnyObjectByType<SpawnManager>().spawns.Add(placedSpawn.GetComponent<Spawn>());
+
+        return true;
     }
 
-    private int GenerateDirection(int fullCounter, int counter, float currentDesviation)
+    private int GenerateDirection(float currentDesviation)
     {
-        if (counter == 0)
+        int value = -1;
+        while (value < 0)
         {
-            foreach (GameObject path in paths)
-            {
-                Destroy(path);
-            }
-            GeneratePath(fullCounter - 1);
-            return -1;
+            value = GetClampedDirection(currentDesviation);
         }
-
-        int value = GetClampedDirection(fullCounter, counter, currentDesviation);
-
-        if (value == -1)
-        {
-            GeneratePath(fullCounter - 1);
-            return value;
-        }
-
 
         if (!currentChecker.GetComponent<CheckerManager>().isPathPlaceable || currentChecker.sideCheckers[value].GetComponentInChildren<Path>() || currentChecker.sideCheckers[value].GetComponentInChildren<Fort>() || currentChecker.sideCheckers[value].GetComponentInChildren<Turret>())
         {
-            value = GenerateDirection(fullCounter, counter - 1, currentDesviation);
+            return -1;
         }
 
         return value;
     }
 
-    private int GetClampedDirection(int fullCounter, int counter, float currentDesviation)
+    private int GetClampedDirection(float currentDesviation)
     {
         int baseDirection = initialDirection;
 
         float randNormal = Mathf.Sqrt(-2f * Mathf.Log(Random.Range(0f, 1f))) * Mathf.Sin(2f * Mathf.PI * Random.Range(0f, 1f));
 
 
-        int value = baseDirection + Mathf.RoundToInt(currentDesviation * randNormal);
+        int value = Mathf.Clamp((baseDirection + Mathf.RoundToInt(currentDesviation * randNormal)), -5, 11);
         int range = 6;
         value = (value) % range;
         if (value < 0) value += range;
@@ -108,7 +101,7 @@ public class PathOrigin : CheckerPlaceable
         }
         else
         {
-            return GenerateDirection(fullCounter, counter - 1, currentDesviation);
+            return -1;
         }
 
 

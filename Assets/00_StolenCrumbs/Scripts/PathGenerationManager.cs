@@ -16,6 +16,13 @@ public class PathGenerationManager : MonoBehaviour
 
         print(originIndex);
 
-        origin[originIndex].GeneratePath(35);
+        bool pathAcomplished = false;
+        int loopsDone = 0;
+        while (!pathAcomplished && loopsDone < 101)
+        {
+            pathAcomplished = origin[originIndex].GeneratePath();
+            loopsDone++;
+        }
+        
     }
 }
