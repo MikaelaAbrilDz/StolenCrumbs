@@ -75,7 +75,11 @@ public class PathOrigin : CheckerPlaceable
 
         int value = GetClampedDirection(fullCounter, counter, currentDesviation);
 
-        if (value == -1) return value;
+        if (value == -1)
+        {
+            GeneratePath(fullCounter - 1);
+            return value;
+        }
 
 
         if (!currentChecker.GetComponent<CheckerManager>().isPathPlaceable || currentChecker.sideCheckers[value].GetComponentInChildren<Path>() || currentChecker.sideCheckers[value].GetComponentInChildren<Fort>() || currentChecker.sideCheckers[value].GetComponentInChildren<Turret>())
